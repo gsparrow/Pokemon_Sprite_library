@@ -1,0 +1,15 @@
+A sprite library of the Red/Blue pokemon that includes Pokedex descriptions.
+
+To run: python main.py
+
+Requires the pygame library.
+
+This library aims to transform the original sprites into minimal pygame source code representations. By minimal, I mean combining like pixels together to form a line, but only on a single line so that drawing the image line by line is still possible, as no line overlaps another.
+
+**Notes **
+The markers and commands for vim formatting are left in the code until at least the completion of the library.
+
+The explanation for the many pygame lines is as follows
+pygame.draw.rect draws a rectangle on the screen of the color with the top left corner given by the first two coordinates, and the bottom right corner given by the next two coordinates. self.size must be at least 2 for pygame to draw this, and there is a coded check for self.size <2.
+Example
+#pygame.draw.rect(self.screen, self.color_1, [self.my_x + 26*self.size,  self.my_y +  0*self.size,  1*self.size, 1*self.size])
