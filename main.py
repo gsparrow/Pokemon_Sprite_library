@@ -27,7 +27,8 @@ pygame.display.set_caption("Gotta Catch 'Em All")
 done = False
 clock = pygame.time.Clock()
 
-pokemon  = sprites.Bulbasaur(  0, 0, 0, 0, 1, (25,16,16), (74,165,90), (165,214,132), WHITE, screen)
+#pokemon  = sprites.Bulbasaur(  0, 0, 0, 0, 1, (25,16,16), (74,165,90), (165,214,132), WHITE, screen)
+pokemon  = sprites.Ivysaur(  0, 0, 0, 0, 1, (25,16,16), (74,165,90), (165,214,132), WHITE, screen)
 											#set sprite at location x,y, with velocity x,y,
 											#with size multiplier 1,  with the following four colors
 											#on the main screen
