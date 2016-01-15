@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # vim: nu
 # vim: expandtab shiftwidth=2 softtabstop=2 autoindent
 # vim: cursorline foldmethod=marker
@@ -53,6 +54,12 @@ class Bulbasaur (my_sprite): # {{{
     self.color_2 = color2
     self.color_3 = color3
     self.color_4 = color4
+
+  def get_Name(self):
+    return u"Bulbasaur"
+
+  def get_Number(self):
+    return 1
 
   def __str__(self):
     return "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokemon."
@@ -574,6 +581,12 @@ class Ivysaur (my_sprite): # {{{
     self.color_2 = color2
     self.color_3 = color3
     self.color_4 = color4
+
+  def get_Name(self):
+    return u"Ivysaur"
+
+  def get_Number(self):
+    return 2
 
   def __str__(self):
     return "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
@@ -1166,6 +1179,12 @@ class Venasaur (my_sprite): # {{{
     self.color_2 = color2
     self.color_3 = color3
     self.color_4 = color4
+  
+  def get_Name(self):
+    return u"Venasaur"
+
+  def get_Number(self):
+    return 3
 
   def __str__(self):
     return "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight."
@@ -2121,6 +2140,12 @@ class Squirtle (my_sprite): # {{{
     self.color_2 = color2
     self.color_3 = color3
     self.color_4 = color4
+  
+  def get_Name(self):
+    return u"Squirtle"
+
+  def get_Number(self):
+    return 7
 
   def __str__(self):
     return "After birth, its back swells and hardens into a shell. Powerful sprays foam from its mouth."
@@ -2591,6 +2616,12 @@ class Wartortle (my_sprite): # {{{
     self.color_2 = color2
     self.color_3 = color3
     self.color_4 = color4
+  
+  def get_Name(self):
+    return u"Wartortle"
+
+  def get_Number(self):
+    return 8
 
   def __str__(self):
     return "Often hides in water to stalk unwary prey. For swimming fast, it moves its ear to maintain balance."
@@ -3257,6 +3288,13 @@ class Blastoise (my_sprite): # {{{
     self.color_2 = color2
     self.color_3 = color3
     self.color_4 = color4
+  
+  def get_Name(self):
+    return u"Blastoise"
+
+  def get_Number(self):
+    return 9
+
 
   def __str__(self):
     return "A brutal Pokemon with pressurized water jets on its shell. They are used for high speed tackles."
@@ -4405,6 +4443,13 @@ class Cubone (my_sprite): # {{{
     self.color_2 = color2
     self.color_3 = color3
     self.color_4 = color4
+  
+  def get_Name(self):
+    return u"Cubone"
+
+  def get_Number(self):
+    return 104
+
 
   def __str__(self):
     return "Because it never removes its skull helmet, no one has ever seen this Pokemon's real face."
@@ -4980,6 +5025,13 @@ class Mew (my_sprite): # {{{
     self.color_2 = color2
     self.color_3 = color3
     self.color_4 = color4
+  
+  def get_Name(self):
+    return u"Mew"
+
+  def get_Number(self):
+    return 151
+
 
   def __str__(self):
     return "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide."
