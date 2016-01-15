@@ -2103,6 +2103,10 @@ class Venasaur (my_sprite): # {{{
     # }}}
 # }}}
 
+# TODO   4 - Charmander
+# TODO   5 - Charmeleon
+# TODO   6 - Charizard
+
 class Squirtle (my_sprite): # {{{
   def __init__(self, x, y, velocity_x, velocity_y, size_multiplier, color1, color2, color3, color4, screen):
     my_sprite.__init__(self, x, y, velocity_x, velocity_y, size_multiplier)
@@ -4292,6 +4296,101 @@ class Blastoise (my_sprite): # {{{
     # }}}
 # }}}
 
+# TODO  10 - Caterpie
+# TODO  11 - Metapod
+# TODO  12 - Butterfree
+# TODO  13 - Weedle
+# TODO  14 - Kakuna
+# TODO  15 - Beedrill
+# TODO  16 - Pidgey
+# TODO  17 - Pidgeotto
+# TODO  18 - Pidgeot
+# TODO  19 - Rattata
+# TODO  20 - Raticate
+# TODO  21 - Spearow
+# TODO  22 - Fearow
+# TODO  23 - Ekans
+# TODO  24 - Arbok
+# TODO  25 - Pikachu
+# TODO  26 - Raichu
+# TODO  27 - Sandshrew
+# TODO  28 - Sandslash
+# TODO  29 - Nidoran♀
+# TODO  30 - Nidorina
+# TODO  31 - Nidoqueen
+# TODO  32 - Nidoran♂
+# TODO  33 - Nidorino
+# TODO  34 - Nidoking
+# TODO  35 - Clefairy
+# TODO  36 - Clefable
+# TODO  37 - Vulpix
+# TODO  38 - Ninetails
+# TODO  39 - Jigglypuff
+# TODO  40 - Wigglytuff
+# TODO  41 - Zubat
+# TODO  42 - Golbat
+# TODO  43 - Oddish
+# TODO  44 - Gloom
+# TODO  45 - Vileplume
+# TODO  46 - Paras
+# TODO  47 - Parasect
+# TODO  48 - Venonat
+# TODO  49 - Venomoth
+# TODO  50 - Diglet
+# TODO  51 - Dugtrio
+# TODO  52 - Meowth
+# TODO  53 - Persian
+# TODO  54 - Psyduck
+# TODO  55 - Golduck
+# TODO  56 - Mankey
+# TODO  57 - Primeape
+# TODO  58 - Growlithe
+# TODO  59 - Arcanine
+# TODO  60 - Poliwag
+# TODO  61 - Poliwhirl
+# TODO  62 - Poliwrath
+# TODO  63 - Abra
+# TODO  64 - Kadabra
+# TODO  65 - Alakazam
+# TODO  66 - Machop
+# TODO  67 - Machoke
+# TODO  68 - Machamp
+# TODO  69 - Bellsprout
+# TODO  70 - Weepinbell
+# TODO  71 - Victreebel
+# TODO  72 - Tentacool
+# TODO  73 - Tentacruel
+# TODO  74 - Geodude
+# TODO  75 - Graveler
+# TODO  76 - Golem
+# TODO  77 - Ponyta
+# TODO  78 - Rapidash
+# TODO  79 - Slowpoke
+# TODO  80 - Slowbro
+# TODO  81 - Magnemite
+# TODO  82 - Magneton
+# TODO  83 - Farfetch'd
+# TODO  84 - Doduo
+# TODO  85 - Dodrio
+# TODO  86 - Seel
+# TODO  87 - Dewgong
+# TODO  88 - Grimer
+# TODO  89 - Muk
+# TODO  90 - Shellder
+# TODO  91 - Cloyster
+# TODO  92 - Ghastly
+# TODO  93 - Haunter
+# TODO  94 - Gengar
+# TODO  95 - Onix
+# TODO  96 - Drowzee
+# TODO  97 - Hypno
+# TODO  98 - Krabby
+# TODO  99 - Kingler
+# TODO 100 - Voltorb
+# TODO 101 - Electrode
+# TODO 102 - Exeggcute
+# TODO 103 - Exeggutor
+
 class Cubone (my_sprite): # {{{
   def __init__(self, x, y, velocity_x, velocity_y, size_multiplier, color1, color2, color3, color4, screen):
     my_sprite.__init__(self, x, y, velocity_x, velocity_y, size_multiplier)
@@ -4820,6 +4919,53 @@ class Cubone (my_sprite): # {{{
     # }}}
 # }}}
 
+# TODO 105 - Marowak
+# TODO 106 - Hitmonlee
+# TODO 107 - Hitmonchan
+# TODO 108 - Lickitung
+# TODO 109 - Koffing
+# TODO 110 - Weezing
+# TODO 111 - Rhyhorn
+# TODO 112 - Rhydon
+# TODO 113 - Chansey
+# TODO 114 - Tangela
+# TODO 115 - Kangaskhan
+# TODO 116 - Horsea
+# TODO 117 - Seadra
+# TODO 118 - Goldeen
+# TODO 119 - Seaking
+# TODO 120 - Staryu
+# TODO 121 - Starmie
+# TODO 122 - Mr. Mime
+# TODO 123 - Scyther
+# TODO 124 - Jynx
+# TODO 125 - Electabuzz
+# TODO 126 - Magmar
+# TODO 127 - Pinsir
+# TODO 128 - Tauros
+# TODO 129 - Magikarp
+# TODO 130 - Gyrados
+# TODO 131 - Lapras
+# TODO 132 - Ditto
+# TODO 133 - Evee
+# TODO 134 - Vaporeon
+# TODO 135 - Jolteon
+# TODO 136 - Flareon
+# TODO 137 - Porygon
+# TODO 138 - Omanyte
+# TODO 139 - Omastar
+# TODO 140 - Kabuto
+# TODO 141 - Kabutops
+# TODO 142 - Aerodactyl
+# TODO 143 - Snorlax
+# TODO 144 - Articuno
+# TODO 145 - Zapdos
+# TODO 146 - Moltres
+# TODO 147 - Dratini
+# TODO 148 - Dragonair
+# TODO 149 - Dragonite
+# TODO 150 - Mewtwo
+
 class Mew (my_sprite): # {{{
   def __init__(self, x, y, velocity_x, velocity_y, size_multiplier, color1, color2, color3, color4, screen):
     my_sprite.__init__(self, x, y, velocity_x, velocity_y, size_multiplier)
@@ -5296,3 +5442,4 @@ class Mew (my_sprite): # {{{
     # }}}
 # }}}
 
+# TODO Missingno
