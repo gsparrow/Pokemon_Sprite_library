@@ -90,7 +90,7 @@ clock = pygame.time.Clock()
 # TODO  60 - Poliwag
 # TODO  61 - Poliwhirl
 # TODO  62 - Poliwrath
-# TODO  63 - Abra
+pokemon  = sprites.Abra     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
 # TODO  64 - Kadabra
 # TODO  65 - Alakazam
 # TODO  66 - Machop
@@ -132,7 +132,7 @@ clock = pygame.time.Clock()
 # TODO 102 - Exeggcute
 # TODO 103 - Exeggutor
 #pokemon  = sprites.Cubone     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
-pokemon  = sprites.Marowak     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+#pokemon  = sprites.Marowak     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO 106 - Hitmonlee
 # TODO 107 - Hitmonchan
 # TODO 108 - Lickitung
