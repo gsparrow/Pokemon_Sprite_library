@@ -132,7 +132,7 @@ clock = pygame.time.Clock()
 # TODO 102 - Exeggcute
 # TODO 103 - Exeggutor
 #pokemon  = sprites.Cubone     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
-# TODO 105 - Marowak
+pokemon  = sprites.Marowak     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO 106 - Hitmonlee
 # TODO 107 - Hitmonchan
 # TODO 108 - Lickitung
@@ -178,14 +178,14 @@ clock = pygame.time.Clock()
 # TODO 148 - Dragonair
 # TODO 149 - Dragonite
 # TODO 150 - Mewtwo
-pokemon  = sprites.Mew        (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
+#pokemon  = sprites.Mew        (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
 # TODO Missingno
 											#set sprite at location x,y, with velocity x,y,
 											#with size multiplier 1,  with the following four colors
 											#on the main screen
 print pokemon.get_Name()
 print str(pokemon.get_Number()).zfill(3)
-print pokemon
+print pokemon.get_Pokedex_Message()
 while not done:
 
   #limit the clock to ten loops per second

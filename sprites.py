@@ -61,8 +61,8 @@ class Bulbasaur (my_sprite): # {{{
   def get_Number(self):
     return 1
 
-  def __str__(self):
-    return "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokemon."
+  def get_Pokedex_Message(self):
+    return "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon."
 
   def draw(self):
     ### 0 ### {{{
@@ -588,7 +588,7 @@ class Ivysaur (my_sprite): # {{{
   def get_Number(self):
     return 2
 
-  def __str__(self):
+  def get_Pokedex_Message(self):
     return "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
 
   def draw(self):
@@ -1186,7 +1186,7 @@ class Venasaur (my_sprite): # {{{
   def get_Number(self):
     return 3
 
-  def __str__(self):
+  def get_Pokedex_Message(self):
     return "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight."
 
 
@@ -2147,7 +2147,7 @@ class Squirtle (my_sprite): # {{{
   def get_Number(self):
     return 7
 
-  def __str__(self):
+  def get_Pokedex_Message(self):
     return "After birth, its back swells and hardens into a shell. Powerful sprays foam from its mouth."
 
 
@@ -2623,7 +2623,7 @@ class Wartortle (my_sprite): # {{{
   def get_Number(self):
     return 8
 
-  def __str__(self):
+  def get_Pokedex_Message(self):
     return "Often hides in water to stalk unwary prey. For swimming fast, it moves its ear to maintain balance."
 
   def draw(self):
@@ -3295,9 +3295,8 @@ class Blastoise (my_sprite): # {{{
   def get_Number(self):
     return 9
 
-
-  def __str__(self):
-    return "A brutal Pokemon with pressurized water jets on its shell. They are used for high speed tackles."
+  def get_Pokedex_Message(self):
+    return u"A brutal Pokémon with pressurized water jets on its shell. They are used for high speed tackles."
 
   def draw(self):
     ### 0 ### {{{
@@ -4450,9 +4449,8 @@ class Cubone (my_sprite): # {{{
   def get_Number(self):
     return 104
 
-
-  def __str__(self):
-    return "Because it never removes its skull helmet, no one has ever seen this Pokemon's real face."
+  def get_Pokedex_Message(self):
+    return "Because it never removes its skull helmet, no one has ever seen this Pokémon's real face."
 
   def draw(self):
     ### 0 ### {{{
@@ -4964,7 +4962,737 @@ class Cubone (my_sprite): # {{{
     # }}}
 # }}}
 
-# TODO 105 - Marowak
+class Marowak (my_sprite): # {{{
+  def __init__(self, x, y, velocity_x, velocity_y, size_multiplier, color1, color2, color3, color4, screen):
+    my_sprite.__init__(self, x, y, velocity_x, velocity_y, size_multiplier)
+    self.screen          = screen
+
+#default Marowak colors
+#    self.color_1 = (25,16,16)
+#    self.color_2 = (123,123,148)
+#    self.color_3 = (214,173,181)
+#    self.color_4 = (255,255,255) #white
+    self.color_1 = color1
+    self.color_2 = color2
+    self.color_3 = color3
+    self.color_4 = color4
+  
+  def get_Name(self):
+    return u"Marowak"
+
+  def get_Number(self):
+    return 105
+
+  def get_Pokedex_Message(self):
+    return "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets."
+
+  def draw(self):
+    ### 0 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 24*self.size,  self.my_y +  0*self.size,  3*self.size, 1*self.size])
+    # }}}
+    ### 1 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 22*self.size,  self.my_y +  1*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 25*self.size,  self.my_y +  1*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 27*self.size,  self.my_y +  1*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 2 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 12*self.size,  self.my_y +  2*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 16*self.size,  self.my_y +  2*self.size,  7*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 23*self.size,  self.my_y +  2*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 27*self.size,  self.my_y +  2*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 3 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  1*self.size,  self.my_y +  3*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 11*self.size,  self.my_y +  3*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 12*self.size,  self.my_y +  3*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 14*self.size,  self.my_y +  3*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 15*self.size,  self.my_y +  3*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 16*self.size,  self.my_y +  3*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 19*self.size,  self.my_y +  3*self.size,  8*self.size, 1*self.size])
+    # }}}
+    ### 4 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  0*self.size,  self.my_y +  4*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  1*self.size,  self.my_y +  4*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  5*self.size,  self.my_y +  4*self.size,  7*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 12*self.size,  self.my_y +  4*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 13*self.size,  self.my_y +  4*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 15*self.size,  self.my_y +  4*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 16*self.size,  self.my_y +  4*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 19*self.size,  self.my_y +  4*self.size,  7*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 26*self.size,  self.my_y +  4*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 5 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  0*self.size,  self.my_y +  5*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  1*self.size,  self.my_y +  5*self.size,  9*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 10*self.size,  self.my_y +  5*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 11*self.size,  self.my_y +  5*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 13*self.size,  self.my_y +  5*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 14*self.size,  self.my_y +  5*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 18*self.size,  self.my_y +  5*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 20*self.size,  self.my_y +  5*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 25*self.size,  self.my_y +  5*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 27*self.size,  self.my_y +  5*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 31*self.size,  self.my_y +  5*self.size,  3*self.size, 1*self.size])
+    # }}}
+    ### 6 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  0*self.size,  self.my_y +  6*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  1*self.size,  self.my_y +  6*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x +  3*self.size,  self.my_y +  6*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  5*self.size,  self.my_y +  6*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x +  9*self.size,  self.my_y +  6*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 10*self.size,  self.my_y +  6*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 11*self.size,  self.my_y +  6*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 12*self.size,  self.my_y +  6*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 15*self.size,  self.my_y +  6*self.size,  7*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 22*self.size,  self.my_y +  6*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 25*self.size,  self.my_y +  6*self.size,  6*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 31*self.size,  self.my_y +  6*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 33*self.size,  self.my_y +  6*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 34*self.size,  self.my_y +  6*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 38*self.size,  self.my_y +  6*self.size,  3*self.size, 1*self.size])
+    # }}}
+    ### 7 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  1*self.size,  self.my_y +  7*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x +  2*self.size,  self.my_y +  7*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  3*self.size,  self.my_y +  7*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  4*self.size,  self.my_y +  7*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x +  8*self.size,  self.my_y +  7*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 10*self.size,  self.my_y +  7*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 13*self.size,  self.my_y +  7*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 14*self.size,  self.my_y +  7*self.size,  9*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 23*self.size,  self.my_y +  7*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 27*self.size,  self.my_y +  7*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 29*self.size,  self.my_y +  7*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 31*self.size,  self.my_y +  7*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 33*self.size,  self.my_y +  7*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 34*self.size,  self.my_y +  7*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 37*self.size,  self.my_y +  7*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 38*self.size,  self.my_y +  7*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 41*self.size,  self.my_y +  7*self.size,  3*self.size, 1*self.size])
+    # }}}
+    ### 8 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  1*self.size,  self.my_y +  8*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  3*self.size,  self.my_y +  8*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x +  7*self.size,  self.my_y +  8*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  9*self.size,  self.my_y +  8*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 10*self.size,  self.my_y +  8*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 11*self.size,  self.my_y +  8*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 12*self.size,  self.my_y +  8*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 13*self.size,  self.my_y +  8*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 14*self.size,  self.my_y +  8*self.size, 10*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 24*self.size,  self.my_y +  8*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 26*self.size,  self.my_y +  8*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 27*self.size,  self.my_y +  8*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 30*self.size,  self.my_y +  8*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 32*self.size,  self.my_y +  8*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 33*self.size,  self.my_y +  8*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 36*self.size,  self.my_y +  8*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 37*self.size,  self.my_y +  8*self.size,  6*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 43*self.size,  self.my_y +  8*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 44*self.size,  self.my_y +  8*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 9 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  2*self.size,  self.my_y +  9*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  3*self.size,  self.my_y +  9*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x +  5*self.size,  self.my_y +  9*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  8*self.size,  self.my_y +  9*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 10*self.size,  self.my_y +  9*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 11*self.size,  self.my_y +  9*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 12*self.size,  self.my_y +  9*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 17*self.size,  self.my_y +  9*self.size,  7*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 24*self.size,  self.my_y +  9*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 26*self.size,  self.my_y +  9*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 29*self.size,  self.my_y +  9*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 32*self.size,  self.my_y +  9*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 33*self.size,  self.my_y +  9*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 35*self.size,  self.my_y +  9*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 36*self.size,  self.my_y +  9*self.size,  7*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 43*self.size,  self.my_y +  9*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 45*self.size,  self.my_y +  9*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 10 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  2*self.size,  self.my_y + 10*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  3*self.size,  self.my_y + 10*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x +  4*self.size,  self.my_y + 10*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  7*self.size,  self.my_y + 10*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x +  9*self.size,  self.my_y + 10*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 10*self.size,  self.my_y + 10*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 11*self.size,  self.my_y + 10*self.size,  7*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 18*self.size,  self.my_y + 10*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 23*self.size,  self.my_y + 10*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 24*self.size,  self.my_y + 10*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 27*self.size,  self.my_y + 10*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 31*self.size,  self.my_y + 10*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 32*self.size,  self.my_y + 10*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 35*self.size,  self.my_y + 10*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 36*self.size,  self.my_y + 10*self.size,  8*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 44*self.size,  self.my_y + 10*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 46*self.size,  self.my_y + 10*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 11 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  3*self.size,  self.my_y + 11*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x +  4*self.size,  self.my_y + 11*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  7*self.size,  self.my_y + 11*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  9*self.size,  self.my_y + 11*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 10*self.size,  self.my_y + 11*self.size,  9*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 19*self.size,  self.my_y + 11*self.size, 12*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 31*self.size,  self.my_y + 11*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 32*self.size,  self.my_y + 11*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 35*self.size,  self.my_y + 11*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 36*self.size,  self.my_y + 11*self.size,  8*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 44*self.size,  self.my_y + 11*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 46*self.size,  self.my_y + 11*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 12 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  4*self.size,  self.my_y + 12*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x +  8*self.size,  self.my_y + 12*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  9*self.size,  self.my_y + 12*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 10*self.size,  self.my_y + 12*self.size,  9*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 19*self.size,  self.my_y + 12*self.size, 11*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 30*self.size,  self.my_y + 12*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 31*self.size,  self.my_y + 12*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 32*self.size,  self.my_y + 12*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 36*self.size,  self.my_y + 12*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 37*self.size,  self.my_y + 12*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 39*self.size,  self.my_y + 12*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 43*self.size,  self.my_y + 12*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 46*self.size,  self.my_y + 12*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 13 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  8*self.size,  self.my_y + 13*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  9*self.size,  self.my_y + 13*self.size, 10*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 19*self.size,  self.my_y + 13*self.size, 10*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 29*self.size,  self.my_y + 13*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 30*self.size,  self.my_y + 13*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 32*self.size,  self.my_y + 13*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 33*self.size,  self.my_y + 13*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 36*self.size,  self.my_y + 13*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 38*self.size,  self.my_y + 13*self.size,  8*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 46*self.size,  self.my_y + 13*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 14 ### {{{
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x +  7*self.size,  self.my_y + 14*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  8*self.size,  self.my_y + 14*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  9*self.size,  self.my_y + 14*self.size, 11*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 20*self.size,  self.my_y + 14*self.size,  9*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 29*self.size,  self.my_y + 14*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 30*self.size,  self.my_y + 14*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 31*self.size,  self.my_y + 14*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 32*self.size,  self.my_y + 14*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 33*self.size,  self.my_y + 14*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 36*self.size,  self.my_y + 14*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 37*self.size,  self.my_y + 14*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 38*self.size,  self.my_y + 14*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 39*self.size,  self.my_y + 14*self.size,  7*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 46*self.size,  self.my_y + 14*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 15 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  7*self.size,  self.my_y + 15*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x +  8*self.size,  self.my_y + 15*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  9*self.size,  self.my_y + 15*self.size, 11*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 20*self.size,  self.my_y + 15*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 24*self.size,  self.my_y + 15*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 26*self.size,  self.my_y + 15*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 28*self.size,  self.my_y + 15*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 31*self.size,  self.my_y + 15*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 32*self.size,  self.my_y + 15*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 34*self.size,  self.my_y + 15*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 37*self.size,  self.my_y + 15*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 39*self.size,  self.my_y + 15*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 41*self.size,  self.my_y + 15*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 45*self.size,  self.my_y + 15*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 16 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  7*self.size,  self.my_y + 16*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  8*self.size,  self.my_y + 16*self.size, 11*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 19*self.size,  self.my_y + 16*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 22*self.size,  self.my_y + 16*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 24*self.size,  self.my_y + 16*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 26*self.size,  self.my_y + 16*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 27*self.size,  self.my_y + 16*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 30*self.size,  self.my_y + 16*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 31*self.size,  self.my_y + 16*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 32*self.size,  self.my_y + 16*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 34*self.size,  self.my_y + 16*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 37*self.size,  self.my_y + 16*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 38*self.size,  self.my_y + 16*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 40*self.size,  self.my_y + 16*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 41*self.size,  self.my_y + 16*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 42*self.size,  self.my_y + 16*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 43*self.size,  self.my_y + 16*self.size,  2*self.size, 1*self.size])
+    # }}}
+    ### 17 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  7*self.size,  self.my_y + 17*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  8*self.size,  self.my_y + 17*self.size, 11*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 19*self.size,  self.my_y + 17*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 21*self.size,  self.my_y + 17*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 22*self.size,  self.my_y + 17*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 24*self.size,  self.my_y + 17*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 26*self.size,  self.my_y + 17*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 27*self.size,  self.my_y + 17*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 30*self.size,  self.my_y + 17*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 31*self.size,  self.my_y + 17*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 32*self.size,  self.my_y + 17*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 33*self.size,  self.my_y + 17*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 38*self.size,  self.my_y + 17*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 43*self.size,  self.my_y + 17*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 44*self.size,  self.my_y + 17*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 18 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  7*self.size,  self.my_y + 18*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  8*self.size,  self.my_y + 18*self.size, 10*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 18*self.size,  self.my_y + 18*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 19*self.size,  self.my_y + 18*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 20*self.size,  self.my_y + 18*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 24*self.size,  self.my_y + 18*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 26*self.size,  self.my_y + 18*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 27*self.size,  self.my_y + 18*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 30*self.size,  self.my_y + 18*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 31*self.size,  self.my_y + 18*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 32*self.size,  self.my_y + 18*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 33*self.size,  self.my_y + 18*self.size,  6*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 39*self.size,  self.my_y + 18*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 44*self.size,  self.my_y + 18*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 19 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  7*self.size,  self.my_y + 19*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  8*self.size,  self.my_y + 19*self.size,  9*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 17*self.size,  self.my_y + 19*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 18*self.size,  self.my_y + 19*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 19*self.size,  self.my_y + 19*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 21*self.size,  self.my_y + 19*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 22*self.size,  self.my_y + 19*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 24*self.size,  self.my_y + 19*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 25*self.size,  self.my_y + 19*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 26*self.size,  self.my_y + 19*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 30*self.size,  self.my_y + 19*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 31*self.size,  self.my_y + 19*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 32*self.size,  self.my_y + 19*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 33*self.size,  self.my_y + 19*self.size,  6*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 39*self.size,  self.my_y + 19*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 44*self.size,  self.my_y + 19*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 20 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  7*self.size,  self.my_y + 20*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x +  8*self.size,  self.my_y + 20*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x +  9*self.size,  self.my_y + 20*self.size,  7*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 16*self.size,  self.my_y + 20*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 17*self.size,  self.my_y + 20*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 18*self.size,  self.my_y + 20*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 19*self.size,  self.my_y + 20*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 20*self.size,  self.my_y + 20*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 21*self.size,  self.my_y + 20*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 23*self.size,  self.my_y + 20*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 24*self.size,  self.my_y + 20*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 25*self.size,  self.my_y + 20*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 26*self.size,  self.my_y + 20*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 27*self.size,  self.my_y + 20*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 29*self.size,  self.my_y + 20*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 30*self.size,  self.my_y + 20*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 31*self.size,  self.my_y + 20*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 33*self.size,  self.my_y + 20*self.size,  6*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 39*self.size,  self.my_y + 20*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 43*self.size,  self.my_y + 20*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 21 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  7*self.size,  self.my_y + 21*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x +  8*self.size,  self.my_y + 21*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 10*self.size,  self.my_y + 21*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 14*self.size,  self.my_y + 21*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 16*self.size,  self.my_y + 21*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 17*self.size,  self.my_y + 21*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 18*self.size,  self.my_y + 21*self.size,  6*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 24*self.size,  self.my_y + 21*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 25*self.size,  self.my_y + 21*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 28*self.size,  self.my_y + 21*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 29*self.size,  self.my_y + 21*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 30*self.size,  self.my_y + 21*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 31*self.size,  self.my_y + 21*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 33*self.size,  self.my_y + 21*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 38*self.size,  self.my_y + 21*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 40*self.size,  self.my_y + 21*self.size,  3*self.size, 1*self.size])
+    # }}}
+    ### 22 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  7*self.size,  self.my_y + 22*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x +  8*self.size,  self.my_y + 22*self.size,  7*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 15*self.size,  self.my_y + 22*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 16*self.size,  self.my_y + 22*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 17*self.size,  self.my_y + 22*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 18*self.size,  self.my_y + 22*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 19*self.size,  self.my_y + 22*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 22*self.size,  self.my_y + 22*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 24*self.size,  self.my_y + 22*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 28*self.size,  self.my_y + 22*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 29*self.size,  self.my_y + 22*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 31*self.size,  self.my_y + 22*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 33*self.size,  self.my_y + 22*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 36*self.size,  self.my_y + 22*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 38*self.size,  self.my_y + 22*self.size,  3*self.size, 1*self.size])
+    # }}}
+    ### 23 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  7*self.size,  self.my_y + 23*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x +  8*self.size,  self.my_y + 23*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x +  9*self.size,  self.my_y + 23*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 14*self.size,  self.my_y + 23*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 16*self.size,  self.my_y + 23*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 17*self.size,  self.my_y + 23*self.size, 10*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 27*self.size,  self.my_y + 23*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 28*self.size,  self.my_y + 23*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 29*self.size,  self.my_y + 23*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 30*self.size,  self.my_y + 23*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 31*self.size,  self.my_y + 23*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 34*self.size,  self.my_y + 23*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 36*self.size,  self.my_y + 23*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 37*self.size,  self.my_y + 23*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 38*self.size,  self.my_y + 23*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 40*self.size,  self.my_y + 23*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 24 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  8*self.size,  self.my_y + 24*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x +  9*self.size,  self.my_y + 24*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 14*self.size,  self.my_y + 24*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 15*self.size,  self.my_y + 24*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 16*self.size,  self.my_y + 24*self.size, 10*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 26*self.size,  self.my_y + 24*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 27*self.size,  self.my_y + 24*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 28*self.size,  self.my_y + 24*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 31*self.size,  self.my_y + 24*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 32*self.size,  self.my_y + 24*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 34*self.size,  self.my_y + 24*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 35*self.size,  self.my_y + 24*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 36*self.size,  self.my_y + 24*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 37*self.size,  self.my_y + 24*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 39*self.size,  self.my_y + 24*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 25 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  8*self.size,  self.my_y + 25*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x +  9*self.size,  self.my_y + 25*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 13*self.size,  self.my_y + 25*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 15*self.size,  self.my_y + 25*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 16*self.size,  self.my_y + 25*self.size,  9*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 25*self.size,  self.my_y + 25*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 26*self.size,  self.my_y + 25*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 27*self.size,  self.my_y + 25*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 32*self.size,  self.my_y + 25*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 33*self.size,  self.my_y + 25*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 34*self.size,  self.my_y + 25*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 35*self.size,  self.my_y + 25*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 36*self.size,  self.my_y + 25*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 46*self.size,  self.my_y + 25*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 26 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  8*self.size,  self.my_y + 26*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x +  9*self.size,  self.my_y + 26*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 12*self.size,  self.my_y + 26*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 14*self.size,  self.my_y + 26*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 15*self.size,  self.my_y + 26*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 16*self.size,  self.my_y + 26*self.size,  9*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 25*self.size,  self.my_y + 26*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 26*self.size,  self.my_y + 26*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 28*self.size,  self.my_y + 26*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 33*self.size,  self.my_y + 26*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 34*self.size,  self.my_y + 26*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 35*self.size,  self.my_y + 26*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 36*self.size,  self.my_y + 26*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 44*self.size,  self.my_y + 26*self.size,  3*self.size, 1*self.size])
+    # }}}
+    ### 27 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  8*self.size,  self.my_y + 27*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x +  9*self.size,  self.my_y + 27*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 10*self.size,  self.my_y + 27*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 11*self.size,  self.my_y + 27*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 12*self.size,  self.my_y + 27*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 13*self.size,  self.my_y + 27*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 14*self.size,  self.my_y + 27*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 15*self.size,  self.my_y + 27*self.size,  9*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 24*self.size,  self.my_y + 27*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 25*self.size,  self.my_y + 27*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 30*self.size,  self.my_y + 27*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 33*self.size,  self.my_y + 27*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 34*self.size,  self.my_y + 27*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 35*self.size,  self.my_y + 27*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 36*self.size,  self.my_y + 27*self.size,  8*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 44*self.size,  self.my_y + 27*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 45*self.size,  self.my_y + 27*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 46*self.size,  self.my_y + 27*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 28 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  8*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x +  9*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 10*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 11*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 12*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 13*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 14*self.size,  self.my_y + 28*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 16*self.size,  self.my_y + 28*self.size,  6*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 22*self.size,  self.my_y + 28*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 24*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 25*self.size,  self.my_y + 28*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 27*self.size,  self.my_y + 28*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 31*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 32*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 33*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 34*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 35*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 36*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 37*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 38*self.size,  self.my_y + 28*self.size,  7*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 45*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 46*self.size,  self.my_y + 28*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 29 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  8*self.size,  self.my_y + 29*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x +  9*self.size,  self.my_y + 29*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 10*self.size,  self.my_y + 29*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 12*self.size,  self.my_y + 29*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 13*self.size,  self.my_y + 29*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 15*self.size,  self.my_y + 29*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 16*self.size,  self.my_y + 29*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 20*self.size,  self.my_y + 29*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 22*self.size,  self.my_y + 29*self.size,  6*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 28*self.size,  self.my_y + 29*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 30*self.size,  self.my_y + 29*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 32*self.size,  self.my_y + 29*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 34*self.size,  self.my_y + 29*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 35*self.size,  self.my_y + 29*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 36*self.size,  self.my_y + 29*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 38*self.size,  self.my_y + 29*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 39*self.size,  self.my_y + 29*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 44*self.size,  self.my_y + 29*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 45*self.size,  self.my_y + 29*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 46*self.size,  self.my_y + 29*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 30 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x +  9*self.size,  self.my_y + 30*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 10*self.size,  self.my_y + 30*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 13*self.size,  self.my_y + 30*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 14*self.size,  self.my_y + 30*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 15*self.size,  self.my_y + 30*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 16*self.size,  self.my_y + 30*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 18*self.size,  self.my_y + 30*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 20*self.size,  self.my_y + 30*self.size,  8*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 28*self.size,  self.my_y + 30*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 30*self.size,  self.my_y + 30*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 31*self.size,  self.my_y + 30*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 35*self.size,  self.my_y + 30*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 36*self.size,  self.my_y + 30*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 37*self.size,  self.my_y + 30*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 38*self.size,  self.my_y + 30*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 39*self.size,  self.my_y + 30*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 40*self.size,  self.my_y + 30*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 42*self.size,  self.my_y + 30*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 45*self.size,  self.my_y + 30*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 46*self.size,  self.my_y + 30*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 31 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 10*self.size,  self.my_y + 31*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 13*self.size,  self.my_y + 31*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 16*self.size,  self.my_y + 31*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 18*self.size,  self.my_y + 31*self.size,  6*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 24*self.size,  self.my_y + 31*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 25*self.size,  self.my_y + 31*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 27*self.size,  self.my_y + 31*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 28*self.size,  self.my_y + 31*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 31*self.size,  self.my_y + 31*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 35*self.size,  self.my_y + 31*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 36*self.size,  self.my_y + 31*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 37*self.size,  self.my_y + 31*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 39*self.size,  self.my_y + 31*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 40*self.size,  self.my_y + 31*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 43*self.size,  self.my_y + 31*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 46*self.size,  self.my_y + 31*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 32 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 11*self.size,  self.my_y + 32*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 16*self.size,  self.my_y + 32*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 18*self.size,  self.my_y + 32*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 19*self.size,  self.my_y + 32*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 23*self.size,  self.my_y + 32*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 24*self.size,  self.my_y + 32*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 28*self.size,  self.my_y + 32*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 30*self.size,  self.my_y + 32*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 32*self.size,  self.my_y + 32*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 35*self.size,  self.my_y + 32*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 36*self.size,  self.my_y + 32*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 37*self.size,  self.my_y + 32*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 39*self.size,  self.my_y + 32*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 40*self.size,  self.my_y + 32*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 45*self.size,  self.my_y + 32*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 33 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 14*self.size,  self.my_y + 33*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 15*self.size,  self.my_y + 33*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 17*self.size,  self.my_y + 33*self.size, 11*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 28*self.size,  self.my_y + 33*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 30*self.size,  self.my_y + 33*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 32*self.size,  self.my_y + 33*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 36*self.size,  self.my_y + 33*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 37*self.size,  self.my_y + 33*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 38*self.size,  self.my_y + 33*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 39*self.size,  self.my_y + 33*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 40*self.size,  self.my_y + 33*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 41*self.size,  self.my_y + 33*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 45*self.size,  self.my_y + 33*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 34 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 14*self.size,  self.my_y + 34*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 15*self.size,  self.my_y + 34*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 16*self.size,  self.my_y + 34*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 17*self.size,  self.my_y + 34*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 18*self.size,  self.my_y + 34*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 19*self.size,  self.my_y + 34*self.size,  6*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 25*self.size,  self.my_y + 34*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 27*self.size,  self.my_y + 34*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 28*self.size,  self.my_y + 34*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 33*self.size,  self.my_y + 34*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 36*self.size,  self.my_y + 34*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 37*self.size,  self.my_y + 34*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 40*self.size,  self.my_y + 34*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 41*self.size,  self.my_y + 34*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 44*self.size,  self.my_y + 34*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 35 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 13*self.size,  self.my_y + 35*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 14*self.size,  self.my_y + 35*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 16*self.size,  self.my_y + 35*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 17*self.size,  self.my_y + 35*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 19*self.size,  self.my_y + 35*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 24*self.size,  self.my_y + 35*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 25*self.size,  self.my_y + 35*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 28*self.size,  self.my_y + 35*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 31*self.size,  self.my_y + 35*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 33*self.size,  self.my_y + 35*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 36*self.size,  self.my_y + 35*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 37*self.size,  self.my_y + 35*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 40*self.size,  self.my_y + 35*self.size,  4*self.size, 1*self.size])
+    # }}}
+    ### 36 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 13*self.size,  self.my_y + 36*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 14*self.size,  self.my_y + 36*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 16*self.size,  self.my_y + 36*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 17*self.size,  self.my_y + 36*self.size, 12*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 29*self.size,  self.my_y + 36*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 30*self.size,  self.my_y + 36*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 31*self.size,  self.my_y + 36*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 33*self.size,  self.my_y + 36*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 37*self.size,  self.my_y + 36*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 38*self.size,  self.my_y + 36*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 40*self.size,  self.my_y + 36*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 41*self.size,  self.my_y + 36*self.size,  2*self.size, 1*self.size])
+    # }}}
+    ### 37 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 12*self.size,  self.my_y + 37*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 13*self.size,  self.my_y + 37*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 16*self.size,  self.my_y + 37*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 18*self.size,  self.my_y + 37*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 19*self.size,  self.my_y + 37*self.size,  7*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 26*self.size,  self.my_y + 37*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 27*self.size,  self.my_y + 37*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 28*self.size,  self.my_y + 37*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 29*self.size,  self.my_y + 37*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 30*self.size,  self.my_y + 37*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 33*self.size,  self.my_y + 37*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 37*self.size,  self.my_y + 37*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 38*self.size,  self.my_y + 37*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 39*self.size,  self.my_y + 37*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 41*self.size,  self.my_y + 37*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 43*self.size,  self.my_y + 37*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 38 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 12*self.size,  self.my_y + 38*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 13*self.size,  self.my_y + 38*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 16*self.size,  self.my_y + 38*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 19*self.size,  self.my_y + 38*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 20*self.size,  self.my_y + 38*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 21*self.size,  self.my_y + 38*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 25*self.size,  self.my_y + 38*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 26*self.size,  self.my_y + 38*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 30*self.size,  self.my_y + 38*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 32*self.size,  self.my_y + 38*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 36*self.size,  self.my_y + 38*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 37*self.size,  self.my_y + 38*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 41*self.size,  self.my_y + 38*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 44*self.size,  self.my_y + 38*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 39 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 12*self.size,  self.my_y + 39*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 13*self.size,  self.my_y + 39*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 15*self.size,  self.my_y + 39*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 16*self.size,  self.my_y + 39*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 20*self.size,  self.my_y + 39*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 21*self.size,  self.my_y + 39*self.size,  8*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 29*self.size,  self.my_y + 39*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 31*self.size,  self.my_y + 39*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 36*self.size,  self.my_y + 39*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 37*self.size,  self.my_y + 39*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 40*self.size,  self.my_y + 39*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 45*self.size,  self.my_y + 39*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 40 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 12*self.size,  self.my_y + 40*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 13*self.size,  self.my_y + 40*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 15*self.size,  self.my_y + 40*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 16*self.size,  self.my_y + 40*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 20*self.size,  self.my_y + 40*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_4, [self.my_x + 22*self.size,  self.my_y + 40*self.size,  7*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 29*self.size,  self.my_y + 40*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 30*self.size,  self.my_y + 40*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 33*self.size,  self.my_y + 40*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 35*self.size,  self.my_y + 40*self.size, 11*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 46*self.size,  self.my_y + 40*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 41 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 13*self.size,  self.my_y + 41*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_3, [self.my_x + 14*self.size,  self.my_y + 41*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 15*self.size,  self.my_y + 41*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 20*self.size,  self.my_y + 41*self.size, 10*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 33*self.size,  self.my_y + 41*self.size, 14*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 47*self.size,  self.my_y + 41*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 42 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 13*self.size,  self.my_y + 42*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 14*self.size,  self.my_y + 42*self.size,  6*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 20*self.size,  self.my_y + 42*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 33*self.size,  self.my_y + 42*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 35*self.size,  self.my_y + 42*self.size, 12*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 47*self.size,  self.my_y + 42*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 43 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 14*self.size,  self.my_y + 43*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 15*self.size,  self.my_y + 43*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 18*self.size,  self.my_y + 43*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 23*self.size,  self.my_y + 43*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 35*self.size,  self.my_y + 43*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 37*self.size,  self.my_y + 43*self.size, 10*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 47*self.size,  self.my_y + 43*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 44 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 15*self.size,  self.my_y + 44*self.size,  3*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 19*self.size,  self.my_y + 44*self.size,  4*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 37*self.size,  self.my_y + 44*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 38*self.size,  self.my_y + 44*self.size,  9*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 47*self.size,  self.my_y + 44*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 45 ### {{{
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 19*self.size,  self.my_y + 45*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 20*self.size,  self.my_y + 45*self.size,  2*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 22*self.size,  self.my_y + 45*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 38*self.size,  self.my_y + 45*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 39*self.size,  self.my_y + 45*self.size,  7*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 46*self.size,  self.my_y + 45*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 46 ### {{{
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 20*self.size,  self.my_y + 46*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 21*self.size,  self.my_y + 46*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 39*self.size,  self.my_y + 46*self.size,  1*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_1, [self.my_x + 40*self.size,  self.my_y + 46*self.size,  5*self.size, 1*self.size])
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 45*self.size,  self.my_y + 46*self.size,  1*self.size, 1*self.size])
+    # }}}
+    ### 47 ### {{{
+    pygame.draw.rect(self.screen, self.color_2, [self.my_x + 40*self.size,  self.my_y + 47*self.size,  5*self.size, 1*self.size])
+    # }}}
+# }}}
+
 # TODO 106 - Hitmonlee
 # TODO 107 - Hitmonchan
 # TODO 108 - Lickitung
@@ -5032,8 +5760,7 @@ class Mew (my_sprite): # {{{
   def get_Number(self):
     return 151
 
-
-  def __str__(self):
+  def get_Pokedex_Message(self):
     return "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide."
 
   def draw(self):
