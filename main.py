@@ -91,7 +91,7 @@ clock = pygame.time.Clock()
 # TODO  61 - Poliwhirl
 # TODO  62 - Poliwrath
 pokemon  = sprites.Abra     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
-# TODO  64 - Kadabra
+pokemon  = sprites.Kadabra     (  0, 0, 0, 0, 12, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
 # TODO  65 - Alakazam
 # TODO  66 - Machop
 # TODO  67 - Machoke
