@@ -13,3 +13,5 @@ The explanation for the many pygame lines is as follows
 pygame.draw.rect draws a rectangle on the screen of the color with the top left corner given by the first two coordinates, and the bottom right corner given by the next two coordinates. self.size must be at least 2 for pygame to draw this, and there is a coded check for self.size <2.
 Example
 #pygame.draw.rect(self.screen, self.color_1, [self.my_x + 26*self.size,  self.my_y +  0*self.size,  1*self.size, 1*self.size])
+
+draw.rect was used rather than a pixel array, as pixel arrays are cited in the documentation as being slow. It will be interesting to see this libraries performance in a game-like setting, especially compared to importing and drawing a .png
