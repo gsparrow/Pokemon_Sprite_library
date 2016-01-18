@@ -90,9 +90,9 @@ clock = pygame.time.Clock()
 # TODO  60 - Poliwag
 # TODO  61 - Poliwhirl
 # TODO  62 - Poliwrath
-pokemon  = sprites.Abra     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
-pokemon  = sprites.Kadabra  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
-pokemon  = sprites.Alakazam (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
+#pokemon  = sprites.Abra     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
+#pokemon  = sprites.Kadabra  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
+#pokemon  = sprites.Alakazam (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
 # TODO  66 - Machop
 # TODO  67 - Machoke
 # TODO  68 - Machamp
@@ -177,7 +177,7 @@ pokemon  = sprites.Alakazam (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,
 # TODO 147 - Dratini
 # TODO 148 - Dragonair
 # TODO 149 - Dragonite
-# TODO 150 - Mewtwo
+pokemon  = sprites.Mewtwo     (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
 #pokemon  = sprites.Mew        (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
 # TODO Missingno
 											#set sprite at location x,y, with velocity x,y,
