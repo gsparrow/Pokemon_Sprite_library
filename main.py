@@ -149,7 +149,7 @@ clock = pygame.time.Clock()
 # TODO 119 - Seaking
 # TODO 120 - Staryu
 # TODO 121 - Starmie
-# TODO 122 - Mr. Mime
+pokemon  = sprites.Mr_Mime     (  0, 0, 0, 0, 1, NEAR_BLACK, (247,181,197), (230,123,173), WHITE, screen)
 # TODO 123 - Scyther
 # TODO 124 - Jynx
 # TODO 125 - Electabuzz
@@ -177,7 +177,7 @@ clock = pygame.time.Clock()
 # TODO 147 - Dratini
 # TODO 148 - Dragonair
 # TODO 149 - Dragonite
-pokemon  = sprites.Mewtwo     (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
+#pokemon  = sprites.Mewtwo     (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
 #pokemon  = sprites.Mew        (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
 # TODO Missingno
 											#set sprite at location x,y, with velocity x,y,
