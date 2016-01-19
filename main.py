@@ -159,7 +159,7 @@ pokemon  = sprites.Charizard  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49), (255,16
 # TODO 129 - Magikarp
 # TODO 130 - Gyrados
 # TODO 131 - Lapras
-# TODO 132 - Ditto
+pokemon  = sprites.Ditto      (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO 133 - Evee
 # TODO 134 - Vaporeon
 # TODO 135 - Jolteon
