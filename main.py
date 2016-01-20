@@ -33,7 +33,7 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.Venasaur   (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
 #pokemon  = sprites.Charmander (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49), (255,162,82), WHITE, screen)
 #pokemon  = sprites.Charmeleon (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49), (255,162,82), WHITE, screen)
-pokemon  = sprites.Charizard  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49), (255,162,82), WHITE, screen)
+#pokemon  = sprites.Charizard  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49), (255,162,82), WHITE, screen)
 #pokemon  = sprites.Squirtle   (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
 #pokemon  = sprites.Wartortle  (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
 #pokemon  = sprites.Blastoise  (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
@@ -101,7 +101,7 @@ pokemon  = sprites.Charizard  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49), (255,16
 # TODO  71 - Victreebel
 # TODO  72 - Tentacool
 # TODO  73 - Tentacruel
-# TODO  74 - Geodude
+pokemon  = sprites.Geodude  (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO  75 - Graveler
 # TODO  76 - Golem
 # TODO  77 - Ponyta
@@ -159,7 +159,7 @@ pokemon  = sprites.Charizard  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49), (255,16
 # TODO 129 - Magikarp
 # TODO 130 - Gyrados
 # TODO 131 - Lapras
-pokemon  = sprites.Ditto      (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+#pokemon  = sprites.Ditto      (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO 133 - Evee
 # TODO 134 - Vaporeon
 # TODO 135 - Jolteon
