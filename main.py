@@ -101,8 +101,8 @@ clock = pygame.time.Clock()
 # TODO  71 - Victreebel
 # TODO  72 - Tentacool
 # TODO  73 - Tentacruel
-pokemon  = sprites.Geodude  (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
-# TODO  75 - Graveler
+#pokemon  = sprites.Geodude   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+pokemon  = sprites.Graveler  (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO  76 - Golem
 # TODO  77 - Ponyta
 # TODO  78 - Rapidash
