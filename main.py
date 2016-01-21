@@ -103,7 +103,7 @@ clock = pygame.time.Clock()
 # TODO  73 - Tentacruel
 #pokemon  = sprites.Geodude   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #pokemon  = sprites.Graveler  (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
-pokemon  = sprites.Golem     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+#pokemon  = sprites.Golem     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO  77 - Ponyta
 # TODO  78 - Rapidash
 # TODO  79 - Slowpoke
@@ -122,7 +122,7 @@ pokemon  = sprites.Golem     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,1
 # TODO  92 - Ghastly
 # TODO  93 - Haunter
 # TODO  94 - Gengar
-# TODO  95 - Onix
+pokemon  = sprites.Onix     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO  96 - Drowzee
 # TODO  97 - Hypno
 # TODO  98 - Krabby
