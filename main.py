@@ -122,12 +122,12 @@ clock = pygame.time.Clock()
 # TODO  92 - Ghastly
 # TODO  93 - Haunter
 # TODO  94 - Gengar
-#pokemon  = sprites.Onix     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+#pokemon  = sprites.Onix       (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO  96 - Drowzee
 # TODO  97 - Hypno
 # TODO  98 - Krabby
 # TODO  99 - Kingler
-# TODO 100 - Voltorb
+pokemon  = sprites.Voltorb    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
 # TODO 101 - Electrode
 # TODO 102 - Exeggcute
 # TODO 103 - Exeggutor
@@ -149,7 +149,7 @@ clock = pygame.time.Clock()
 # TODO 119 - Seaking
 # TODO 120 - Staryu
 #pokemon  = sprites.Staryu    (  0, 0, 0, 0, 1, NEAR_BLACK, (255,165,82), (214,82,49), WHITE, screen)
-pokemon  = sprites.Starmie   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+#pokemon  = sprites.Starmie   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #pokemon  = sprites.Mr_Mime     (  0, 0, 0, 0, 1, NEAR_BLACK, (247,181,197), (230,123,173), WHITE, screen)
 # TODO 123 - Scyther
 # TODO 124 - Jynx
