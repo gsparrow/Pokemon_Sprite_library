@@ -148,8 +148,8 @@ clock = pygame.time.Clock()
 # TODO 118 - Goldeen
 # TODO 119 - Seaking
 # TODO 120 - Staryu
-pokemon  = sprites.Staryu   (  0, 0, 0, 0, 1, NEAR_BLACK, (255,165,82), (214,82,49), WHITE, screen)
-# TODO 121 - Starmie
+#pokemon  = sprites.Staryu    (  0, 0, 0, 0, 1, NEAR_BLACK, (255,165,82), (214,82,49), WHITE, screen)
+pokemon  = sprites.Starmie   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #pokemon  = sprites.Mr_Mime     (  0, 0, 0, 0, 1, NEAR_BLACK, (247,181,197), (230,123,173), WHITE, screen)
 # TODO 123 - Scyther
 # TODO 124 - Jynx
