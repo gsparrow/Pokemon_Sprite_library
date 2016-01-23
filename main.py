@@ -98,8 +98,8 @@ clock = pygame.time.Clock()
 # TODO  68 - Machamp
 # TODO  69 - Bellsprout
 #pokemon  = sprites.Bellsprout  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
-pokemon  = sprites.Weepinbell  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
-# TODO  71 - Victreebel
+#pokemon  = sprites.Weepinbell  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
+pokemon  = sprites.Victreebel  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
 # TODO  72 - Tentacool
 # TODO  73 - Tentacruel
 #pokemon  = sprites.Geodude   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
