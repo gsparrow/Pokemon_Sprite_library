@@ -127,8 +127,8 @@ clock = pygame.time.Clock()
 # TODO  97 - Hypno
 # TODO  98 - Krabby
 # TODO  99 - Kingler
-pokemon  = sprites.Voltorb    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
-# TODO 101 - Electrode
+#pokemon  = sprites.Voltorb    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
+pokemon  = sprites.Electrode  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
 # TODO 102 - Exeggcute
 # TODO 103 - Exeggutor
 #pokemon  = sprites.Cubone     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
