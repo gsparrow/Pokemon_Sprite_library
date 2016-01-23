@@ -53,7 +53,7 @@ clock = pygame.time.Clock()
 # TODO  23 - Ekans
 # TODO  24 - Arbok
 #pokemon  = sprites.Pikachu  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
-pokemon  = sprites.Raichu  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
+#pokemon  = sprites.Raichu  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
 # TODO  27 - Sandshrew
 # TODO  28 - Sandslash
 # TODO  29 - Nidoran♀
@@ -97,6 +97,7 @@ pokemon  = sprites.Raichu  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,1
 # TODO  67 - Machoke
 # TODO  68 - Machamp
 # TODO  69 - Bellsprout
+pokemon  = sprites.Bellsprout  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
 # TODO  70 - Weepinbell
 # TODO  71 - Victreebel
 # TODO  72 - Tentacool
