@@ -70,7 +70,7 @@ clock = pygame.time.Clock()
 # TODO  40 - Wigglytuff
 # TODO  41 - Zubat
 # TODO  42 - Golbat
-# TODO  43 - Oddish
+pokemon  = sprites.Oddish  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
 # TODO  44 - Gloom
 # TODO  45 - Vileplume
 # TODO  46 - Paras
@@ -142,7 +142,7 @@ clock = pygame.time.Clock()
 # TODO 111 - Rhyhorn
 # TODO 112 - Rhydon
 # TODO 113 - Chansey
-pokemon  = sprites.Tangela  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189), (148,165,222), WHITE, screen)
+#pokemon  = sprites.Tangela  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189), (148,165,222), WHITE, screen)
 # TODO 115 - Kangaskhan
 # TODO 116 - Horsea
 # TODO 117 - Seadra
