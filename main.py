@@ -71,7 +71,8 @@ clock = pygame.time.Clock()
 # TODO  41 - Zubat
 # TODO  42 - Golbat
 #pokemon  = sprites.Oddish  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
-pokemon  = sprites.Gloom   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49), (255,165,82), WHITE, screen)
+#pokemon  = sprites.Gloom   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49), (255,165,82), WHITE, screen)
+pokemon  = sprites.Vileplume (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49), (255,165,82), WHITE, screen)
 # TODO  45 - Vileplume
 # TODO  46 - Paras
 # TODO  47 - Parasect
