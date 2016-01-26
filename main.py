@@ -76,7 +76,7 @@ clock = pygame.time.Clock()
 # TODO  46 - Paras
 # TODO  47 - Parasect
 #pokemon  = sprites.Venonat   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
-pokemon  = sprites.Venomoth  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+#pokemon  = sprites.Venomoth  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 # TODO  50 - Diglet
 # TODO  51 - Dugtrio
 # TODO  52 - Meowth
@@ -137,12 +137,12 @@ pokemon  = sprites.Venomoth  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,1
 # TODO 106 - Hitmonlee
 # TODO 107 - Hitmonchan
 # TODO 108 - Lickitung
-# TODO 109 - Koffing
+pokemon  = sprites.Koffing    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 # TODO 110 - Weezing
 # TODO 111 - Rhyhorn
 # TODO 112 - Rhydon
 # TODO 113 - Chansey
-#pokemon  = sprites.Tangela  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189), (148,165,222), WHITE, screen)
+#pokemon  = sprites.Tangela    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189), (148,165,222), WHITE, screen)
 # TODO 115 - Kangaskhan
 # TODO 116 - Horsea
 # TODO 117 - Seadra
