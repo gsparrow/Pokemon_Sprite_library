@@ -138,7 +138,7 @@ clock = pygame.time.Clock()
 # TODO 107 - Hitmonchan
 # TODO 108 - Lickitung
 #pokemon  = sprites.Koffing    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
-pokemon  = sprites.Weezing    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+#pokemon  = sprites.Weezing    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 # TODO 111 - Rhyhorn
 # TODO 112 - Rhydon
 # TODO 113 - Chansey
@@ -151,17 +151,17 @@ pokemon  = sprites.Weezing    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,
 # TODO 120 - Staryu
 #pokemon  = sprites.Staryu    (  0, 0, 0, 0, 1, NEAR_BLACK, (255,165,82), (214,82,49), WHITE, screen)
 #pokemon  = sprites.Starmie   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
-#pokemon  = sprites.Mr_Mime     (  0, 0, 0, 0, 1, NEAR_BLACK, (247,181,197), (230,123,173), WHITE, screen)
+#pokemon  = sprites.Mr_Mime   (  0, 0, 0, 0, 1, NEAR_BLACK, (247,181,197), (230,123,173), WHITE, screen)
 # TODO 123 - Scyther
 # TODO 124 - Jynx
 # TODO 125 - Electabuzz
 # TODO 126 - Magmar
 # TODO 127 - Pinsir
-# TODO 128 - Tauros
+pokemon  = sprites.Tauros    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO 129 - Magikarp
 # TODO 130 - Gyrados
 # TODO 131 - Lapras
-#pokemon  = sprites.Ditto      (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+#pokemon  = sprites.Ditto     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO 133 - Evee
 # TODO 134 - Vaporeon
 # TODO 135 - Jolteon
