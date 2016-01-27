@@ -137,8 +137,8 @@ clock = pygame.time.Clock()
 # TODO 106 - Hitmonlee
 # TODO 107 - Hitmonchan
 # TODO 108 - Lickitung
-pokemon  = sprites.Koffing    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
-# TODO 110 - Weezing
+#pokemon  = sprites.Koffing    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+pokemon  = sprites.Weezing    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 # TODO 111 - Rhyhorn
 # TODO 112 - Rhydon
 # TODO 113 - Chansey
