@@ -120,7 +120,7 @@ clock = pygame.time.Clock()
 # TODO  89 - Muk
 # TODO  90 - Shellder
 # TODO  91 - Cloyster
-# TODO  92 - Ghastly
+pokemon  = sprites.Gastly    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 # TODO  93 - Haunter
 # TODO  94 - Gengar
 #pokemon  = sprites.Onix       (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
@@ -157,7 +157,7 @@ clock = pygame.time.Clock()
 # TODO 125 - Electabuzz
 # TODO 126 - Magmar
 # TODO 127 - Pinsir
-pokemon  = sprites.Tauros    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+#pokemon  = sprites.Tauros    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO 129 - Magikarp
 # TODO 130 - Gyrados
 # TODO 131 - Lapras
