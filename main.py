@@ -28,12 +28,12 @@ pygame.display.set_caption("Gotta Catch 'Em All")
 done = False
 clock = pygame.time.Clock()
 
-#pokemon  = sprites.Bulbasaur  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
-#pokemon  = sprites.Ivysaur    (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
-#pokemon  = sprites.Venasaur   (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
-#pokemon  = sprites.Charmander (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49), (255,162,82), WHITE, screen)
-#pokemon  = sprites.Charmeleon (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49), (255,162,82), WHITE, screen)
-#pokemon  = sprites.Charizard  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49), (255,162,82), WHITE, screen)
+#pokemon  = sprites.Bulbasaur  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+#pokemon  = sprites.Ivysaur    (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+#pokemon  = sprites.Venasaur   (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+#pokemon  = sprites.Charmander (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+#pokemon  = sprites.Charmeleon (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+#pokemon  = sprites.Charizard  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
 #pokemon  = sprites.Squirtle   (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
 #pokemon  = sprites.Wartortle  (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
 #pokemon  = sprites.Blastoise  (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
@@ -96,7 +96,6 @@ clock = pygame.time.Clock()
 # TODO  66 - Machop
 # TODO  67 - Machoke
 # TODO  68 - Machamp
-# TODO  69 - Bellsprout
 #pokemon  = sprites.Bellsprout  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
 #pokemon  = sprites.Weepinbell  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
 #pokemon  = sprites.Victreebel  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
@@ -120,8 +119,8 @@ clock = pygame.time.Clock()
 # TODO  89 - Muk
 # TODO  90 - Shellder
 # TODO  91 - Cloyster
-pokemon  = sprites.Gastly    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
-# TODO  93 - Haunter
+#pokemon  = sprites.Gastly     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+pokemon  = sprites.Haunter    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 # TODO  94 - Gengar
 #pokemon  = sprites.Onix       (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO  96 - Drowzee
@@ -148,7 +147,6 @@ pokemon  = sprites.Gastly    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,1
 # TODO 117 - Seadra
 # TODO 118 - Goldeen
 # TODO 119 - Seaking
-# TODO 120 - Staryu
 #pokemon  = sprites.Staryu    (  0, 0, 0, 0, 1, NEAR_BLACK, (255,165,82), (214,82,49), WHITE, screen)
 #pokemon  = sprites.Starmie   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #pokemon  = sprites.Mr_Mime   (  0, 0, 0, 0, 1, NEAR_BLACK, (247,181,197), (230,123,173), WHITE, screen)
