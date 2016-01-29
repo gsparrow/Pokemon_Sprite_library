@@ -40,8 +40,8 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.Caterpie   (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
 #pokemon  = sprites.Metapod    (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
 #pokemon  = sprites.Butterfree (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
-pokemon  = sprites.Weedle (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
-# TODO  14 - Kakuna
+#pokemon  = sprites.Weedle     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+pokemon  = sprites.Kakuna     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 # TODO  15 - Beedrill
 # TODO  16 - Pidgey
 # TODO  17 - Pidgeotto
