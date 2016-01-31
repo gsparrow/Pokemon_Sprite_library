@@ -42,7 +42,7 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.Butterfree (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
 #pokemon  = sprites.Weedle     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 #pokemon  = sprites.Kakuna     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
-pokemon  = sprites.Beedrill   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+#pokemon  = sprites.Beedrill   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 # TODO  16 - Pidgey
 # TODO  17 - Pidgeotto
 # TODO  18 - Pidgeot
@@ -111,7 +111,7 @@ pokemon  = sprites.Beedrill   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,
 # TODO  81 - Magnemite
 # TODO  82 - Magneton
 # TODO  83 - Farfetch'd
-# TODO  84 - Doduo
+pokemon  = sprites.Doduo     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74), (230,165,123), WHITE, screen)
 # TODO  85 - Dodrio
 # TODO  86 - Seel
 # TODO  87 - Dewgong
