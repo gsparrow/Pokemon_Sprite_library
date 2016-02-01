@@ -111,8 +111,8 @@ clock = pygame.time.Clock()
 # TODO  81 - Magnemite
 # TODO  82 - Magneton
 # TODO  83 - Farfetch'd
-pokemon  = sprites.Doduo     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74), (230,165,123), WHITE, screen)
-# TODO  85 - Dodrio
+#pokemon  = sprites.Doduo     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74), (230,165,123), WHITE, screen)
+pokemon  = sprites.Dodrio    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74), (230,165,123), WHITE, screen)
 # TODO  86 - Seel
 # TODO  87 - Dewgong
 # TODO  88 - Grimer
