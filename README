@@ -15,3 +15,9 @@ Example
 #pygame.draw.rect(self.screen, self.color_1, [self.my_x + 26*self.size,  self.my_y +  0*self.size,  1*self.size, 1*self.size])
 
 draw.rect was used rather than a pixel array, as pixel arrays are cited in the documentation as being slow. It will be interesting to see this libraries performance in a game-like setting, especially compared to importing and drawing a .png
+
+While the goal is stated above, there are many interesting applications and explorations that can occur because of a library like that. Firstly, porting to a 2.5d blender file would be somewhat easy. It will also act as a guide for building with legos. The more interesting parts though are that how does the performance of using a library like this compare with the performance of using the standard image importing method, and how does that compare to drawing lines rather than rectangles? This will be especially useful when there are thousands of pokemon on screen.
+
+The benefits so far have been that they images do not require blending, as there are just gaps when drawing one over the other, not false whitespace.
+
+The downsides have been that github is not prepared to handles files like sprites.py, that are of moderate length, and vim also has some trouble handling it, but only over the code folded parts and only when paging over them.
