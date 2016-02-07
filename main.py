@@ -44,9 +44,8 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.Kakuna     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 #pokemon  = sprites.Beedrill   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 #pokemon  = sprites.Pidgey     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74), (230,165,123), WHITE, screen)
-pokemon  = sprites.Pidgeotto  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74), (230,165,123), WHITE, screen)
-# TODO  17 - Pidgeotto
-# TODO  18 - Pidgeot
+#pokemon  = sprites.Pidgeotto  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74), (230,165,123), WHITE, screen)
+pokemon  = sprites.Pidgeot    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74), (230,165,123), WHITE, screen)
 # TODO  19 - Rattata
 # TODO  20 - Raticate
 # TODO  21 - Spearow
