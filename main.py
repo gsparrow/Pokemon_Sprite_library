@@ -43,10 +43,10 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.Weedle     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 #pokemon  = sprites.Kakuna     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 #pokemon  = sprites.Beedrill   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
-#pokemon  = sprites.Pidgey     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74), (230,165,123), WHITE, screen)
-#pokemon  = sprites.Pidgeotto  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74), (230,165,123), WHITE, screen)
-#pokemon  = sprites.Pidgeot    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74), (230,165,123), WHITE, screen)
-# TODO  19 - Rattata
+#pokemon  = sprites.Pidgey     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+#pokemon  = sprites.Pidgeotto  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+#pokemon  = sprites.Pidgeot    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+pokemon  = sprites.Rattata    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO  20 - Raticate
 # TODO  21 - Spearow
 # TODO  22 - Fearow
@@ -179,7 +179,7 @@ clock = pygame.time.Clock()
 # TODO 149 - Dragonite
 #pokemon  = sprites.Mewtwo     (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
 #pokemon  = sprites.Mew        (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
-pokemon  = sprites.Missingno  (  0, 0, 0, 0, 1, NEAR_BLACK, WHITE, screen)
+#pokemon  = sprites.Missingno  (  0, 0, 0, 0, 1, NEAR_BLACK, WHITE, screen)
 											#set sprite at location x,y, with velocity x,y,
 											#with size multiplier 1,  with the following four colors
 											#on the main screen
