@@ -51,10 +51,10 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.Raticate   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #pokemon  = sprites.Spearow    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 #pokemon  = sprites.Fearow     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
-pokemon  = sprites.Ekans      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189),  (222,181,197), WHITE, screen)
-# TODO  24 - Arbok
-#pokemon  = sprites.Pikachu  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
-#pokemon  = sprites.Raichu  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
+#pokemon  = sprites.Ekans      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+pokemon  = sprites.Arbok      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+#pokemon  = sprites.Pikachu    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+#pokemon  = sprites.Raichu     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 # TODO  27 - Sandshrew
 # TODO  28 - Sandslash
 # TODO  29 - Nidoran♀
