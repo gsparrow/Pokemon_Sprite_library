@@ -59,8 +59,8 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.Sandslash  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 #pokemon  = sprites.NidoranF   (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
 #pokemon  = sprites.Nidorina   (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
-pokemon  = sprites.Nidoqueen  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
-# TODO  32 - Nidoran♂
+#pokemon  = sprites.Nidoqueen  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+pokemon  = sprites.NidoranM   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 # TODO  33 - Nidorino
 # TODO  34 - Nidoking
 # TODO  35 - Clefairy
