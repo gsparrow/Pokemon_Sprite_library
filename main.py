@@ -21,9 +21,13 @@ ORANGE     = (255, 165,   0)
 NEAR_BLACK = ( 25,  16,  16)                                                            #appears to be used rather than black
     
 
-screen = pygame.display.set_mode(size)
-
+icon = pygame.Surface((24,24))
+icon.fill(WHITE)
+my_icon = sprites.Pokeball (0, 0, 0, 0, 1, NEAR_BLACK, WHITE, (255,123,123), icon)
+my_icon.draw()
+pygame.display.set_icon(icon)
 pygame.display.set_caption("Gotta Catch 'Em All")
+screen = pygame.display.set_mode(size)
 
 done = False
 clock = pygame.time.Clock()
@@ -60,8 +64,8 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.NidoranF   (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
 #pokemon  = sprites.Nidorina   (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
 #pokemon  = sprites.Nidoqueen  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
-pokemon  = sprites.NidoranM   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
-# TODO  33 - Nidorino
+#pokemon  = sprites.NidoranM   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+pokemon  = sprites.Nidorino   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 # TODO  34 - Nidoking
 # TODO  35 - Clefairy
 # TODO  36 - Clefable
