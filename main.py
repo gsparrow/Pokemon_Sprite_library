@@ -66,7 +66,7 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.Nidoqueen  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
 #pokemon  = sprites.NidoranM   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 #pokemon  = sprites.Nidorino   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
-pokemon  = sprites.Nidoking   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+#pokemon  = sprites.Nidoking   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 # TODO  35 - Clefairy
 # TODO  36 - Clefable
 # TODO  37 - Vulpix
@@ -90,7 +90,7 @@ pokemon  = sprites.Nidoking   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,
 # TODO  55 - Golduck
 # TODO  56 - Mankey
 # TODO  57 - Primeape
-# TODO  58 - Growlithe
+pokemon  = sprites.Growlithe  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),   (230,165,123), WHITE, screen)
 # TODO  59 - Arcanine
 # TODO  60 - Poliwag
 # TODO  61 - Poliwhirl
