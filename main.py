@@ -22,7 +22,7 @@ NEAR_BLACK = ( 25,  16,  16)                                                    
     
 
 icon = pygame.Surface((24,24))
-icon.fill(WHITE)
+icon.fill(BLUE)
 my_icon = sprites.Pokeball (0, 0, 0, 0, 1, NEAR_BLACK, WHITE, (255,123,123), icon)
 my_icon.draw()
 pygame.display.set_icon(icon)
@@ -90,8 +90,8 @@ clock = pygame.time.Clock()
 # TODO  55 - Golduck
 # TODO  56 - Mankey
 # TODO  57 - Primeape
-pokemon  = sprites.Growlithe  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),   (230,165,123), WHITE, screen)
-# TODO  59 - Arcanine
+#pokemon  = sprites.Growlithe  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),   (230,165,123), WHITE, screen)
+pokemon  = sprites.Arcanine   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (255,165,82), WHITE, screen)
 # TODO  60 - Poliwag
 # TODO  61 - Poliwhirl
 # TODO  62 - Poliwrath
