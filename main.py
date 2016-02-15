@@ -67,8 +67,8 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.NidoranM   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 #pokemon  = sprites.Nidorino   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 #pokemon  = sprites.Nidoking   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
-pokemon  = sprites.Clefairy   (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
-# TODO  36 - Clefable
+#pokemon  = sprites.Clefairy   (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+pokemon  = sprites.Clefable   (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
 # TODO  37 - Vulpix
 # TODO  38 - Ninetails
 # TODO  39 - Jigglypuff
