@@ -109,8 +109,8 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.Geodude   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #pokemon  = sprites.Graveler  (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #pokemon  = sprites.Golem     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
-pokemon  = sprites.Ponyta    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
-# TODO  78 - Rapidash
+#pokemon  = sprites.Ponyta    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+pokemon  = sprites.Rapidash  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
 # TODO  79 - Slowpoke
 # TODO  80 - Slowbro
 # TODO  81 - Magnemite
