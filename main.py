@@ -69,7 +69,7 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.Nidoking   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 #pokemon  = sprites.Clefairy   (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
 #pokemon  = sprites.Clefable   (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
-# TODO  37 - Vulpix
+pokemon  = sprites.Vulpix     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
 # TODO  38 - Ninetails
 # TODO  39 - Jigglypuff
 # TODO  40 - Wigglytuff
@@ -110,7 +110,7 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.Graveler  (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #pokemon  = sprites.Golem     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #pokemon  = sprites.Ponyta    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
-pokemon  = sprites.Rapidash  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+#pokemon  = sprites.Rapidash  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
 # TODO  79 - Slowpoke
 # TODO  80 - Slowbro
 # TODO  81 - Magnemite
