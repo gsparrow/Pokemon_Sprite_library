@@ -70,18 +70,18 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.Clefairy   (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
 #pokemon  = sprites.Clefable   (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
 #pokemon  = sprites.Vulpix     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
-pokemon  = sprites.Ninetails  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115),  WHITE, screen)
+#pokemon  = sprites.Ninetails  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 # TODO  39 - Jigglypuff
 # TODO  40 - Wigglytuff
 # TODO  41 - Zubat
 # TODO  42 - Golbat
-#pokemon  = sprites.Oddish    (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
-#pokemon  = sprites.Gloom     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49), (255,165,82), WHITE, screen)
-#pokemon  = sprites.Vileplume (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49), (255,165,82), WHITE, screen)
+#pokemon  = sprites.Oddish     (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+#pokemon  = sprites.Gloom      (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+#pokemon  = sprites.Vileplume  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
 # TODO  46 - Paras
 # TODO  47 - Parasect
-#pokemon  = sprites.Venonat   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
-#pokemon  = sprites.Venomoth  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+#pokemon  = sprites.Venonat    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+#pokemon  = sprites.Venomoth   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 # TODO  50 - Diglet
 # TODO  51 - Dugtrio
 # TODO  52 - Meowth
@@ -91,8 +91,8 @@ pokemon  = sprites.Ninetails  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,
 # TODO  56 - Mankey
 # TODO  57 - Primeape
 #pokemon  = sprites.Growlithe  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),   (230,165,123), WHITE, screen)
-#pokemon  = sprites.Arcanine   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (255,165,82), WHITE, screen)
-# TODO  60 - Poliwag
+#pokemon  = sprites.Arcanine   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),   (255,165,82),  WHITE, screen)
+pokemon  = sprites.Poliwag    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),   (148,165,222), WHITE, screen)
 # TODO  61 - Poliwhirl
 # TODO  62 - Poliwrath
 #pokemon  = sprites.Abra     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
