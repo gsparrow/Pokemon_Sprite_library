@@ -92,7 +92,8 @@ clock = pygame.time.Clock()
 # TODO  57 - Primeape
 #pokemon  = sprites.Growlithe  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),   (230,165,123), WHITE, screen)
 #pokemon  = sprites.Arcanine   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),   (255,165,82),  WHITE, screen)
-pokemon  = sprites.Poliwag    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),   (148,165,222), WHITE, screen)
+#pokemon  = sprites.Poliwag    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),   (148,165,222), WHITE, screen)
+pokemon  = sprites.Poliwhirl  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),   (148,165,222), WHITE, screen)
 # TODO  61 - Poliwhirl
 # TODO  62 - Poliwrath
 #pokemon  = sprites.Abra     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
