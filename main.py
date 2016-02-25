@@ -93,25 +93,24 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.Growlithe  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),   (230,165,123), WHITE, screen)
 #pokemon  = sprites.Arcanine   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),   (255,165,82),  WHITE, screen)
 #pokemon  = sprites.Poliwag    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),   (148,165,222), WHITE, screen)
-pokemon  = sprites.Poliwhirl  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),   (148,165,222), WHITE, screen)
-# TODO  61 - Poliwhirl
-# TODO  62 - Poliwrath
-#pokemon  = sprites.Abra     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
-#pokemon  = sprites.Kadabra  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
-#pokemon  = sprites.Alakazam (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
+#pokemon  = sprites.Poliwhirl  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),   (148,165,222), WHITE, screen)
+pokemon  = sprites.Poliwrath  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),   (148,165,222), WHITE, screen)
+#pokemon  = sprites.Abra       (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),    (255,230,115), WHITE, screen)
+#pokemon  = sprites.Kadabra    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),    (255,230,115), WHITE, screen)
+#pokemon  = sprites.Alakazam   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),    (255,230,115), WHITE, screen)
 # TODO  66 - Machop
 # TODO  67 - Machoke
 # TODO  68 - Machamp
-#pokemon  = sprites.Bellsprout  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
-#pokemon  = sprites.Weepinbell  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
-#pokemon  = sprites.Victreebel  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90), (165,214,132), WHITE, screen)
+#pokemon  = sprites.Bellsprout (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),    (165,214,132), WHITE, screen)
+#pokemon  = sprites.Weepinbell (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),    (165,214,132), WHITE, screen)
+#pokemon  = sprites.Victreebel (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),    (165,214,132), WHITE, screen)
 # TODO  72 - Tentacool
 # TODO  73 - Tentacruel
-#pokemon  = sprites.Geodude   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
-#pokemon  = sprites.Graveler  (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
-#pokemon  = sprites.Golem     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
-#pokemon  = sprites.Ponyta    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
-#pokemon  = sprites.Rapidash  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+#pokemon  = sprites.Geodude    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148),  (214,173,181), WHITE, screen)
+#pokemon  = sprites.Graveler   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148),  (214,173,181), WHITE, screen)
+#pokemon  = sprites.Golem      (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148),  (214,173,181), WHITE, screen)
+#pokemon  = sprites.Ponyta     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),    (255,162,82),  WHITE, screen)
+#pokemon  = sprites.Rapidash   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),    (255,162,82),  WHITE, screen)
 # TODO  79 - Slowpoke
 # TODO  80 - Slowbro
 # TODO  81 - Magnemite
