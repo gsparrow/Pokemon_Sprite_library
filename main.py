@@ -94,11 +94,11 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.Arcanine   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),   (255,165,82),  WHITE, screen)
 #pokemon  = sprites.Poliwag    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),   (148,165,222), WHITE, screen)
 #pokemon  = sprites.Poliwhirl  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),   (148,165,222), WHITE, screen)
-pokemon  = sprites.Poliwrath  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),   (148,165,222), WHITE, screen)
+#pokemon  = sprites.Poliwrath  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),   (148,165,222), WHITE, screen)
 #pokemon  = sprites.Abra       (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),    (255,230,115), WHITE, screen)
 #pokemon  = sprites.Kadabra    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),    (255,230,115), WHITE, screen)
 #pokemon  = sprites.Alakazam   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),    (255,230,115), WHITE, screen)
-# TODO  66 - Machop
+pokemon  = sprites.Machop     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148),  (214,173,181), WHITE, screen)
 # TODO  67 - Machoke
 # TODO  68 - Machamp
 #pokemon  = sprites.Bellsprout (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),    (165,214,132), WHITE, screen)
