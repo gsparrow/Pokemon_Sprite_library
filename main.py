@@ -72,8 +72,8 @@ clock = pygame.time.Clock()
 #pokemon  = sprites.Vulpix     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
 #pokemon  = sprites.Ninetails  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 #pokemon  = sprites.Jigglypuff (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
-pokemon  = sprites.Wigglytuff (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
-# TODO  41 - Zubat
+#pokemon  = sprites.Wigglytuff (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+pokemon  = sprites.Zubat      (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
 # TODO  42 - Golbat
 #pokemon  = sprites.Oddish     (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
 #pokemon  = sprites.Gloom      (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
