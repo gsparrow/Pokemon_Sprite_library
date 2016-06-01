@@ -80,10 +80,10 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Gloom      (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
 #my_pokemon  = pokemon.Vileplume  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
 #my_pokemon  = pokemon.Paras      (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
-my_pokemon  = pokemon.Parasect   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+#my_pokemon  = pokemon.Parasect   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
 #my_pokemon  = pokemon.Venonat    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 #my_pokemon  = pokemon.Venomoth   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
-# TODO  50 - Diglet
+my_pokemon  = pokemon.Diglet     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 # TODO  51 - Dugtrio
 # TODO  52 - Meowth
 # TODO  53 - Persian
