@@ -87,8 +87,8 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Dugtrio    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 #my_pokemon  = pokemon.Meowth     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 #my_pokemon  = pokemon.Persian    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
-my_pokemon  = pokemon.Psyduck    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
-# TODO  55 - Golduck
+#my_pokemon  = pokemon.Psyduck    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+my_pokemon  = pokemon.Golduck    (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
 # TODO  56 - Mankey
 # TODO  57 - Primeape
 #my_pokemon  = pokemon.Growlithe  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),   (230,165,123), WHITE, screen)
