@@ -90,7 +90,7 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Psyduck    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 #my_pokemon  = pokemon.Golduck    (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
 #my_pokemon  = pokemon.Mankey     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
-my_pokemon  = pokemon.Primeape   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+#my_pokemon  = pokemon.Primeape   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 #my_pokemon  = pokemon.Growlithe  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),   (230,165,123), WHITE, screen)
 #my_pokemon  = pokemon.Arcanine   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),   (255,165,82),  WHITE, screen)
 #my_pokemon  = pokemon.Poliwag    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),   (148,165,222), WHITE, screen)
@@ -105,7 +105,7 @@ my_pokemon  = pokemon.Primeape   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (2
 #my_pokemon  = pokemon.Bellsprout (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),    (165,214,132), WHITE, screen)
 #my_pokemon  = pokemon.Weepinbell (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),    (165,214,132), WHITE, screen)
 #my_pokemon  = pokemon.Victreebel (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),    (165,214,132), WHITE, screen)
-# TODO  72 - Tentacool
+my_pokemon  = pokemon.Tentacool  (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
 # TODO  73 - Tentacruel
 #my_pokemon  = pokemon.Geodude    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148),  (214,173,181), WHITE, screen)
 #my_pokemon  = pokemon.Graveler   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148),  (214,173,181), WHITE, screen)
