@@ -106,13 +106,13 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Weepinbell (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),    (165,214,132), WHITE, screen)
 #my_pokemon  = pokemon.Victreebel (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),    (165,214,132), WHITE, screen)
 #my_pokemon  = pokemon.Tentacool  (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
-my_pokemon  = pokemon.Tentacruel (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+#my_pokemon  = pokemon.Tentacruel (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
 #my_pokemon  = pokemon.Geodude    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148),  (214,173,181), WHITE, screen)
 #my_pokemon  = pokemon.Graveler   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148),  (214,173,181), WHITE, screen)
 #my_pokemon  = pokemon.Golem      (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148),  (214,173,181), WHITE, screen)
 #my_pokemon  = pokemon.Ponyta     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),    (255,162,82),  WHITE, screen)
 #my_pokemon  = pokemon.Rapidash   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),    (255,162,82),  WHITE, screen)
-# TODO  79 - Slowpoke
+my_pokemon  = pokemon.Slowpoke   (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173),  (247,181,197),  WHITE, screen)
 # TODO  80 - Slowbro
 # TODO  81 - Magnemite
 # TODO  82 - Magneton
