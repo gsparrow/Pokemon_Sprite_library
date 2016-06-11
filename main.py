@@ -116,10 +116,10 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Slowbro    (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197),  WHITE, screen)
 #my_pokemon  = pokemon.Magnemite  (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #my_pokemon  = pokemon.Magneton   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
-my_pokemon  = pokemon.Farfetchd  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74), (230,165,123), WHITE, screen)
-#my_pokemon  = pokemon.Doduo      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74), (230,165,123), WHITE, screen)
-#my_pokemon  = pokemon.Dodrio     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74), (230,165,123), WHITE, screen)
-# TODO  86 - Seel
+#my_pokemon  = pokemon.Farfetchd  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+#my_pokemon  = pokemon.Doduo      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+#my_pokemon  = pokemon.Dodrio     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+my_pokemon  = pokemon.Seel       (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
 # TODO  87 - Dewgong
 # TODO  88 - Grimer
 # TODO  89 - Muk
