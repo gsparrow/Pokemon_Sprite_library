@@ -120,8 +120,8 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Doduo      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 #my_pokemon  = pokemon.Dodrio     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 #my_pokemon  = pokemon.Seel       (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
-my_pokemon  = pokemon.Dewgong    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
-# TODO  88 - Grimer
+#my_pokemon  = pokemon.Dewgong    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+my_pokemon  = pokemon.Grimer     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 # TODO  89 - Muk
 # TODO  90 - Shellder
 # TODO  91 - Cloyster
