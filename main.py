@@ -122,8 +122,8 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Seel       (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
 #my_pokemon  = pokemon.Dewgong    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
 #my_pokemon  = pokemon.Grimer     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
-my_pokemon  = pokemon.Muk        (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
-# TODO  90 - Shellder
+#my_pokemon  = pokemon.Muk        (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+my_pokemon  = pokemon.Shellder   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO  91 - Cloyster
 #my_pokemon  = pokemon.Gastly     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 #my_pokemon  = pokemon.Haunter    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
