@@ -131,8 +131,8 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Onix       (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #my_pokemon  = pokemon.Drowzee    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 #my_pokemon  = pokemon.Hypno      (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
-my_pokemon  = pokemon.Krabby     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
-# TODO  99 - Kingler
+#my_pokemon  = pokemon.Krabby     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+my_pokemon  = pokemon.Kingler    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
 #my_pokemon  = pokemon.Voltorb    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
 #my_pokemon  = pokemon.Electrode  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0), (255,230,115), WHITE, screen)
 # TODO 102 - Exeggcute
