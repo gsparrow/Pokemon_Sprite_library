@@ -144,8 +144,8 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Lickitung  (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
 #my_pokemon  = pokemon.Koffing    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 #my_pokemon  = pokemon.Weezing    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
-my_pokemon  = pokemon.Rhyhorn    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
-# TODO 112 - Rhydon
+#my_pokemon  = pokemon.Rhyhorn    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+my_pokemon  = pokemon.Rhydon     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO 113 - Chansey
 #my_pokemon  = pokemon.Tangela    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189), (148,165,222), WHITE, screen)
 # TODO 115 - Kangaskhan
