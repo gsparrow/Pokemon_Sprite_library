@@ -146,9 +146,9 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Weezing    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 #my_pokemon  = pokemon.Rhyhorn    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #my_pokemon  = pokemon.Rhydon     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
-my_pokemon  = pokemon.Chansey    (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+#my_pokemon  = pokemon.Chansey    (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
 #my_pokemon  = pokemon.Tangela    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189), (148,165,222), WHITE, screen)
-# TODO 115 - Kangaskhan
+my_pokemon  = pokemon.Kangaskhan (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 # TODO 116 - Horsea
 # TODO 117 - Seadra
 # TODO 118 - Goldeen
