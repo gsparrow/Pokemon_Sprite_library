@@ -150,8 +150,8 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Tangela    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189), (148,165,222), WHITE, screen)
 #my_pokemon  = pokemon.Kangaskhan (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 #my_pokemon  = pokemon.Horsea     (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
-my_pokemon  = pokemon.Seadra     (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
-# TODO 118 - Goldeen
+#my_pokemon  = pokemon.Seadra     (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+my_pokemon  = pokemon.Goldeen    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
 # TODO 119 - Seaking
 #my_pokemon  = pokemon.Staryu    (  0, 0, 0, 0, 1, NEAR_BLACK, (255,165,82), (214,82,49), WHITE, screen)
 #my_pokemon  = pokemon.Starmie   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
