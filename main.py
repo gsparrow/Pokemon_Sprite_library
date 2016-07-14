@@ -156,8 +156,8 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Staryu     (  0, 0, 0, 0, 1, NEAR_BLACK, (255,165,82),  (214,82,49),   WHITE, screen)
 #my_pokemon  = pokemon.Starmie    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #my_pokemon  = pokemon.Mr_Mime    (  0, 0, 0, 0, 1, NEAR_BLACK, (247,181,197), (230,123,173), WHITE, screen)
-my_pokemon  = pokemon.Scyther    (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
-# TODO 124 - Jynx
+#my_pokemon  = pokemon.Scyther    (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+my_pokemon  = pokemon.Jynx       (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
 # TODO 125 - Electabuzz
 # TODO 126 - Magmar
 # TODO 127 - Pinsir
