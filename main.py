@@ -159,9 +159,9 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Scyther    (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
 #my_pokemon  = pokemon.Jynx       (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
 #my_pokemon  = pokemon.Electabuzz (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
-my_pokemon  = pokemon.Magmar     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
-# TODO 127 - Pinsir
-#my_pokemon  = pokemon.Tauros    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+#my_pokemon  = pokemon.Magmar     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+my_pokemon  = pokemon.Pinsir     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+#my_pokemon  = pokemon.Tauros     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO 129 - Magikarp
 # TODO 130 - Gyrados
 # TODO 131 - Lapras
