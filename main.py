@@ -163,9 +163,9 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Pinsir     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 #my_pokemon  = pokemon.Tauros     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #my_pokemon  = pokemon.Magikarp   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
-my_pokemon  = pokemon.Gyrados    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189), (148,165,222), WHITE, screen)
-# TODO 131 - Lapras
-#my_pokemon  = pokemon.Ditto     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+#my_pokemon  = pokemon.Gyrados    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189), (148,165,222), WHITE, screen)
+my_pokemon  = pokemon.Lapras     (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+#my_pokemon  = pokemon.Ditto      (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO 133 - Evee
 # TODO 134 - Vaporeon
 # TODO 135 - Jolteon
