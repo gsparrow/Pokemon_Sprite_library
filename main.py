@@ -170,8 +170,8 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Vaporeon   (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
 #my_pokemon  = pokemon.Jolteon    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 #my_pokemon  = pokemon.Flareon    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
-my_pokemon  = pokemon.Porygon    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
-# TODO 138 - Omanyte
+#my_pokemon  = pokemon.Porygon    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+my_pokemon  = pokemon.Omanyte    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
 # TODO 139 - Omastar
 # TODO 140 - Kabuto
 # TODO 141 - Kabutops
