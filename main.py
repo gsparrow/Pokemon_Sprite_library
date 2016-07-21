@@ -174,8 +174,8 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Omanyte    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
 #my_pokemon  = pokemon.Omastar    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
 #my_pokemon  = pokemon.Kabuto     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
-my_pokemon  = pokemon.Kabutops   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
-# TODO 142 - Aerodactyl
+#my_pokemon  = pokemon.Kabutops   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+my_pokemon  = pokemon.Aerodactyl (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO 143 - Snorlax
 # TODO 144 - Articuno
 # TODO 145 - Zapdos
