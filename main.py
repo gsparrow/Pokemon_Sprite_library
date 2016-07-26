@@ -179,8 +179,8 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Snorlax    (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
 #my_pokemon  = pokemon.Articuno   (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
 #my_pokemon  = pokemon.Zapdos     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
-my_pokemon  = pokemon.Moltres    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
-# TODO 147 - Dratini
+#my_pokemon  = pokemon.Moltres    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+my_pokemon  = pokemon.Dratini    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 # TODO 148 - Dragonair
 # TODO 149 - Dragonite
 #my_pokemon  = pokemon.Mewtwo     (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
