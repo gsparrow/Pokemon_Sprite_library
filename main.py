@@ -178,8 +178,8 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Aerodactyl (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #my_pokemon  = pokemon.Snorlax    (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
 #my_pokemon  = pokemon.Articuno   (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
-my_pokemon  = pokemon.Zapdos     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
-# TODO 146 - Moltres
+#my_pokemon  = pokemon.Zapdos     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+my_pokemon  = pokemon.Moltres    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
 # TODO 147 - Dratini
 # TODO 148 - Dragonair
 # TODO 149 - Dragonite
@@ -200,6 +200,8 @@ while not done:
   for event in pygame.event.get():							#allows you to exit by clicking x
     if event.type == pygame.QUIT:
       done =True
+    elif event.type == pygame.MOUSEBUTTONUP:
+      None 
 
   screen.fill(RED)									#arbitrary color, good for spotting mistakes in the sprite
 
