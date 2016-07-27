@@ -182,10 +182,10 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Moltres    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
 #my_pokemon  = pokemon.Dratini    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
 #my_pokemon  = pokemon.Dragonair  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
-my_pokemon  = pokemon.Dragonite  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+#my_pokemon  = pokemon.Dragonite  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 #my_pokemon  = pokemon.Mewtwo     (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
 #my_pokemon  = pokemon.Mew        (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
-#my_pokemon  = pokemon.Missingno  (  0, 0, 0, 0, 1, NEAR_BLACK, WHITE, screen)
+my_pokemon  = pokemon.Missingno  (  0, 0, 0, 0, 1, (18,11,11), (117,101,142), (238,168,126), WHITE, screen)
 											#set sprite at location x,y, with velocity x,y,
 											#with size multiplier 1,  with the following four colors
 											#on the main screen
