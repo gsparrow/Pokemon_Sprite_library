@@ -59,7 +59,7 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Ekans      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 #my_pokemon  = pokemon.Arbok      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 #my_pokemon  = pokemon.Pikachu    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
-#my_pokemon  = pokemon.Raichu     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+my_pokemon  = pokemon.Raichu     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 #my_pokemon  = pokemon.Sandshrew  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 #my_pokemon  = pokemon.Sandslash  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 #my_pokemon  = pokemon.NidoranF   (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
@@ -185,13 +185,17 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Dragonite  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 #my_pokemon  = pokemon.Mewtwo     (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
 #my_pokemon  = pokemon.Mew        (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
-my_pokemon  = pokemon.Missingno  (  0, 0, 0, 0, 1, (18,11,11), (117,101,142), (238,168,126), WHITE, screen)
+#my_pokemon  = pokemon.Missingno  (  0, 0, 0, 0, 1, (18,11,11), (117,101,142), (238,168,126), WHITE, screen)
 											#set sprite at location x,y, with velocity x,y,
 											#with size multiplier 1,  with the following four colors
 											#on the main screen
 print my_pokemon.get_Name()
 print str(my_pokemon.get_Number()).zfill(3)
 print my_pokemon.get_Pokedex_Message()
+print str(my_pokemon.get_Height_US()) + "in"
+print str(my_pokemon.get_Height_SI()) + "m"
+print str(my_pokemon.get_Weight_US()) + "lbs"
+print str(my_pokemon.get_Weight_SI()) + "kg"
 while not done:
 
   #limit the clock to ten loops per second
