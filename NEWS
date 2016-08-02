@@ -1,1 +1,3 @@
-Next I will be adding adding Height, Weight, and default color methods to all pokemon
+Next I will be adding default colors as static class methods.
+
+This means that when you call Bulbasaur.get_default_color_1() it will return (74,165,90). This will be implemented as a breaking change, as color_3 will be renamed color_0, color_1 will replace color_3, color_2 will move to color_1, and color_4 will move to color_2. The default constructors will then only require color_0 and color_1, and color_2 and color_3 will be silently invoked, but will be changeable through set/get methods
