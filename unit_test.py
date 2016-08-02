@@ -28,7 +28,19 @@ clock = pygame.time.Clock()
 
 class test_Bulbasaur(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Bulbasaur  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Bulbasaur( 0, 0, 0, 0, 1, pokemon.Bulbasaur.get_default_color_0(), pokemon.Bulbasaur.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Bulbasaur')
@@ -38,6 +50,9 @@ class test_Bulbasaur(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Seed Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 28)
@@ -54,7 +69,19 @@ class test_Bulbasaur(unittest.TestCase): # {{{
 
 class test_Ivysaur(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Ivysaur  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Ivysaur( 0, 0, 0, 0, 1, pokemon.Ivysaur.get_default_color_0(), pokemon.Ivysaur.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Ivysaur')
@@ -64,6 +91,9 @@ class test_Ivysaur(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Seed Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -80,7 +110,19 @@ class test_Ivysaur(unittest.TestCase): # {{{
 
 class test_Venasaur(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Venasaur  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Venasaur( 0, 0, 0, 0, 1, pokemon.Venasaur.get_default_color_0(), pokemon.Venasaur.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Venasaur')
@@ -90,6 +132,9 @@ class test_Venasaur(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Seed Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 79)
@@ -106,7 +151,19 @@ class test_Venasaur(unittest.TestCase): # {{{
 
 class test_Charmander(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Charmander (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Charmander( 0, 0, 0, 0, 1, pokemon.Charmander.get_default_color_0(), pokemon.Charmander.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Charmander')
@@ -116,6 +173,9 @@ class test_Charmander(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Lizard Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 24)
@@ -132,7 +192,19 @@ class test_Charmander(unittest.TestCase): # {{{
 
 class test_Charmeleon(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Charmeleon (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Charmeleon( 0, 0, 0, 0, 1, pokemon.Charmeleon.get_default_color_0(), pokemon.Charmeleon.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Charmeleon')
@@ -142,6 +214,9 @@ class test_Charmeleon(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "When it swings its burning tail, it elevates the temperature to unbearably high levels.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Flame Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 43)
@@ -158,7 +233,19 @@ class test_Charmeleon(unittest.TestCase): # {{{
 
 class test_Charizard(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Charizard (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Charizard( 0, 0, 0, 0, 1, pokemon.Charizard.get_default_color_0(), pokemon.Charizard.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Charizard')
@@ -168,6 +255,9 @@ class test_Charizard(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Flame Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 67)
@@ -184,7 +274,19 @@ class test_Charizard(unittest.TestCase): # {{{
 
 class test_Squirtle(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Squirtle   (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon  = pokemon.Squirtle   (  0, 0, 0, 0, 1, pokemon.Squirtle.get_default_color_0(), pokemon.Squirtle.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Squirtle')
@@ -194,6 +296,9 @@ class test_Squirtle(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Tiny Turtle Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 20)
@@ -210,7 +315,19 @@ class test_Squirtle(unittest.TestCase): # {{{
 
 class test_Wartortle(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Wartortle   (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon  = pokemon.Wartortle   (  0, 0, 0, 0, 1, pokemon.Wartortle.get_default_color_0(), pokemon.Wartortle.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Wartortle')
@@ -220,6 +337,9 @@ class test_Wartortle(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Turtle Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -236,7 +356,19 @@ class test_Wartortle(unittest.TestCase): # {{{
 
 class test_Blastoise(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Blastoise   (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon  = pokemon.Blastoise   (  0, 0, 0, 0, 1, pokemon.Blastoise.get_default_color_0(), pokemon.Blastoise.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Blastoise')
@@ -246,6 +378,9 @@ class test_Blastoise(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"A brutal Pokémon with pressurized water jets on its shell. They are used for high speed tackles.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Shellfish Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 63)
@@ -262,7 +397,19 @@ class test_Blastoise(unittest.TestCase): # {{{
 
 class test_Caterpie(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Caterpie   (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Caterpie( 0, 0, 0, 0, 1, pokemon.Caterpie.get_default_color_0(), pokemon.Caterpie.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Caterpie')
@@ -272,6 +419,9 @@ class test_Caterpie(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Worm Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 12)
@@ -288,7 +438,19 @@ class test_Caterpie(unittest.TestCase): # {{{
 
 class test_Metapod(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Metapod   (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Metapod( 0, 0, 0, 0, 1, pokemon.Metapod.get_default_color_0(), pokemon.Metapod.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Metapod')
@@ -298,6 +460,9 @@ class test_Metapod(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"This Pokémon is vulnerable to attack while its shell is soft, exposing its weak and tender body.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Cocoon Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 28)
@@ -314,7 +479,19 @@ class test_Metapod(unittest.TestCase): # {{{
 
 class test_Butterfree(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Butterfree (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon  = pokemon.Butterfree (  0, 0, 0, 0, 1, pokemon.Butterfree.get_default_color_0(), pokemon.Butterfree.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Butterfree')
@@ -324,6 +501,9 @@ class test_Butterfree(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "In battle, it flaps its wings at high speed to release highly toxic dust into the air.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Butterfly Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 43)
@@ -340,7 +520,19 @@ class test_Butterfree(unittest.TestCase): # {{{
 
 class test_Weedle(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Weedle     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon  = pokemon.Weedle( 0, 0, 0, 0, 1, pokemon.Weedle.get_default_color_0(), pokemon.Weedle.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Weedle')
@@ -350,6 +542,9 @@ class test_Weedle(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Often found in forests, eating leaves. It has a sharp venomous stinger on its head.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Hairy Bug Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 12)
@@ -366,7 +561,19 @@ class test_Weedle(unittest.TestCase): # {{{
 
 class test_Kakuna(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Kakuna     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon  = pokemon.Kakuna     (  0, 0, 0, 0, 1, pokemon.Kakuna.get_default_color_0(), pokemon.Kakuna.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Kakuna')
@@ -376,6 +583,9 @@ class test_Kakuna(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"Almost incapable of moving, this Pokémon can only harden its shell to protect itself from predators.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Cocoon Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 24)
@@ -392,7 +602,19 @@ class test_Kakuna(unittest.TestCase): # {{{
 
 class test_Beedrill(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Beedrill     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Beedrill( 0, 0, 0, 0, 1, pokemon.Beedrill.get_default_color_0(), pokemon.Beedrill.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Beedrill')
@@ -402,6 +624,9 @@ class test_Beedrill(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Poison Bee Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -418,7 +643,19 @@ class test_Beedrill(unittest.TestCase): # {{{
 
 class test_Pidgey(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Pidgey     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Pidgey     (  0, 0, 0, 0, 1, pokemon.Pidgey.get_default_color_0(), pokemon.Pidgey.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Pidgey')
@@ -428,6 +665,9 @@ class test_Pidgey(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Tiny Bird Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 12)
@@ -444,7 +684,19 @@ class test_Pidgey(unittest.TestCase): # {{{
 
 class test_Pidgeotto(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Pidgeotto     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Pidgeotto     (  0, 0, 0, 0, 1, pokemon.Pidgeotto.get_default_color_0(), pokemon.Pidgeotto.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Pidgeotto')
@@ -454,6 +706,9 @@ class test_Pidgeotto(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"Very protective of its sprawling territorial area, this Pokémon will fiercely peck at any intruder.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Bird Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 43)
@@ -470,7 +725,19 @@ class test_Pidgeotto(unittest.TestCase): # {{{
 
 class test_Pidgeot(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Pidgeot     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Pidgeot     (  0, 0, 0, 0, 1, pokemon.Pidgeot.get_default_color_0(), pokemon.Pidgeot.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Pidgeot')
@@ -480,6 +747,9 @@ class test_Pidgeot(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "When hunting, it skims the surface of water at high speed to pick off unwary prey such as Magikarp.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Bird Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 59)
@@ -496,7 +766,19 @@ class test_Pidgeot(unittest.TestCase): # {{{
 
 class test_Rattata(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Rattata    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Rattata    (  0, 0, 0, 0, 1, pokemon.Rattata.get_default_color_0(), pokemon.Rattata.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Rattata')
@@ -506,6 +788,9 @@ class test_Rattata(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Bites anything when it attacks. Small and very quick, it is a common sight in many places.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Mouse Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 12)
@@ -522,7 +807,19 @@ class test_Rattata(unittest.TestCase): # {{{
 
 class test_Raticate(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Raticate    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Raticate    (  0, 0, 0, 0, 1, pokemon.Raticate.get_default_color_0(), pokemon.Raticate.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Raticate')
@@ -532,6 +829,9 @@ class test_Raticate(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "It uses its whiskers to maintain its balance. It apparently slows down if they are cut off.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Mouse Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 28)
@@ -548,7 +848,19 @@ class test_Raticate(unittest.TestCase): # {{{
 
 class test_Spearow(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Spearow    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Spearow    (  0, 0, 0, 0, 1, pokemon.Spearow.get_default_color_0(), pokemon.Spearow.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Spearow')
@@ -558,6 +870,9 @@ class test_Spearow(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Tiny Bird Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 12)
@@ -574,7 +889,19 @@ class test_Spearow(unittest.TestCase): # {{{
 
 class test_Fearow(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Fearow    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Fearow    (  0, 0, 0, 0, 1, pokemon.Fearow.get_default_color_0(), pokemon.Fearow.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Fearow')
@@ -584,6 +911,9 @@ class test_Fearow(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Beak Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 47)
@@ -600,7 +930,19 @@ class test_Fearow(unittest.TestCase): # {{{
 
 class test_Ekans(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Ekans      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Ekans      (  0, 0, 0, 0, 1, pokemon.Ekans.get_default_color_0(), pokemon.Ekans.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Ekans')
@@ -610,6 +952,9 @@ class test_Ekans(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Moves silently and stealthily. Eats the eggs of birds, such as Pidgey and Spearow, whole.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Snake Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 79)
@@ -626,7 +971,19 @@ class test_Ekans(unittest.TestCase): # {{{
 
 class test_Arbok(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Arbok      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Arbok      (  0, 0, 0, 0, 1, pokemon.Arbok.get_default_color_0(), pokemon.Arbok.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Arbok')
@@ -636,6 +993,9 @@ class test_Arbok(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "It is rumored that the ferocious warning markings on its belly differ from area to area.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Cobra Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 138)
@@ -652,7 +1012,19 @@ class test_Arbok(unittest.TestCase): # {{{
 
 class test_Pikachu(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Pikachu    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon  = pokemon.Pikachu    (  0, 0, 0, 0, 1, pokemon.Pikachu.get_default_color_0(), pokemon.Pikachu.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Pikachu')
@@ -662,6 +1034,9 @@ class test_Pikachu(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"When several of these Pokémon gather, their electricity could build and cause lightning storms.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Mouse Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 16)
@@ -678,7 +1053,19 @@ class test_Pikachu(unittest.TestCase): # {{{
 
 class test_Raichu(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Raichu    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon  = pokemon.Raichu    (  0, 0, 0, 0, 1, pokemon.Raichu.get_default_color_0(), pokemon.Raichu.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Raichu')
@@ -688,6 +1075,9 @@ class test_Raichu(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its long tail serves as a ground to protect itself from its own high voltage power.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Mouse Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 31)
@@ -704,7 +1094,19 @@ class test_Raichu(unittest.TestCase): # {{{
 
 class test_Sandshrew(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Sandshrew  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Sandshrew  (  0, 0, 0, 0, 1, pokemon.Sandshrew.get_default_color_0(), pokemon.Sandshrew.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Sandshrew')
@@ -714,6 +1116,9 @@ class test_Sandshrew(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Burrows deep underground in arid locations far from water. It only emerges to hunt for food.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Mouse Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 24)
@@ -730,7 +1135,19 @@ class test_Sandshrew(unittest.TestCase): # {{{
 
 class test_Sandslash(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Sandslash  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Sandslash  (  0, 0, 0, 0, 1, pokemon.Sandslash.get_default_color_0(), pokemon.Sandslash.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Sandslash')
@@ -740,6 +1157,9 @@ class test_Sandslash(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Mouse Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -756,7 +1176,19 @@ class test_Sandslash(unittest.TestCase): # {{{
 
 class test_NidoranF(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.NidoranF   (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.NidoranF   (  0, 0, 0, 0, 1, pokemon.NidoranF.get_default_color_0(), pokemon.NidoranF.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), u'Nidoran♀')
@@ -766,6 +1198,9 @@ class test_NidoranF(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"Although small, its venomous barbs render this Pokémon dangerous. The female has smaller horns.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Poison Pin Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 16)
@@ -782,7 +1217,19 @@ class test_NidoranF(unittest.TestCase): # {{{
 
 class test_Nidorina(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Nidorina   (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.Nidorina   (  0, 0, 0, 0, 1, pokemon.Nidorina.get_default_color_0(), pokemon.Nidorina.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Nidorina')
@@ -792,6 +1239,9 @@ class test_Nidorina(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "The female's horn develops slowly. Prefers physical attacks such as clawing and biting.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Poison Pin Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 31)
@@ -808,7 +1258,19 @@ class test_Nidorina(unittest.TestCase): # {{{
 
 class test_Nidoqueen(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Nidoqueen  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.Nidoqueen  (  0, 0, 0, 0, 1, pokemon.Nidoqueen.get_default_color_0(), pokemon.Nidoqueen.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Nidoqueen')
@@ -818,6 +1280,9 @@ class test_Nidoqueen(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Drill Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 51)
@@ -834,7 +1299,19 @@ class test_Nidoqueen(unittest.TestCase): # {{{
 
 class test_NidoranM(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.NidoranM   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.NidoranM   (  0, 0, 0, 0, 1, pokemon.NidoranM.get_default_color_0(), pokemon.NidoranM.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), u'Nidoran♂')
@@ -844,6 +1321,9 @@ class test_NidoranM(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Poison Pin Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 20)
@@ -860,7 +1340,19 @@ class test_NidoranM(unittest.TestCase): # {{{
 
 class test_Nidorino(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Nidorino   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Nidorino   (  0, 0, 0, 0, 1, pokemon.Nidorino.get_default_color_0(), pokemon.Nidorino.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Nidorino')
@@ -870,6 +1362,9 @@ class test_Nidorino(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"An aggressive Pokémon that is quick to attack. The horn on its head secretes a powerful venom.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Poison Pin Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 35)
@@ -886,7 +1381,19 @@ class test_Nidorino(unittest.TestCase): # {{{
 
 class test_Nidoking(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Nidoking   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Nidoking   (  0, 0, 0, 0, 1, pokemon.Nidoking.get_default_color_0(), pokemon.Nidoking.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Nidoking')
@@ -896,6 +1403,9 @@ class test_Nidoking(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "It uses its powerful tail in battle to smash, constrict, then break the prey's bones.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Drill Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 55)
@@ -912,7 +1422,19 @@ class test_Nidoking(unittest.TestCase): # {{{
 
 class test_Clefairy(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Clefairy   (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Clefairy   (  0, 0, 0, 0, 1, pokemon.Clefairy.get_default_color_0(), pokemon.Clefairy.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Clefairy')
@@ -922,6 +1444,9 @@ class test_Clefairy(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its magical and cute appeal has many admirers. It is rare and found only in certain areas.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Fairy Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 24)
@@ -938,7 +1463,19 @@ class test_Clefairy(unittest.TestCase): # {{{
 
 class test_Clefable(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Clefable   (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Clefable   (  0, 0, 0, 0, 1, pokemon.Clefable.get_default_color_0(), pokemon.Clefable.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Clefable')
@@ -948,6 +1485,9 @@ class test_Clefable(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"A timid fairy Pokémon that is rarely seen. It will run and hide the moment it senses people.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Fairy Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 51)
@@ -964,7 +1504,19 @@ class test_Clefable(unittest.TestCase): # {{{
 
 class test_Vulpix(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Vulpix     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Vulpix( 0, 0, 0, 0, 1, pokemon.Vulpix.get_default_color_0(), pokemon.Vulpix.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Vulpix')
@@ -974,6 +1526,9 @@ class test_Vulpix(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "At the time of birth, it has just one tail. The tail splits from its tip as it grows older.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Fox Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 24)
@@ -990,7 +1545,19 @@ class test_Vulpix(unittest.TestCase): # {{{
 
 class test_Ninetails(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Ninetails  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon  = pokemon.Ninetails  (  0, 0, 0, 0, 1, pokemon.Ninetails.get_default_color_0(), pokemon.Ninetails.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Ninetails')
@@ -1000,6 +1567,9 @@ class test_Ninetails(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Fox Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 43)
@@ -1016,7 +1586,19 @@ class test_Ninetails(unittest.TestCase): # {{{
 
 class test_Jigglypuff(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Jigglypuff (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Jigglypuff (  0, 0, 0, 0, 1, pokemon.Jigglypuff.get_default_color_0(), pokemon.Jigglypuff.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Jigglypuff')
@@ -1026,6 +1608,9 @@ class test_Jigglypuff(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Balloon Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 20)
@@ -1042,7 +1627,19 @@ class test_Jigglypuff(unittest.TestCase): # {{{
 
 class test_Wigglytuff(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Wigglytuff (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Wigglytuff (  0, 0, 0, 0, 1, pokemon.Wigglytuff.get_default_color_0(), pokemon.Wigglytuff.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Wigglytuff')
@@ -1052,6 +1649,9 @@ class test_Wigglytuff(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Balloon Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -1068,7 +1668,19 @@ class test_Wigglytuff(unittest.TestCase): # {{{
 
 class test_Zubat(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Zubat      (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.Zubat      (  0, 0, 0, 0, 1, pokemon.Zubat.get_default_color_0(), pokemon.Zubat.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Zubat')
@@ -1078,6 +1690,9 @@ class test_Zubat(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Bat Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 31)
@@ -1094,7 +1709,19 @@ class test_Zubat(unittest.TestCase): # {{{
 
 class test_Golbat(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Golbat     (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.Golbat     (  0, 0, 0, 0, 1, pokemon.Golbat.get_default_color_0(), pokemon.Golbat.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Golbat')
@@ -1104,6 +1731,9 @@ class test_Golbat(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Bat Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 63)
@@ -1120,7 +1750,19 @@ class test_Golbat(unittest.TestCase): # {{{
 
 class test_Oddish(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Oddish     (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Oddish(  0, 0, 0, 0, 1, pokemon.Oddish.get_default_color_0(), pokemon.Oddish.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Oddish')
@@ -1130,6 +1772,9 @@ class test_Oddish(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Weed Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 20)
@@ -1146,7 +1791,19 @@ class test_Oddish(unittest.TestCase): # {{{
 
 class test_Gloom(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Gloom      (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon  = pokemon.Gloom      (  0, 0, 0, 0, 1, pokemon.Gloom.get_default_color_0(), pokemon.Gloom.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Gloom')
@@ -1156,6 +1813,9 @@ class test_Gloom(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Weed Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 31)
@@ -1172,7 +1832,19 @@ class test_Gloom(unittest.TestCase): # {{{
 
 class test_Vileplume(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Vileplume  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon  = pokemon.Vileplume  (  0, 0, 0, 0, 1, pokemon.Vileplume.get_default_color_0(), pokemon.Vileplume.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Vileplume')
@@ -1182,6 +1854,9 @@ class test_Vileplume(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Flower Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 47)
@@ -1198,7 +1873,19 @@ class test_Vileplume(unittest.TestCase): # {{{
 
 class test_Paras(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Paras      (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon  = pokemon.Paras      (  0, 0, 0, 0, 1, pokemon.Paras.get_default_color_0(), pokemon.Paras.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Paras')
@@ -1208,6 +1895,9 @@ class test_Paras(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Burrows to suck tree roots. The mushrooms on its back grow by drawing nutrients from the bug host.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Mushroom Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 12)
@@ -1224,7 +1914,19 @@ class test_Paras(unittest.TestCase): # {{{
 
 class test_Parasect(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Parasect   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon  = pokemon.Parasect   (  0, 0, 0, 0, 1, pokemon.Parasect.get_default_color_0(), pokemon.Parasect.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Parasect')
@@ -1234,6 +1936,9 @@ class test_Parasect(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Mushroom Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -1250,7 +1955,19 @@ class test_Parasect(unittest.TestCase): # {{{
 
 class test_Venonat(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Venonat    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Venonat    (  0, 0, 0, 0, 1, pokemon.Venonat.get_default_color_0(), pokemon.Venonat.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Venonat')
@@ -1260,6 +1977,9 @@ class test_Venonat(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Insect Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -1276,7 +1996,19 @@ class test_Venonat(unittest.TestCase): # {{{
 
 class test_Venomoth(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Venomoth   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Venomoth   (  0, 0, 0, 0, 1, pokemon.Venomoth.get_default_color_0(), pokemon.Venomoth.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Venomoth')
@@ -1286,6 +2018,9 @@ class test_Venomoth(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "The dust-like scales covering its wings are color coded to indicate the kinds of poison it has.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Poison Moth Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 59)
@@ -1302,7 +2037,19 @@ class test_Venomoth(unittest.TestCase): # {{{
 
 class test_Diglet(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Diglet     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Diglet     (  0, 0, 0, 0, 1, pokemon.Diglet.get_default_color_0(), pokemon.Diglet.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Diglet')
@@ -1312,6 +2059,9 @@ class test_Diglet(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Mole Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 8)
@@ -1328,7 +2078,19 @@ class test_Diglet(unittest.TestCase): # {{{
 
 class test_Dugtrio(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Dugtrio    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Dugtrio    (  0, 0, 0, 0, 1, pokemon.Dugtrio.get_default_color_0(), pokemon.Dugtrio.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Dugtrio')
@@ -1338,6 +2100,9 @@ class test_Dugtrio(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "A team of Diglett triplets. It triggers huge earthquakes by burrowing 60 miles underground.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Mole Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 28)
@@ -1354,7 +2119,19 @@ class test_Dugtrio(unittest.TestCase): # {{{
 
 class test_Meowth(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Meowth     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon  = pokemon.Meowth     (  0, 0, 0, 0, 1, pokemon.Meowth.get_default_color_0(), pokemon.Meowth.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Meowth')
@@ -1364,6 +2141,9 @@ class test_Meowth(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Scratch Cat Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 16)
@@ -1380,7 +2160,19 @@ class test_Meowth(unittest.TestCase): # {{{
 
 class test_Persian(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Persian    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon  = pokemon.Persian    (  0, 0, 0, 0, 1, pokemon.Persian.get_default_color_0(), pokemon.Persian.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Persian')
@@ -1390,6 +2182,9 @@ class test_Persian(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Classy Cat Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -1406,7 +2201,19 @@ class test_Persian(unittest.TestCase): # {{{
 
 class test_Psyduck(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Psyduck    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Psyduck( 0, 0, 0, 0, 1, pokemon.Psyduck.get_default_color_0(), pokemon.Psyduck.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Psyduck')
@@ -1416,6 +2223,9 @@ class test_Psyduck(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "While lulling its enemies with its vacant look, this wily Pokémon will use psychokinetic powers.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Duck Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 31)
@@ -1432,7 +2242,19 @@ class test_Psyduck(unittest.TestCase): # {{{
 
 class test_Golduck(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Golduck    (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon  = pokemon.Golduck    (  0, 0, 0, 0, 1, pokemon.Golduck.get_default_color_0(), pokemon.Golduck.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Golduck')
@@ -1442,6 +2264,9 @@ class test_Golduck(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Often seen swimming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Duck Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 67)
@@ -1458,7 +2283,19 @@ class test_Golduck(unittest.TestCase): # {{{
 
 class test_Mankey(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Mankey     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Mankey     (  0, 0, 0, 0, 1, pokemon.Mankey.get_default_color_0(), pokemon.Mankey.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Mankey')
@@ -1468,6 +2305,9 @@ class test_Mankey(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Extremely quick to anger. It could be docile one moment then thrashing away the next instant.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Pig Monkey Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 20)
@@ -1484,7 +2324,19 @@ class test_Mankey(unittest.TestCase): # {{{
 
 class test_Primeape(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Primeape   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Primeape   (  0, 0, 0, 0, 1, pokemon.Primeape.get_default_color_0(), pokemon.Primeape.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Primeape')
@@ -1494,6 +2346,9 @@ class test_Primeape(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Pig Monkey Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -1510,7 +2365,19 @@ class test_Primeape(unittest.TestCase): # {{{
 
 class test_Growlithe(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Growlithe  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Growlithe  (  0, 0, 0, 0, 1, pokemon.Growlithe.get_default_color_0(), pokemon.Growlithe.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Growlithe')
@@ -1520,6 +2387,9 @@ class test_Growlithe(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Very protective of its territory. It will bark and bite to repel intruders from its space.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Puppy Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 28)
@@ -1536,7 +2406,19 @@ class test_Growlithe(unittest.TestCase): # {{{
 
 class test_Arcanine(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Arcanine   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (255,165,82),  WHITE, screen)
+    self.my_pokemon  = pokemon.Arcanine   (  0, 0, 0, 0, 1, pokemon.Arcanine.get_default_color_0(), pokemon.Arcanine.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Arcanine')
@@ -1546,6 +2428,9 @@ class test_Arcanine(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"A Pokémon that has been admired since the past for its beauty. It runs agilely as if on wings.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Legendary Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 75)
@@ -1562,7 +2447,19 @@ class test_Arcanine(unittest.TestCase): # {{{
 
 class test_Poliwag(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Poliwag    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.Poliwag    (  0, 0, 0, 0, 1, pokemon.Poliwag.get_default_color_0(), pokemon.Poliwag.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Poliwag')
@@ -1572,6 +2469,9 @@ class test_Poliwag(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Tadpole Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 24)
@@ -1588,7 +2488,19 @@ class test_Poliwag(unittest.TestCase): # {{{
 
 class test_Poliwhirl(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Poliwhirl  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.Poliwhirl  (  0, 0, 0, 0, 1, pokemon.Poliwhirl.get_default_color_0(), pokemon.Poliwhirl.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Poliwhirl')
@@ -1598,6 +2510,9 @@ class test_Poliwhirl(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Capable of living in or out of water. When out of water, it sweats to keep its body slimy.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Tadpole Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -1614,7 +2529,19 @@ class test_Poliwhirl(unittest.TestCase): # {{{
 
 class test_Poliwrath(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Poliwrath  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.Poliwrath  (  0, 0, 0, 0, 1, pokemon.Poliwrath.get_default_color_0(), pokemon.Poliwrath.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Poliwrath')
@@ -1624,6 +2551,9 @@ class test_Poliwrath(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Tadpole Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 51)
@@ -1640,7 +2570,19 @@ class test_Poliwrath(unittest.TestCase): # {{{
 
 class test_Abra(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Abra       (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Abra( 0, 0, 0, 0, 1, pokemon.Abra.get_default_color_0(), pokemon.Abra.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Abra')
@@ -1650,6 +2592,9 @@ class test_Abra(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Using its ability to read minds, it will identify impending danger and Teleport to safety.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Psi Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 35)
@@ -1666,7 +2611,19 @@ class test_Abra(unittest.TestCase): # {{{
 
 class test_Kadabra(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Kadabra    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Kadabra( 0, 0, 0, 0, 1, pokemon.Kadabra.get_default_color_0(), pokemon.Kadabra.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Kadabra')
@@ -1676,6 +2633,9 @@ class test_Kadabra(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "It emits special alpha waves from its body that induce headaches just by being close by.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Psi Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 51)
@@ -1692,7 +2652,19 @@ class test_Kadabra(unittest.TestCase): # {{{
 
 class test_Alakazam(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Alakazam   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Alakazam( 0, 0, 0, 0, 1, pokemon.Alakazam.get_default_color_0(), pokemon.Alakazam.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Alakazam')
@@ -1702,6 +2674,9 @@ class test_Alakazam(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its brain can outperform a super-computer. Its intelligence quotient is said to be 5,000.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Psi Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 59)
@@ -1718,7 +2693,19 @@ class test_Alakazam(unittest.TestCase): # {{{
 
 class test_Machop(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Machop     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Machop     (  0, 0, 0, 0, 1, pokemon.Machop.get_default_color_0(), pokemon.Machop.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Machop')
@@ -1728,6 +2715,9 @@ class test_Machop(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Loves to build its muscles. It trains in all styles of martial arts to become even stronger.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Superpower Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 31)
@@ -1740,11 +2730,23 @@ class test_Machop(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 19.5)
-# }}}
+# }}}zo
 
 class test_Machoke(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Machoke    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Machoke    (  0, 0, 0, 0, 1, pokemon.Machoke.get_default_color_0(), pokemon.Machoke.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Machoke')
@@ -1754,6 +2756,9 @@ class test_Machoke(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Superpower Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 59)
@@ -1770,7 +2775,19 @@ class test_Machoke(unittest.TestCase): # {{{
 
 class test_Machamp(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Machamp    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Machamp    (  0, 0, 0, 0, 1, pokemon.Machamp.get_default_color_0(), pokemon.Machamp.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Machamp')
@@ -1780,6 +2797,9 @@ class test_Machamp(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Superpower Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 63)
@@ -1796,7 +2816,19 @@ class test_Machamp(unittest.TestCase): # {{{
 
 class test_Bellsprout(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Bellsprout (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Bellsprout( 0, 0, 0, 0, 1, pokemon.Bellsprout.get_default_color_0(), pokemon.Bellsprout.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Bellsprout')
@@ -1806,6 +2838,9 @@ class test_Bellsprout(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"A carnivorous Pokémon that traps and eats bugs. It uses its root feet to soak up needed moisture.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Flower Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 28)
@@ -1822,7 +2857,19 @@ class test_Bellsprout(unittest.TestCase): # {{{
 
 class test_Weepinbell(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Weepinbell (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Weepinbell( 0, 0, 0, 0, 1, pokemon.Weepinbell.get_default_color_0(), pokemon.Weepinbell.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Weepinbell')
@@ -1832,6 +2879,9 @@ class test_Weepinbell(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "It spits out PoisonPowder to immobilize the enemy and then finishes it with a spray of Acid.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Flycatcher Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -1848,7 +2898,19 @@ class test_Weepinbell(unittest.TestCase): # {{{
 
 class test_Victreebel(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Victreebel (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Victreebel( 0, 0, 0, 0, 1, pokemon.Victreebel.get_default_color_0(), pokemon.Victreebel.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Victreebel')
@@ -1858,6 +2920,9 @@ class test_Victreebel(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Said to live in huge colonies deep in jungles, although no one has ever returned from there.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Flycatcher Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 67)
@@ -1874,7 +2939,19 @@ class test_Victreebel(unittest.TestCase): # {{{
 
 class test_Tentacool(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Tentacool  (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon  = pokemon.Tentacool  (  0, 0, 0, 0, 1, pokemon.Tentacool.get_default_color_0(), pokemon.Tentacool.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Tentacool')
@@ -1884,6 +2961,9 @@ class test_Tentacool(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Jellyfish Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 35)
@@ -1900,7 +2980,19 @@ class test_Tentacool(unittest.TestCase): # {{{
 
 class test_Tentacruel(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Tentacruel (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon  = pokemon.Tentacruel (  0, 0, 0, 0, 1, pokemon.Tentacruel.get_default_color_0(), pokemon.Tentacruel.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Tentacruel')
@@ -1910,6 +3002,9 @@ class test_Tentacruel(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Jellyfish Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 63)
@@ -1926,7 +3021,19 @@ class test_Tentacruel(unittest.TestCase): # {{{
 
 class test_Geodude(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Geodude    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Geodude    (  0, 0, 0, 0, 1, pokemon.Geodude.get_default_color_0(), pokemon.Geodude.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Geodude')
@@ -1936,6 +3043,9 @@ class test_Geodude(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Rock Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 16)
@@ -1952,7 +3062,19 @@ class test_Geodude(unittest.TestCase): # {{{
 
 class test_Graveler(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Graveler   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Graveler   (  0, 0, 0, 0, 1, pokemon.Graveler.get_default_color_0(), pokemon.Graveler.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Graveler')
@@ -1962,6 +3084,9 @@ class test_Graveler(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Rock Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -1978,7 +3103,19 @@ class test_Graveler(unittest.TestCase): # {{{
 
 class test_Golem(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Golem      (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Golem      (  0, 0, 0, 0, 1, pokemon.Golem.get_default_color_0(), pokemon.Golem.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Golem')
@@ -1988,6 +3125,9 @@ class test_Golem(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Megaton Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 55)
@@ -2004,7 +3144,19 @@ class test_Golem(unittest.TestCase): # {{{
 
 class test_Ponyta(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Ponyta     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Ponyta( 0, 0, 0, 0, 1, pokemon.Ponyta.get_default_color_0(), pokemon.Ponyta.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Ponyta')
@@ -2014,6 +3166,9 @@ class test_Ponyta(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Fire Horse Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -2030,7 +3185,19 @@ class test_Ponyta(unittest.TestCase): # {{{
 
 class test_Rapidash(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Rapidash   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Rapidash( 0, 0, 0, 0, 1, pokemon.Rapidash.get_default_color_0(), pokemon.Rapidash.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Rapidash')
@@ -2040,6 +3207,9 @@ class test_Rapidash(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"Very competitive, this Pokémon will chase anything that moves fast in the hopes of racing it.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Fire Horse Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 67)
@@ -2056,7 +3226,19 @@ class test_Rapidash(unittest.TestCase): # {{{
 
 class test_Slowpoke(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Slowpoke   (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Slowpoke   (  0, 0, 0, 0, 1, pokemon.Slowpoke.get_default_color_0(), pokemon.Slowpoke.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Slowpoke')
@@ -2066,6 +3248,9 @@ class test_Slowpoke(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Dopey Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 47)
@@ -2082,7 +3267,19 @@ class test_Slowpoke(unittest.TestCase): # {{{
 
 class test_Slowbro(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Slowbro    (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Slowbro    (  0, 0, 0, 0, 1, pokemon.Slowbro.get_default_color_0(), pokemon.Slowbro.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Slowbro')
@@ -2092,6 +3289,9 @@ class test_Slowbro(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "The Shellder that is latched onto Slowpoke's tail is said to feed on the host's left over scraps.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Hermit Crab Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 63)
@@ -2108,7 +3308,19 @@ class test_Slowbro(unittest.TestCase): # {{{
 
 class test_Magnemite(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Magnemite  (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Magnemite  (  0, 0, 0, 0, 1, pokemon.Magnemite.get_default_color_0(), pokemon.Magnemite.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Magnemite')
@@ -2118,6 +3330,9 @@ class test_Magnemite(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Uses anti-gravity to stay suspended. Appears without warning and uses Thunder Wave and similar moves.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Magnet Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 12)
@@ -2134,7 +3349,19 @@ class test_Magnemite(unittest.TestCase): # {{{
 
 class test_Magneton(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Magneton   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Magneton   (  0, 0, 0, 0, 1, pokemon.Magneton.get_default_color_0(), pokemon.Magneton.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Magneton')
@@ -2144,6 +3371,9 @@ class test_Magneton(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Formed by several Magnemites linked together. They frequently appear when sunspots flare up.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Magnet Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -2160,7 +3390,19 @@ class test_Magneton(unittest.TestCase): # {{{
 
 class test_Farfetchd(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Farfetchd  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Farfetchd  (  0, 0, 0, 0, 1, pokemon.Farfetchd.get_default_color_0(), pokemon.Farfetchd.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Farfetch\'d')
@@ -2170,6 +3412,9 @@ class test_Farfetchd(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "The sprig of green onions it holds is its weapon. It is used much like a metal sword.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Wild Duck Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 31)
@@ -2186,7 +3431,19 @@ class test_Farfetchd(unittest.TestCase): # {{{
 
 class test_Doduo(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Doduo      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Doduo      (  0, 0, 0, 0, 1, pokemon.Doduo.get_default_color_0(), pokemon.Doduo.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Doduo')
@@ -2196,6 +3453,9 @@ class test_Doduo(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Twin Bird Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 55)
@@ -2212,7 +3472,19 @@ class test_Doduo(unittest.TestCase): # {{{
 
 class test_Dodrio(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Dodrio     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Dodrio     (  0, 0, 0, 0, 1, pokemon.Dodrio.get_default_color_0(), pokemon.Dodrio.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Dodrio')
@@ -2222,6 +3494,9 @@ class test_Dodrio(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Triple Bird Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 71)
@@ -2238,7 +3513,19 @@ class test_Dodrio(unittest.TestCase): # {{{
 
 class test_Seel(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Seel       (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.Seel       (  0, 0, 0, 0, 1, pokemon.Seel.get_default_color_0(), pokemon.Seel.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Seel')
@@ -2248,6 +3535,9 @@ class test_Seel(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "The protruding horn on its head is very hard. It is used for bashing through thick ice.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Sea Lion Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 43)
@@ -2264,7 +3554,19 @@ class test_Seel(unittest.TestCase): # {{{
 
 class test_Dewgong(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Dewgong    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.Dewgong    (  0, 0, 0, 0, 1, pokemon.Dewgong.get_default_color_0(), pokemon.Dewgong.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Dewgong')
@@ -2274,6 +3576,9 @@ class test_Dewgong(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Sea Lion Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 67)
@@ -2290,7 +3595,19 @@ class test_Dewgong(unittest.TestCase): # {{{
 
 class test_Grimer(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Grimer     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Grimer     (  0, 0, 0, 0, 1, pokemon.Grimer.get_default_color_0(), pokemon.Grimer.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Grimer')
@@ -2300,6 +3617,9 @@ class test_Grimer(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Sludge Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 35)
@@ -2316,7 +3636,19 @@ class test_Grimer(unittest.TestCase): # {{{
 
 class test_Muk(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Muk        (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Muk        (  0, 0, 0, 0, 1, pokemon.Muk.get_default_color_0(), pokemon.Muk.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Muk')
@@ -2326,6 +3658,9 @@ class test_Muk(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Sludge Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 47)
@@ -2342,7 +3677,19 @@ class test_Muk(unittest.TestCase): # {{{
 
 class test_Shellder(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Shellder   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Shellder   (  0, 0, 0, 0, 1, pokemon.Shellder.get_default_color_0(), pokemon.Shellder.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Shellder')
@@ -2352,6 +3699,9 @@ class test_Shellder(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Bivalve Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 12)
@@ -2368,7 +3718,19 @@ class test_Shellder(unittest.TestCase): # {{{
 
 class test_Cloyster(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Cloyster   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Cloyster   (  0, 0, 0, 0, 1, pokemon.Cloyster.get_default_color_0(), pokemon.Cloyster.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Cloyster')
@@ -2378,6 +3740,9 @@ class test_Cloyster(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "When attacked, it launches its horns in quick volleys. Its innards have never been seen.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Bivalve Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 59)
@@ -2394,7 +3759,19 @@ class test_Cloyster(unittest.TestCase): # {{{
 
 class test_Gastly(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Gastly     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Gastly     (  0, 0, 0, 0, 1, pokemon.Gastly.get_default_color_0(), pokemon.Gastly.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Gastly')
@@ -2404,6 +3781,9 @@ class test_Gastly(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"Almost invisible, this gaseous Pokémon cloaks the target and puts it to sleep without notice.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Gas Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 51)
@@ -2420,7 +3800,19 @@ class test_Gastly(unittest.TestCase): # {{{
 
 class test_Haunter(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Haunter    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Haunter    (  0, 0, 0, 0, 1, pokemon.Haunter.get_default_color_0(), pokemon.Haunter.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Haunter')
@@ -2430,6 +3822,9 @@ class test_Haunter(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Because of its ability to slip through block walls, it is said to be from another dimension.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Gas Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 63)
@@ -2446,7 +3841,19 @@ class test_Haunter(unittest.TestCase): # {{{
 
 class test_Gengar(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Gengar     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Gengar     (  0, 0, 0, 0, 1, pokemon.Gengar.get_default_color_0(), pokemon.Gengar.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Gengar')
@@ -2456,6 +3863,9 @@ class test_Gengar(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"Under a full moon, this Pokémon likes to mimic the shadows of people and laugh at their fright.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Shadow Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 59)
@@ -2472,7 +3882,19 @@ class test_Gengar(unittest.TestCase): # {{{
 
 class test_Onix(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Onix       (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Onix       (  0, 0, 0, 0, 1, pokemon.Onix.get_default_color_0(), pokemon.Onix.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Onix')
@@ -2482,6 +3904,9 @@ class test_Onix(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Rock Snake Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 346)
@@ -2498,7 +3923,19 @@ class test_Onix(unittest.TestCase): # {{{
 
 class test_Drowzee(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Drowzee    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Drowzee( 0, 0, 0, 0, 1, pokemon.Drowzee.get_default_color_0(), pokemon.Drowzee.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Drowzee')
@@ -2508,6 +3945,9 @@ class test_Drowzee(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Hypnosis Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -2524,7 +3964,19 @@ class test_Drowzee(unittest.TestCase): # {{{
 
 class test_Hypno(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Hypno      (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Hypno( 0, 0, 0, 0, 1, pokemon.Hypno.get_default_color_0(), pokemon.Hypno.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Hypno')
@@ -2534,6 +3986,9 @@ class test_Hypno(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "When it locks eyes with an enemy, it will use a mix of PSI moves such as Hypnosis and Confusion.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Hypnosis Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 63)
@@ -2550,7 +4005,19 @@ class test_Hypno(unittest.TestCase): # {{{
 
 class test_Krabby(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Krabby     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon  = pokemon.Krabby     (  0, 0, 0, 0, 1, pokemon.Krabby.get_default_color_0(), pokemon.Krabby.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Krabby')
@@ -2560,6 +4027,9 @@ class test_Krabby(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its pincers are not only powerful weapons, they are used for balance when walking sideways.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"River Crab Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 16)
@@ -2576,7 +4046,19 @@ class test_Krabby(unittest.TestCase): # {{{
 
 class test_Kingler(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Kingler    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon  = pokemon.Kingler    (  0, 0, 0, 0, 1, pokemon.Kingler.get_default_color_0(), pokemon.Kingler.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Kingler')
@@ -2586,6 +4068,9 @@ class test_Kingler(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Pincer Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 51)
@@ -2602,7 +4087,19 @@ class test_Kingler(unittest.TestCase): # {{{
 
 class test_Voltorb(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Voltorb    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Voltorb( 0, 0, 0, 0, 1, pokemon.Voltorb.get_default_color_0(), pokemon.Voltorb.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Voltorb')
@@ -2612,6 +4109,9 @@ class test_Voltorb(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"Usually found in power plants. Easily mistaken for a Poké Ball, they have zapped many people.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Ball Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 20)
@@ -2628,7 +4128,19 @@ class test_Voltorb(unittest.TestCase): # {{{
 
 class test_Electrode(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Electrode  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Electrode( 0, 0, 0, 0, 1, pokemon.Electrode.get_default_color_0(), pokemon.Electrode.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Electrode')
@@ -2638,6 +4150,9 @@ class test_Electrode(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "It stores electric energy under very high pressure. It often explodes with little or no provocation.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Ball Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 47)
@@ -2654,7 +4169,19 @@ class test_Electrode(unittest.TestCase): # {{{
 
 class test_Exeggcute(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Exeggcute  (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Exeggcute  (  0, 0, 0, 0, 1, pokemon.Exeggcute.get_default_color_0(), pokemon.Exeggcute.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Exeggcute')
@@ -2664,6 +4191,9 @@ class test_Exeggcute(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Egg Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 16)
@@ -2680,7 +4210,19 @@ class test_Exeggcute(unittest.TestCase): # {{{
 
 class test_Exeggutor(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Exeggutor  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Exeggutor( 0, 0, 0, 0, 1, pokemon.Exeggutor.get_default_color_0(), pokemon.Exeggutor.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Exeggutor')
@@ -2690,6 +4232,9 @@ class test_Exeggutor(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Legend has it that on rare occasions, one of its heads will drop off and continue on as an Exeggcute.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Coconut Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 79)
@@ -2706,7 +4251,19 @@ class test_Exeggutor(unittest.TestCase): # {{{
 
 class test_Cubone(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Cubone     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Cubone     (  0, 0, 0, 0, 1, pokemon.Cubone.get_default_color_0(), pokemon.Cubone.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Cubone')
@@ -2716,6 +4273,9 @@ class test_Cubone(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"Because it never removes its skull helmet, no one has ever seen this Pokémon's real face.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Lonely Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 16)
@@ -2732,7 +4292,19 @@ class test_Cubone(unittest.TestCase): # {{{
 
 class test_Marowak(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Marowak    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Marowak    (  0, 0, 0, 0, 1, pokemon.Marowak.get_default_color_0(), pokemon.Marowak.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Marowak')
@@ -2742,6 +4314,9 @@ class test_Marowak(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Bone Keeper Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -2758,7 +4333,19 @@ class test_Marowak(unittest.TestCase): # {{{
 
 class test_Hitmonlee(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Hitmonlee  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Hitmonlee  (  0, 0, 0, 0, 1, pokemon.Hitmonlee.get_default_color_0(), pokemon.Hitmonlee.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Hitmonlee')
@@ -2768,6 +4355,9 @@ class test_Hitmonlee(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Kicking Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 59)
@@ -2784,7 +4374,19 @@ class test_Hitmonlee(unittest.TestCase): # {{{
 
 class test_Hitmonchan(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Hitmonchan (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Hitmonchan (  0, 0, 0, 0, 1, pokemon.Hitmonchan.get_default_color_0(), pokemon.Hitmonchan.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Hitmonchan')
@@ -2794,6 +4396,9 @@ class test_Hitmonchan(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Punching Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 55)
@@ -2810,7 +4415,19 @@ class test_Hitmonchan(unittest.TestCase): # {{{
 
 class test_Lickitung(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Lickitung  (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Lickitung  (  0, 0, 0, 0, 1, pokemon.Lickitung.get_default_color_0(), pokemon.Lickitung.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Lickitung')
@@ -2820,6 +4437,9 @@ class test_Lickitung(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its tongue can be extended like a chameleon's. It leaves a tingling sensation when it licks enemies.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Licking Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 47)
@@ -2836,7 +4456,19 @@ class test_Lickitung(unittest.TestCase): # {{{
 
 class test_Koffing(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Koffing    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Koffing    (  0, 0, 0, 0, 1, pokemon.Koffing.get_default_color_0(), pokemon.Koffing.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Koffing')
@@ -2846,6 +4478,9 @@ class test_Koffing(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Poison Gas Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 24)
@@ -2862,7 +4497,19 @@ class test_Koffing(unittest.TestCase): # {{{
 
 class test_Weezing(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Weezing    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Weezing    (  0, 0, 0, 0, 1, pokemon.Weezing.get_default_color_0(), pokemon.Weezing.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Weezing')
@@ -2872,6 +4519,9 @@ class test_Weezing(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Where two kinds of poison gases meet, 2 Koffings can fuse into a Weezing over many years.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Poison Gas Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 47)
@@ -2888,7 +4538,19 @@ class test_Weezing(unittest.TestCase): # {{{
 
 class test_Rhyhorn(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Rhyhorn    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Rhyhorn    (  0, 0, 0, 0, 1, pokemon.Rhyhorn.get_default_color_0(), pokemon.Rhyhorn.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Rhyhorn')
@@ -2898,6 +4560,9 @@ class test_Rhyhorn(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its massive bones are 1000 times harder than human bones. It can easily knock a trailer flying.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Spikes Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -2914,7 +4579,19 @@ class test_Rhyhorn(unittest.TestCase): # {{{
 
 class test_Rhydon(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Rhydon     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Rhydon     (  0, 0, 0, 0, 1, pokemon.Rhydon.get_default_color_0(), pokemon.Rhydon.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Rhydon')
@@ -2924,6 +4601,9 @@ class test_Rhydon(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Drill Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 75)
@@ -2940,7 +4620,19 @@ class test_Rhydon(unittest.TestCase): # {{{
 
 class test_Chansey(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Chansey    (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Chansey    (  0, 0, 0, 0, 1, pokemon.Chansey.get_default_color_0(), pokemon.Chansey.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Chansey')
@@ -2950,6 +4642,9 @@ class test_Chansey(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"A rare and elusive Pokémon that is said to bring happiness to those who manage to get it.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Egg Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 43)
@@ -2966,16 +4661,31 @@ class test_Chansey(unittest.TestCase): # {{{
 
 class test_Tangela(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Tangela    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.Tangela    (  0, 0, 0, 0, 1, pokemon.Tangela.get_default_color_0(), pokemon.Tangela.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Tangela')
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Pokedex_Number(self):
     self.assertEqual(str(self.my_pokemon.get_Number()).zfill(3), '114')
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "The whole body is swathed with wide vines that are similar to seaweed. Its vines shake as it walks.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Vine Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -2992,7 +4702,19 @@ class test_Tangela(unittest.TestCase): # {{{
 
 class test_Kangaskhan(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Kangaskhan (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Kangaskhan (  0, 0, 0, 0, 1, pokemon.Kangaskhan.get_default_color_0(), pokemon.Kangaskhan.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Kangaskhan')
@@ -3002,6 +4724,9 @@ class test_Kangaskhan(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "The infant rarely ventures out of its mother's protective pouch until it is 3 years old.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Parent Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 87)
@@ -3018,7 +4743,19 @@ class test_Kangaskhan(unittest.TestCase): # {{{
 
 class test_Horsea(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Horsea     (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon  = pokemon.Horsea     (  0, 0, 0, 0, 1, pokemon.Horsea.get_default_color_0(), pokemon.Horsea.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Horsea')
@@ -3028,6 +4765,9 @@ class test_Horsea(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Known to shoot down flying bugs with precision blasts of ink from the surface of the water.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Dragon Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 16)
@@ -3044,7 +4784,19 @@ class test_Horsea(unittest.TestCase): # {{{
 
 class test_Seadra(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Seadra     (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon  = pokemon.Seadra     (  0, 0, 0, 0, 1, pokemon.Seadra.get_default_color_0(), pokemon.Seadra.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Seadra')
@@ -3054,6 +4806,9 @@ class test_Seadra(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Capable of swimming backwards by rapidly flapping its wing-like pectoral fins and stout tail.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Dragon Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 47)
@@ -3070,7 +4825,19 @@ class test_Seadra(unittest.TestCase): # {{{
 
 class test_Goldeen(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Goldeen    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon  = pokemon.Goldeen    (  0, 0, 0, 0, 1, pokemon.Goldeen.get_default_color_0(), pokemon.Goldeen.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Goldeen')
@@ -3080,6 +4847,9 @@ class test_Goldeen(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Goldfish Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 24)
@@ -3096,7 +4866,19 @@ class test_Goldeen(unittest.TestCase): # {{{
 
 class test_Seaking(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Seaking    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon  = pokemon.Seaking    (  0, 0, 0, 0, 1, pokemon.Seaking.get_default_color_0(), pokemon.Seaking.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Seaking')
@@ -3106,6 +4888,9 @@ class test_Seaking(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Goldfish Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 51)
@@ -3122,7 +4907,19 @@ class test_Seaking(unittest.TestCase): # {{{
 
 class test_Staryu(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Staryu     (  0, 0, 0, 0, 1, NEAR_BLACK, (255,165,82),  (214,82,49),   WHITE, screen)
+    self.my_pokemon  = pokemon.Staryu     (  0, 0, 0, 0, 1, pokemon.Staryu.get_default_color_0(), pokemon.Staryu.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Staryu')
@@ -3132,6 +4929,9 @@ class test_Staryu(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"An enigmatic Pokémon that can effortlessly regenerate any appendage it loses in battle.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Star Shape Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 31)
@@ -3148,7 +4948,19 @@ class test_Staryu(unittest.TestCase): # {{{
 
 class test_Starmie(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Starmie    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Starmie    (  0, 0, 0, 0, 1, pokemon.Starmie.get_default_color_0(), pokemon.Starmie.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Starmie')
@@ -3158,6 +4970,9 @@ class test_Starmie(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Mysterious Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 43)
@@ -3174,7 +4989,19 @@ class test_Starmie(unittest.TestCase): # {{{
 
 class test_Mr_Mime(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Mr_Mime    (  0, 0, 0, 0, 1, NEAR_BLACK, (247,181,197), (230,123,173), WHITE, screen)
+    self.my_pokemon  = pokemon.Mr_Mime    (  0, 0, 0, 0, 1, pokemon.Mr_Mime.get_default_color_0(), pokemon.Mr_Mime.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Mr. Mime')
@@ -3184,6 +5011,9 @@ class test_Mr_Mime(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "If interrupted while it is miming, it will slap around the offender with its broad hands.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Barrier Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 51)
@@ -3200,7 +5030,19 @@ class test_Mr_Mime(unittest.TestCase): # {{{
 
 class test_Scyther(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Scyther    (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Scyther( 0, 0, 0, 0, 1, pokemon.Scyther.get_default_color_0(), pokemon.Scyther.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Scyther')
@@ -3210,6 +5052,9 @@ class test_Scyther(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "With ninja-like agility and speed, it can create the illusion that there is more than one.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Mantis Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 59)
@@ -3226,7 +5071,19 @@ class test_Scyther(unittest.TestCase): # {{{
 
 class test_Jynx(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Jynx       (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
+    self.my_pokemon  = pokemon.Jynx       (  0, 0, 0, 0, 1, pokemon.Jynx.get_default_color_0(), pokemon.Jynx.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,140))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (132,115,156))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Jynx')
@@ -3236,6 +5093,9 @@ class test_Jynx(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Human Shape Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 55)
@@ -3252,7 +5112,19 @@ class test_Jynx(unittest.TestCase): # {{{
 
 class test_Electabuzz(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Electabuzz (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Electabuzz( 0, 0, 0, 0, 1, pokemon.Electabuzz.get_default_color_0(), pokemon.Electabuzz.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Electabuzz')
@@ -3262,6 +5134,9 @@ class test_Electabuzz(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Normally found near power plants, they can wander away and cause major blackouts in cities.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Electric Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 43)
@@ -3278,7 +5153,19 @@ class test_Electabuzz(unittest.TestCase): # {{{
 
 class test_Magmar(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Magmar     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Magmar( 0, 0, 0, 0, 1, pokemon.Magmar.get_default_color_0(), pokemon.Magmar.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Magmar')
@@ -3288,6 +5175,9 @@ class test_Magmar(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its body always burns with an orange glow that enables it to hide perfectly among flames.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Spitfire Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 51)
@@ -3304,7 +5194,19 @@ class test_Magmar(unittest.TestCase): # {{{
 
 class test_Pinsir(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Pinsir     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Pinsir     (  0, 0, 0, 0, 1, pokemon.Pinsir.get_default_color_0(), pokemon.Pinsir.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Pinsir')
@@ -3314,6 +5216,9 @@ class test_Pinsir(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "If it fails to crush the victim in its pincers, it will swing it around and toss it hard.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Stag Beetle Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 59)
@@ -3330,7 +5235,19 @@ class test_Pinsir(unittest.TestCase): # {{{
 
 class test_Tauros(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Tauros     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Tauros     (  0, 0, 0, 0, 1, pokemon.Tauros.get_default_color_0(), pokemon.Tauros.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Tauros')
@@ -3340,6 +5257,9 @@ class test_Tauros(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "When it targets an enemy, it charges furiously while whipping its body with its long tails.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Wild Bull Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 55)
@@ -3356,7 +5276,19 @@ class test_Tauros(unittest.TestCase): # {{{
 
 class test_Magikarp(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Magikarp   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon  = pokemon.Magikarp   (  0, 0, 0, 0, 1, pokemon.Magikarp.get_default_color_0(), pokemon.Magikarp.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Magikarp')
@@ -3366,6 +5298,9 @@ class test_Magikarp(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Fish Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 35)
@@ -3382,7 +5317,19 @@ class test_Magikarp(unittest.TestCase): # {{{
 
 class test_Gyrados(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Gyrados    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189), (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.Gyrados    (  0, 0, 0, 0, 1, pokemon.Gyrados.get_default_color_0(), pokemon.Gyrados.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Gyrados')
@@ -3392,6 +5339,9 @@ class test_Gyrados(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Atrocious Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 256)
@@ -3408,7 +5358,19 @@ class test_Gyrados(unittest.TestCase): # {{{
 
 class test_Lapras(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Lapras     (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon  = pokemon.Lapras     (  0, 0, 0, 0, 1, pokemon.Lapras.get_default_color_0(), pokemon.Lapras.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Lapras')
@@ -3418,6 +5380,9 @@ class test_Lapras(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"A Pokémon that has been overhunted almost to extinction. It can ferry people across the water.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Transport Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 98)
@@ -3434,7 +5399,19 @@ class test_Lapras(unittest.TestCase): # {{{
 
 class test_Ditto(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Ditto      (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Ditto      (  0, 0, 0, 0, 1, pokemon.Ditto.get_default_color_0(), pokemon.Ditto.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Ditto')
@@ -3444,6 +5421,9 @@ class test_Ditto(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Transform Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 12)
@@ -3460,7 +5440,19 @@ class test_Ditto(unittest.TestCase): # {{{
 
 class test_Eevee(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Eevee      (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Eevee      (  0, 0, 0, 0, 1, pokemon.Eevee.get_default_color_0(), pokemon.Eevee.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Eevee')
@@ -3470,6 +5462,9 @@ class test_Eevee(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its genetic code is irregular. It may mutate if it is exposed to radiation from element Stones.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Evolution Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 12)
@@ -3486,7 +5481,19 @@ class test_Eevee(unittest.TestCase): # {{{
 
 class test_Vaporeon(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Vaporeon   (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon  = pokemon.Vaporeon   (  0, 0, 0, 0, 1, pokemon.Vaporeon.get_default_color_0(), pokemon.Vaporeon.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Vaporeon')
@@ -3496,6 +5503,9 @@ class test_Vaporeon(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Bubble Jet Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -3512,7 +5522,19 @@ class test_Vaporeon(unittest.TestCase): # {{{
 
 class test_Jolteon(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Jolteon    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Jolteon( 0, 0, 0, 0, 1, pokemon.Jolteon.get_default_color_0(), pokemon.Jolteon.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Jolteon')
@@ -3522,6 +5544,9 @@ class test_Jolteon(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "It accumulates negative ions in the atmosphere to blast out 10000-volt lightning bolts.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Lightning Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 31)
@@ -3538,7 +5563,19 @@ class test_Jolteon(unittest.TestCase): # {{{
 
 class test_Flareon(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Flareon    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Flareon( 0, 0, 0, 0, 1, pokemon.Flareon.get_default_color_0(), pokemon.Flareon.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Flareon')
@@ -3548,6 +5585,9 @@ class test_Flareon(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "When storing thermal energy in its body, its temperature could soar to over 1600 degrees.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Flame Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 35)
@@ -3564,7 +5604,19 @@ class test_Flareon(unittest.TestCase): # {{{
 
 class test_Porygon(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Porygon    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Porygon    (  0, 0, 0, 0, 1, pokemon.Porygon.get_default_color_0(), pokemon.Porygon.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Porygon')
@@ -3574,6 +5626,9 @@ class test_Porygon(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"A Pokémon that consists entirely of programming code. Capable of moving freely in cyberspace.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Virtual Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 31)
@@ -3590,7 +5645,19 @@ class test_Porygon(unittest.TestCase): # {{{
 
 class test_Omanyte(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Omanyte    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.Omanyte    (  0, 0, 0, 0, 1, pokemon.Omanyte.get_default_color_0(), pokemon.Omanyte.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Omanyte')
@@ -3600,6 +5667,9 @@ class test_Omanyte(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Although long extinct, in rare cases, it can be genetically resurrected from fossils.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Spiral Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 16)
@@ -3616,7 +5686,19 @@ class test_Omanyte(unittest.TestCase): # {{{
 
 class test_Omastar(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Omastar    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.Omastar    (  0, 0, 0, 0, 1, pokemon.Omastar.get_default_color_0(), pokemon.Omastar.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Omastar')
@@ -3626,6 +5708,9 @@ class test_Omastar(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"A prehistoric Pokémon that died out when its heavy shell made it impossible to catch prey.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Spiral Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 39)
@@ -3642,7 +5727,19 @@ class test_Omastar(unittest.TestCase): # {{{
 
 class test_Kabuto(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Kabuto     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Kabuto     (  0, 0, 0, 0, 1, pokemon.Kabuto.get_default_color_0(), pokemon.Kabuto.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Kabuto')
@@ -3652,6 +5749,9 @@ class test_Kabuto(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"A Pokémon that was resurrected from a fossil found in what was once the ocean floor eons ago.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Shellfish Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 20)
@@ -3668,7 +5768,19 @@ class test_Kabuto(unittest.TestCase): # {{{
 
 class test_Kabutops(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Kabutops   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Kabutops   (  0, 0, 0, 0, 1, pokemon.Kabutops.get_default_color_0(), pokemon.Kabutops.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Kabutops')
@@ -3678,6 +5790,9 @@ class test_Kabutops(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body fluids.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Shellfish Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 51)
@@ -3694,7 +5809,19 @@ class test_Kabutops(unittest.TestCase): # {{{
 
 class test_Aerodactyl(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Aerodactyl (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Aerodactyl (  0, 0, 0, 0, 1, pokemon.Aerodactyl.get_default_color_0(), pokemon.Aerodactyl.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Aerodactyl')
@@ -3704,6 +5831,9 @@ class test_Aerodactyl(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"A ferocious, prehistoric Pokémon that goes for the enemy's throat with its serrated saw-like fangs.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Fossil Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 71)
@@ -3720,7 +5850,19 @@ class test_Aerodactyl(unittest.TestCase): # {{{
 
 class test_Snorlax(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Snorlax    (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon  = pokemon.Snorlax    (  0, 0, 0, 0, 1, pokemon.Snorlax.get_default_color_0(), pokemon.Snorlax.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Snorlax')
@@ -3730,6 +5872,9 @@ class test_Snorlax(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Sleeping Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 83)
@@ -3746,7 +5891,19 @@ class test_Snorlax(unittest.TestCase): # {{{
 
 class test_Articuno(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Articuno   (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.Articuno   (  0, 0, 0, 0, 1, pokemon.Articuno.get_default_color_0(), pokemon.Articuno.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Articuno')
@@ -3756,6 +5913,9 @@ class test_Articuno(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"A legendary bird Pokémon that is said to appear to doomed people who are lost in icy mountains.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Freeze Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 67)
@@ -3772,7 +5932,19 @@ class test_Articuno(unittest.TestCase): # {{{
 
 class test_Zapdos(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Zapdos     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Zapdos( 0, 0, 0, 0, 1, pokemon.Zapdos.get_default_color_0(), pokemon.Zapdos.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Zapdos')
@@ -3782,6 +5954,9 @@ class test_Zapdos(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"A legendary bird Pokémon that is said to appear from clouds while dropping enormous lightning bolts.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Electric Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 63)
@@ -3798,7 +5973,19 @@ class test_Zapdos(unittest.TestCase): # {{{
 
 class test_Moltres(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Moltres    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Moltres( 0, 0, 0, 0, 1, pokemon.Moltres.get_default_color_0(), pokemon.Moltres.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Moltres')
@@ -3808,6 +5995,9 @@ class test_Moltres(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Flame Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 79)
@@ -3824,7 +6014,19 @@ class test_Moltres(unittest.TestCase): # {{{
 
 class test_Dratini(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Dratini    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon  = pokemon.Dratini    (  0, 0, 0, 0, 1, pokemon.Dratini.get_default_color_0(), pokemon.Dratini.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Dratini')
@@ -3834,6 +6036,9 @@ class test_Dratini(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"Long considered a mythical Pokémon until recently when a small colony was found living underwater.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Dragon Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 71)
@@ -3850,7 +6055,19 @@ class test_Dratini(unittest.TestCase): # {{{
 
 class test_Dragonair(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Dragonair  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon  = pokemon.Dragonair  (  0, 0, 0, 0, 1, pokemon.Dragonair.get_default_color_0(), pokemon.Dragonair.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Dragonair')
@@ -3860,6 +6077,9 @@ class test_Dragonair(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"A mystical Pokémon that exudes a gentle aura. Has the ability to change climate conditions.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Dragon Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 157)
@@ -3876,7 +6096,19 @@ class test_Dragonair(unittest.TestCase): # {{{
 
 class test_Dragonite(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Dragonite  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon  = pokemon.Dragonite  (  0, 0, 0, 0, 1, pokemon.Dragonite.get_default_color_0(), pokemon.Dragonite.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Dragonite')
@@ -3886,6 +6118,9 @@ class test_Dragonite(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), u"An extremely rarely seen marine Pokémon. Its intelligence is said to match that of humans.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Dragon Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 87)
@@ -3902,7 +6137,19 @@ class test_Dragonite(unittest.TestCase): # {{{
 
 class test_Mewtwo(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Mewtwo     (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
+    self.my_pokemon  = pokemon.Mewtwo     (  0, 0, 0, 0, 1, pokemon.Mewtwo.get_default_color_0(), pokemon.Mewtwo.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,140))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (132,115,156))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Mewtwo')
@@ -3912,6 +6159,9 @@ class test_Mewtwo(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"Genetic Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 79)
@@ -3928,7 +6178,19 @@ class test_Mewtwo(unittest.TestCase): # {{{
 
 class test_Mew(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Mew        (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
+    self.my_pokemon  = pokemon.Mew        (  0, 0, 0, 0, 1, pokemon.Mew.get_default_color_0(), pokemon.Mew.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,140))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (132,115,156))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Mew')
@@ -3938,6 +6200,9 @@ class test_Mew(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u"New Species Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 16)
@@ -3954,7 +6219,19 @@ class test_Mew(unittest.TestCase): # {{{
 
 class test_Missingno(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Missingno  (  0, 0, 0, 0, 1, (18,11,11), (117,101,142), (238,168,126), WHITE, screen)
+    self.my_pokemon  = pokemon.Missingno  (  0, 0, 0, 0, 1, pokemon.Missingno.get_default_color_0(), pokemon.Missingno.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (238,168,126))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (117,101,142))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (18,11,11))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'MISSINGNO.')
@@ -3964,6 +6241,9 @@ class test_Missingno(unittest.TestCase): # {{{
 
   def test_Pokedex_Message(self):
     self.assertEqual(self.my_pokemon.get_Pokedex_Message(), "")
+
+  def test_Pokemon_Category(self):
+    self.assertEqual(self.my_pokemon.get_Pokemon_Category(), u" ??? Pokémon")
 
   def test_Pokemon_Height_US(self):
     self.assertEqual(self.my_pokemon.get_Height_US(), 120)
