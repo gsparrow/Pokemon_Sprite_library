@@ -34,7 +34,7 @@ done = False
 clock = pygame.time.Clock()
 
 #my_pokemon  = items.Pokeball     (  0, 0, 0, 0, 1, NEAR_BLACK, WHITE,         (255,123,123),        screen)
-#my_pokemon  = pokemon.Bulbasaur  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+my_pokemon  = pokemon.Bulbasaur  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
 #my_pokemon  = pokemon.Ivysaur    (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
 #my_pokemon  = pokemon.Venasaur   (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
 #my_pokemon  = pokemon.Charmander (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
@@ -59,7 +59,7 @@ clock = pygame.time.Clock()
 #my_pokemon  = pokemon.Ekans      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 #my_pokemon  = pokemon.Arbok      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
 #my_pokemon  = pokemon.Pikachu    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
-my_pokemon  = pokemon.Raichu     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+#my_pokemon  = pokemon.Raichu     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
 #my_pokemon  = pokemon.Sandshrew  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 #my_pokemon  = pokemon.Sandslash  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
 #my_pokemon  = pokemon.NidoranF   (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
@@ -201,13 +201,16 @@ while not done:
   #limit the clock to ten loops per second
   clock.tick(3)
 
-  for event in pygame.event.get():							#allows you to exit by clicking x
+  for event in pygame.event.get():					       	    #allows you to exit by clicking x
     if event.type == pygame.QUIT:
       done =True
     elif event.type == pygame.MOUSEBUTTONUP:
       None 
+    elif event.type == pygame.KEYDOWN:
+      if event.key == pygame.K_F10:
+        pygame.image.save(screen, (str(my_pokemon.get_Number()).zfill(3) + ".bmp"))
 
-  screen.fill(RED)									#arbitrary color, good for spotting mistakes in the sprite
+  screen.fill(WHITE)								    #arbitrary color, good for spotting mistakes in the sprite
 
   my_pokemon.draw()
 
