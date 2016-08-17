@@ -189,7 +189,7 @@ done = False
 clock = pygame.time.Clock()
 
 #my_pokemon  = items.Pokeball     (  0, 0, 0, 0, 1, NEAR_BLACK, WHITE,         (255,123,123),        screen)
-#my_pokemon  = Bulbasaur  (  0, 0, 0, 0, 1, Bulbasaur.get_default_color_0(), Bulbasaur.get_default_color_1(), screen)
+my_pokemon  = Bulbasaur  (  0, 0, 0, 0, 1, Bulbasaur.get_default_color_0(), Bulbasaur.get_default_color_1(), screen)
 #my_pokemon  = Ivysaur    (  0, 0, 0, 0, 1, Ivysaur.get_default_color_0(),   Ivysaur.get_default_color_1(),   screen)
 #my_pokemon  = Venasaur   (  0, 0, 0, 0, 1, Venasaur.get_default_color_0(),  Venasaur.get_default_color_1(),  screen)
 #my_pokemon  = Charmander (  0, 0, 0, 0, 1, Charmander.get_default_color_0(), Charmander.get_default_color_1(), screen)
@@ -240,7 +240,7 @@ clock = pygame.time.Clock()
 #my_pokemon  = Venomoth   (  0, 0, 0, 0, 1, Venomoth.get_default_color_0(), Venomoth.get_default_color_1(), screen)
 #my_pokemon  = Diglet     (  0, 0, 0, 0, 1, Diglet.get_default_color_0(), Diglet.get_default_color_1(), screen)
 #my_pokemon  = Dugtrio    (  0, 0, 0, 0, 1, Dugtrio.get_default_color_0(), Dugtrio.get_default_color_1(), screen)
-#my_pokemon  = Meowth     (  0, 0, 0, 0, 12, Meowth.get_default_color_0(), Meowth.get_default_color_1(), screen)
+#my_pokemon  = Meowth     (  0, 0, 0, 0, 1, Meowth.get_default_color_0(), Meowth.get_default_color_1(), screen)
 #my_pokemon  = Persian    (  0, 0, 0, 0, 1, Persian.get_default_color_0(), Persian.get_default_color_1(), screen)
 #my_pokemon  = Psyduck    (  0, 0, 0, 0, 1, Psyduck.get_default_color_0(), Psyduck.get_default_color_1(), screen)
 #my_pokemon  = Golduck    (  0, 0, 0, 0, 1, Golduck.get_default_color_0(), Golduck.get_default_color_1(), screen)
@@ -340,7 +340,7 @@ clock = pygame.time.Clock()
 #my_pokemon  = Dragonite  (  0, 0, 0, 0, 1, Dragonite.get_default_color_0(), Dragonite.get_default_color_1(), screen)
 #my_pokemon  = Mewtwo     (  0, 0, 0, 0, 1, Mewtwo.get_default_color_0(), Mewtwo.get_default_color_1(), screen)
 #my_pokemon  = Mew        (  0, 0, 0, 0, 1, Mew.get_default_color_0(), Mew.get_default_color_1(), screen)
-my_pokemon  = Missingno  (  0, 0, 0, 0, 1, Missingno.get_default_color_0(), Missingno.get_default_color_1(), screen)
+#my_pokemon  = Missingno  (  0, 0, 0, 0, 1, Missingno.get_default_color_0(), Missingno.get_default_color_1(), screen)
 											#set sprite at location x,y, with velocity x,y,
 											#with size multiplier 1,  with the following four colors
 											#on the main screen
