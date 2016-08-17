@@ -367,7 +367,7 @@ while not done:
 
   screen.fill(RED)								    #arbitrary color, good for spotting mistakes in the sprite
 
-  my_pokemon.draw()
+  my_pokemon.draw_front()
 
   pygame.display.flip()
 
