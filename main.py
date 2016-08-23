@@ -351,6 +351,8 @@ print str(my_pokemon.get_Height_US()) + "in"
 print str(my_pokemon.get_Height_SI()) + "m"
 print str(my_pokemon.get_Weight_US()) + "lbs"
 print str(my_pokemon.get_Weight_SI()) + "kg"
+print str(my_pokemon.get_front_height())
+print str(my_pokemon.get_front_width())
 while not done:
 
   #limit the clock to ten loops per second
