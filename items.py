@@ -25,7 +25,13 @@ class Pokeball (my_sprite): # {{{
   def get_Pokedex_Message(self):
     return "Allows the player to catch wild Pokémon."
 
-  def draw(self):
+  def get_front_height(self):
+    return 12*self.size
+
+  def get_front_width(self):
+    return 12*self.size
+
+  def draw(self): # {{{
     ###  0 ### {{{
     pygame.draw.rect(self.screen, self.color_1, [self.my_x +  4*self.size,  self.my_y +  0*self.size,  4*self.size, 1*self.size])
     # }}}
@@ -87,6 +93,6 @@ class Pokeball (my_sprite): # {{{
     # }}}
     ### 11 ### {{{
     pygame.draw.rect(self.screen, self.color_1, [self.my_x +  4*self.size,  self.my_y + 11*self.size,  4*self.size, 1*self.size])
-    # }}}
+    # }}} }}}
 # }}}
 

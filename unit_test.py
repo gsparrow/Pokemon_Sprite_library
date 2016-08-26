@@ -28,7 +28,43 @@ clock = pygame.time.Clock()
 
 class test_Bulbasaur(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Bulbasaur  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Bulbasaur( 0, 0, 0, 0, 1, pokemon.Bulbasaur.get_default_color_0(), pokemon.Bulbasaur.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Bulbasaur')
@@ -57,7 +93,43 @@ class test_Bulbasaur(unittest.TestCase): # {{{
 
 class test_Ivysaur(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Ivysaur  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Ivysaur( 0, 0, 0, 0, 1, pokemon.Ivysaur.get_default_color_0(), pokemon.Ivysaur.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Ivysaur')
@@ -86,7 +158,43 @@ class test_Ivysaur(unittest.TestCase): # {{{
 
 class test_Venasaur(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Venasaur  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Venasaur( 0, 0, 0, 0, 1, pokemon.Venasaur.get_default_color_0(), pokemon.Venasaur.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Venasaur')
@@ -115,7 +223,43 @@ class test_Venasaur(unittest.TestCase): # {{{
 
 class test_Charmander(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Charmander (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Charmander( 0, 0, 0, 0, 1, pokemon.Charmander.get_default_color_0(), pokemon.Charmander.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Charmander')
@@ -144,7 +288,43 @@ class test_Charmander(unittest.TestCase): # {{{
 
 class test_Charmeleon(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Charmeleon (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Charmeleon( 0, 0, 0, 0, 1, pokemon.Charmeleon.get_default_color_0(), pokemon.Charmeleon.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Charmeleon')
@@ -173,7 +353,43 @@ class test_Charmeleon(unittest.TestCase): # {{{
 
 class test_Charizard(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Charizard (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Charizard( 0, 0, 0, 0, 1, pokemon.Charizard.get_default_color_0(), pokemon.Charizard.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Charizard')
@@ -202,7 +418,43 @@ class test_Charizard(unittest.TestCase): # {{{
 
 class test_Squirtle(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Squirtle   (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon = pokemon.Squirtle( 0, 0, 0, 0, 1, pokemon.Squirtle.get_default_color_0(), pokemon.Squirtle.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Squirtle')
@@ -231,7 +483,43 @@ class test_Squirtle(unittest.TestCase): # {{{
 
 class test_Wartortle(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Wartortle   (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon = pokemon.Wartortle( 0, 0, 0, 0, 1, pokemon.Wartortle.get_default_color_0(), pokemon.Wartortle.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Wartortle')
@@ -260,7 +548,43 @@ class test_Wartortle(unittest.TestCase): # {{{
 
 class test_Blastoise(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Blastoise   (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon = pokemon.Blastoise( 0, 0, 0, 0, 1, pokemon.Blastoise.get_default_color_0(), pokemon.Blastoise.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Blastoise')
@@ -289,7 +613,43 @@ class test_Blastoise(unittest.TestCase): # {{{
 
 class test_Caterpie(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Caterpie   (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Caterpie( 0, 0, 0, 0, 1, pokemon.Caterpie.get_default_color_0(), pokemon.Caterpie.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Caterpie')
@@ -318,7 +678,43 @@ class test_Caterpie(unittest.TestCase): # {{{
 
 class test_Metapod(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Metapod   (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Metapod( 0, 0, 0, 0, 1, pokemon.Metapod.get_default_color_0(), pokemon.Metapod.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Metapod')
@@ -347,7 +743,43 @@ class test_Metapod(unittest.TestCase): # {{{
 
 class test_Butterfree(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Butterfree (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon = pokemon.Butterfree( 0, 0, 0, 0, 1, pokemon.Butterfree.get_default_color_0(), pokemon.Butterfree.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Butterfree')
@@ -376,7 +808,43 @@ class test_Butterfree(unittest.TestCase): # {{{
 
 class test_Weedle(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Weedle     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Weedle( 0, 0, 0, 0, 1, pokemon.Weedle.get_default_color_0(), pokemon.Weedle.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Weedle')
@@ -405,7 +873,43 @@ class test_Weedle(unittest.TestCase): # {{{
 
 class test_Kakuna(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Kakuna     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Kakuna( 0, 0, 0, 0, 1, pokemon.Kakuna.get_default_color_0(), pokemon.Kakuna.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Kakuna')
@@ -434,7 +938,43 @@ class test_Kakuna(unittest.TestCase): # {{{
 
 class test_Beedrill(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Beedrill     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Beedrill( 0, 0, 0, 0, 1, pokemon.Beedrill.get_default_color_0(), pokemon.Beedrill.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Beedrill')
@@ -463,7 +1003,43 @@ class test_Beedrill(unittest.TestCase): # {{{
 
 class test_Pidgey(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Pidgey     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Pidgey( 0, 0, 0, 0, 1, pokemon.Pidgey.get_default_color_0(), pokemon.Pidgey.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Pidgey')
@@ -492,7 +1068,43 @@ class test_Pidgey(unittest.TestCase): # {{{
 
 class test_Pidgeotto(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Pidgeotto     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Pidgeotto( 0, 0, 0, 0, 1, pokemon.Pidgeotto.get_default_color_0(), pokemon.Pidgeotto.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Pidgeotto')
@@ -521,7 +1133,43 @@ class test_Pidgeotto(unittest.TestCase): # {{{
 
 class test_Pidgeot(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Pidgeot     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Pidgeot( 0, 0, 0, 0, 1, pokemon.Pidgeot.get_default_color_0(), pokemon.Pidgeot.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Pidgeot')
@@ -550,7 +1198,43 @@ class test_Pidgeot(unittest.TestCase): # {{{
 
 class test_Rattata(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Rattata    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Rattata( 0, 0, 0, 0, 1, pokemon.Rattata.get_default_color_0(), pokemon.Rattata.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Rattata')
@@ -579,7 +1263,43 @@ class test_Rattata(unittest.TestCase): # {{{
 
 class test_Raticate(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Raticate    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Raticate( 0, 0, 0, 0, 1, pokemon.Raticate.get_default_color_0(), pokemon.Raticate.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Raticate')
@@ -608,7 +1328,43 @@ class test_Raticate(unittest.TestCase): # {{{
 
 class test_Spearow(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Spearow    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Spearow( 0, 0, 0, 0, 1, pokemon.Spearow.get_default_color_0(), pokemon.Spearow.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Spearow')
@@ -637,7 +1393,43 @@ class test_Spearow(unittest.TestCase): # {{{
 
 class test_Fearow(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Fearow    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Fearow( 0, 0, 0, 0, 1, pokemon.Fearow.get_default_color_0(), pokemon.Fearow.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Fearow')
@@ -666,7 +1458,43 @@ class test_Fearow(unittest.TestCase): # {{{
 
 class test_Ekans(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Ekans      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Ekans( 0, 0, 0, 0, 1, pokemon.Ekans.get_default_color_0(), pokemon.Ekans.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Ekans')
@@ -695,7 +1523,43 @@ class test_Ekans(unittest.TestCase): # {{{
 
 class test_Arbok(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Arbok      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Arbok( 0, 0, 0, 0, 1, pokemon.Arbok.get_default_color_0(), pokemon.Arbok.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Arbok')
@@ -724,7 +1588,43 @@ class test_Arbok(unittest.TestCase): # {{{
 
 class test_Pikachu(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Pikachu    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Pikachu( 0, 0, 0, 0, 1, pokemon.Pikachu.get_default_color_0(), pokemon.Pikachu.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Pikachu')
@@ -753,7 +1653,43 @@ class test_Pikachu(unittest.TestCase): # {{{
 
 class test_Raichu(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Raichu    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Raichu( 0, 0, 0, 0, 1, pokemon.Raichu.get_default_color_0(), pokemon.Raichu.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Raichu')
@@ -782,7 +1718,43 @@ class test_Raichu(unittest.TestCase): # {{{
 
 class test_Sandshrew(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Sandshrew  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Sandshrew( 0, 0, 0, 0, 1, pokemon.Sandshrew.get_default_color_0(), pokemon.Sandshrew.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Sandshrew')
@@ -811,7 +1783,43 @@ class test_Sandshrew(unittest.TestCase): # {{{
 
 class test_Sandslash(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Sandslash  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Sandslash( 0, 0, 0, 0, 1, pokemon.Sandslash.get_default_color_0(), pokemon.Sandslash.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Sandslash')
@@ -840,7 +1848,43 @@ class test_Sandslash(unittest.TestCase): # {{{
 
 class test_NidoranF(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.NidoranF   (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.NidoranF( 0, 0, 0, 0, 1, pokemon.NidoranF.get_default_color_0(), pokemon.NidoranF.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), u'Nidoran♀')
@@ -869,7 +1913,43 @@ class test_NidoranF(unittest.TestCase): # {{{
 
 class test_Nidorina(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Nidorina   (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.Nidorina( 0, 0, 0, 0, 1, pokemon.Nidorina.get_default_color_0(), pokemon.Nidorina.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Nidorina')
@@ -898,7 +1978,43 @@ class test_Nidorina(unittest.TestCase): # {{{
 
 class test_Nidoqueen(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Nidoqueen  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.Nidoqueen( 0, 0, 0, 0, 1, pokemon.Nidoqueen.get_default_color_0(), pokemon.Nidoqueen.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Nidoqueen')
@@ -927,7 +2043,43 @@ class test_Nidoqueen(unittest.TestCase): # {{{
 
 class test_NidoranM(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.NidoranM   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.NidoranM( 0, 0, 0, 0, 1, pokemon.NidoranM.get_default_color_0(), pokemon.NidoranM.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), u'Nidoran♂')
@@ -956,7 +2108,43 @@ class test_NidoranM(unittest.TestCase): # {{{
 
 class test_Nidorino(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Nidorino   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Nidorino( 0, 0, 0, 0, 1, pokemon.Nidorino.get_default_color_0(), pokemon.Nidorino.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Nidorino')
@@ -985,7 +2173,43 @@ class test_Nidorino(unittest.TestCase): # {{{
 
 class test_Nidoking(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Nidoking   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Nidoking( 0, 0, 0, 0, 1, pokemon.Nidoking.get_default_color_0(), pokemon.Nidoking.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Nidoking')
@@ -1014,7 +2238,43 @@ class test_Nidoking(unittest.TestCase): # {{{
 
 class test_Clefairy(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Clefairy   (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Clefairy( 0, 0, 0, 0, 1, pokemon.Clefairy.get_default_color_0(), pokemon.Clefairy.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Clefairy')
@@ -1043,7 +2303,43 @@ class test_Clefairy(unittest.TestCase): # {{{
 
 class test_Clefable(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Clefable   (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Clefable( 0, 0, 0, 0, 1, pokemon.Clefable.get_default_color_0(), pokemon.Clefable.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Clefable')
@@ -1072,7 +2368,43 @@ class test_Clefable(unittest.TestCase): # {{{
 
 class test_Vulpix(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Vulpix     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Vulpix( 0, 0, 0, 0, 1, pokemon.Vulpix.get_default_color_0(), pokemon.Vulpix.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Vulpix')
@@ -1101,7 +2433,43 @@ class test_Vulpix(unittest.TestCase): # {{{
 
 class test_Ninetails(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Ninetails  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Ninetails( 0, 0, 0, 0, 1, pokemon.Ninetails.get_default_color_0(), pokemon.Ninetails.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Ninetails')
@@ -1130,7 +2498,43 @@ class test_Ninetails(unittest.TestCase): # {{{
 
 class test_Jigglypuff(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Jigglypuff (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Jigglypuff( 0, 0, 0, 0, 1, pokemon.Jigglypuff.get_default_color_0(), pokemon.Jigglypuff.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Jigglypuff')
@@ -1159,7 +2563,43 @@ class test_Jigglypuff(unittest.TestCase): # {{{
 
 class test_Wigglytuff(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Wigglytuff (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Wigglytuff( 0, 0, 0, 0, 1, pokemon.Wigglytuff.get_default_color_0(), pokemon.Wigglytuff.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Wigglytuff')
@@ -1188,7 +2628,43 @@ class test_Wigglytuff(unittest.TestCase): # {{{
 
 class test_Zubat(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Zubat      (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.Zubat( 0, 0, 0, 0, 1, pokemon.Zubat.get_default_color_0(), pokemon.Zubat.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Zubat')
@@ -1217,7 +2693,43 @@ class test_Zubat(unittest.TestCase): # {{{
 
 class test_Golbat(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Golbat     (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.Golbat( 0, 0, 0, 0, 1, pokemon.Golbat.get_default_color_0(), pokemon.Golbat.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Golbat')
@@ -1246,7 +2758,43 @@ class test_Golbat(unittest.TestCase): # {{{
 
 class test_Oddish(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Oddish     (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Oddish( 0, 0, 0, 0, 1, pokemon.Oddish.get_default_color_0(), pokemon.Oddish.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Oddish')
@@ -1275,7 +2823,43 @@ class test_Oddish(unittest.TestCase): # {{{
 
 class test_Gloom(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Gloom      (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Gloom( 0, 0, 0, 0, 1, pokemon.Gloom.get_default_color_0(), pokemon.Gloom.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Gloom')
@@ -1304,7 +2888,43 @@ class test_Gloom(unittest.TestCase): # {{{
 
 class test_Vileplume(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Vileplume  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Vileplume( 0, 0, 0, 0, 1, pokemon.Vileplume.get_default_color_0(), pokemon.Vileplume.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Vileplume')
@@ -1333,7 +2953,43 @@ class test_Vileplume(unittest.TestCase): # {{{
 
 class test_Paras(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Paras      (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Paras( 0, 0, 0, 0, 1, pokemon.Paras.get_default_color_0(), pokemon.Paras.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Paras')
@@ -1362,7 +3018,43 @@ class test_Paras(unittest.TestCase): # {{{
 
 class test_Parasect(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Parasect   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Parasect( 0, 0, 0, 0, 1, pokemon.Parasect.get_default_color_0(), pokemon.Parasect.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Parasect')
@@ -1391,7 +3083,43 @@ class test_Parasect(unittest.TestCase): # {{{
 
 class test_Venonat(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Venonat    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Venonat( 0, 0, 0, 0, 1, pokemon.Venonat.get_default_color_0(), pokemon.Venonat.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Venonat')
@@ -1420,7 +3148,43 @@ class test_Venonat(unittest.TestCase): # {{{
 
 class test_Venomoth(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Venomoth   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Venomoth( 0, 0, 0, 0, 1, pokemon.Venomoth.get_default_color_0(), pokemon.Venomoth.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Venomoth')
@@ -1449,7 +3213,43 @@ class test_Venomoth(unittest.TestCase): # {{{
 
 class test_Diglet(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Diglet     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Diglet( 0, 0, 0, 0, 1, pokemon.Diglet.get_default_color_0(), pokemon.Diglet.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Diglet')
@@ -1478,7 +3278,43 @@ class test_Diglet(unittest.TestCase): # {{{
 
 class test_Dugtrio(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Dugtrio    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Dugtrio(  0, 0, 0, 0, 1, pokemon.Dugtrio.get_default_color_0(), pokemon.Dugtrio.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Dugtrio')
@@ -1507,7 +3343,43 @@ class test_Dugtrio(unittest.TestCase): # {{{
 
 class test_Meowth(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Meowth     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Meowth( 0, 0, 0, 0, 1, pokemon.Meowth.get_default_color_0(), pokemon.Meowth.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Meowth')
@@ -1536,7 +3408,43 @@ class test_Meowth(unittest.TestCase): # {{{
 
 class test_Persian(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Persian    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Persian( 0, 0, 0, 0, 1, pokemon.Persian.get_default_color_0(), pokemon.Persian.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Persian')
@@ -1565,7 +3473,43 @@ class test_Persian(unittest.TestCase): # {{{
 
 class test_Psyduck(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Psyduck    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Psyduck( 0, 0, 0, 0, 1, pokemon.Psyduck.get_default_color_0(), pokemon.Psyduck.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Psyduck')
@@ -1594,7 +3538,43 @@ class test_Psyduck(unittest.TestCase): # {{{
 
 class test_Golduck(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Golduck    (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon = pokemon.Golduck( 0, 0, 0, 0, 1, pokemon.Golduck.get_default_color_0(), pokemon.Golduck.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Golduck')
@@ -1623,7 +3603,43 @@ class test_Golduck(unittest.TestCase): # {{{
 
 class test_Mankey(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Mankey     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Mankey( 0, 0, 0, 0, 1, pokemon.Mankey.get_default_color_0(), pokemon.Mankey.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Mankey')
@@ -1652,7 +3668,43 @@ class test_Mankey(unittest.TestCase): # {{{
 
 class test_Primeape(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Primeape   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Primeape( 0, 0, 0, 0, 1, pokemon.Primeape.get_default_color_0(), pokemon.Primeape.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Primeape')
@@ -1681,7 +3733,43 @@ class test_Primeape(unittest.TestCase): # {{{
 
 class test_Growlithe(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Growlithe  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Growlithe( 0, 0, 0, 0, 1, pokemon.Growlithe.get_default_color_0(), pokemon.Growlithe.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Growlithe')
@@ -1710,7 +3798,43 @@ class test_Growlithe(unittest.TestCase): # {{{
 
 class test_Arcanine(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Arcanine   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (255,165,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Arcanine( 0, 0, 0, 0, 1, pokemon.Arcanine.get_default_color_0(), pokemon.Arcanine.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Arcanine')
@@ -1739,7 +3863,43 @@ class test_Arcanine(unittest.TestCase): # {{{
 
 class test_Poliwag(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Poliwag    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.Poliwag( 0, 0, 0, 0, 1, pokemon.Poliwag.get_default_color_0(), pokemon.Poliwag.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Poliwag')
@@ -1768,7 +3928,43 @@ class test_Poliwag(unittest.TestCase): # {{{
 
 class test_Poliwhirl(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Poliwhirl  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.Poliwhirl( 0, 0, 0, 0, 1, pokemon.Poliwhirl.get_default_color_0(), pokemon.Poliwhirl.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Poliwhirl')
@@ -1797,7 +3993,43 @@ class test_Poliwhirl(unittest.TestCase): # {{{
 
 class test_Poliwrath(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Poliwrath  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.Poliwrath( 0, 0, 0, 0, 1, pokemon.Poliwrath.get_default_color_0(), pokemon.Poliwrath.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Poliwrath')
@@ -1826,7 +4058,43 @@ class test_Poliwrath(unittest.TestCase): # {{{
 
 class test_Abra(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Abra       (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Abra( 0, 0, 0, 0, 1, pokemon.Abra.get_default_color_0(), pokemon.Abra.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Abra')
@@ -1855,7 +4123,43 @@ class test_Abra(unittest.TestCase): # {{{
 
 class test_Kadabra(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Kadabra    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Kadabra( 0, 0, 0, 0, 1, pokemon.Kadabra.get_default_color_0(), pokemon.Kadabra.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Kadabra')
@@ -1884,7 +4188,43 @@ class test_Kadabra(unittest.TestCase): # {{{
 
 class test_Alakazam(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Alakazam   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Alakazam( 0, 0, 0, 0, 1, pokemon.Alakazam.get_default_color_0(), pokemon.Alakazam.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Alakazam')
@@ -1913,7 +4253,43 @@ class test_Alakazam(unittest.TestCase): # {{{
 
 class test_Machop(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Machop     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Machop( 0, 0, 0, 0, 1, pokemon.Machop.get_default_color_0(), pokemon.Machop.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Machop')
@@ -1938,11 +4314,47 @@ class test_Machop(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 19.5)
-# }}}
+# }}}zo
 
 class test_Machoke(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Machoke    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Machoke( 0, 0, 0, 0, 1, pokemon.Machoke.get_default_color_0(), pokemon.Machoke.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Machoke')
@@ -1971,7 +4383,43 @@ class test_Machoke(unittest.TestCase): # {{{
 
 class test_Machamp(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Machamp    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Machamp( 0, 0, 0, 0, 1, pokemon.Machamp.get_default_color_0(), pokemon.Machamp.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Machamp')
@@ -2000,7 +4448,43 @@ class test_Machamp(unittest.TestCase): # {{{
 
 class test_Bellsprout(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Bellsprout (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Bellsprout( 0, 0, 0, 0, 1, pokemon.Bellsprout.get_default_color_0(), pokemon.Bellsprout.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Bellsprout')
@@ -2029,7 +4513,43 @@ class test_Bellsprout(unittest.TestCase): # {{{
 
 class test_Weepinbell(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Weepinbell (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Weepinbell( 0, 0, 0, 0, 1, pokemon.Weepinbell.get_default_color_0(), pokemon.Weepinbell.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Weepinbell')
@@ -2058,7 +4578,43 @@ class test_Weepinbell(unittest.TestCase): # {{{
 
 class test_Victreebel(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Victreebel (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Victreebel( 0, 0, 0, 0, 1, pokemon.Victreebel.get_default_color_0(), pokemon.Victreebel.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Victreebel')
@@ -2087,7 +4643,43 @@ class test_Victreebel(unittest.TestCase): # {{{
 
 class test_Tentacool(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Tentacool  (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon = pokemon.Tentacool( 0, 0, 0, 0, 1, pokemon.Tentacool.get_default_color_0(), pokemon.Tentacool.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Tentacool')
@@ -2116,7 +4708,43 @@ class test_Tentacool(unittest.TestCase): # {{{
 
 class test_Tentacruel(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Tentacruel (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon = pokemon.Tentacruel( 0, 0, 0, 0, 1, pokemon.Tentacruel.get_default_color_0(), pokemon.Tentacruel.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Tentacruel')
@@ -2145,7 +4773,43 @@ class test_Tentacruel(unittest.TestCase): # {{{
 
 class test_Geodude(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Geodude    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Geodude( 0, 0, 0, 0, 1, pokemon.Geodude.get_default_color_0(), pokemon.Geodude.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Geodude')
@@ -2174,7 +4838,43 @@ class test_Geodude(unittest.TestCase): # {{{
 
 class test_Graveler(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Graveler   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Graveler( 0, 0, 0, 0, 1, pokemon.Graveler.get_default_color_0(), pokemon.Graveler.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Graveler')
@@ -2203,7 +4903,43 @@ class test_Graveler(unittest.TestCase): # {{{
 
 class test_Golem(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Golem      (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Golem( 0, 0, 0, 0, 1, pokemon.Golem.get_default_color_0(), pokemon.Golem.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Golem')
@@ -2232,7 +4968,43 @@ class test_Golem(unittest.TestCase): # {{{
 
 class test_Ponyta(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Ponyta     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Ponyta( 0, 0, 0, 0, 1, pokemon.Ponyta.get_default_color_0(), pokemon.Ponyta.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Ponyta')
@@ -2261,7 +5033,43 @@ class test_Ponyta(unittest.TestCase): # {{{
 
 class test_Rapidash(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Rapidash   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Rapidash( 0, 0, 0, 0, 1, pokemon.Rapidash.get_default_color_0(), pokemon.Rapidash.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Rapidash')
@@ -2290,7 +5098,43 @@ class test_Rapidash(unittest.TestCase): # {{{
 
 class test_Slowpoke(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Slowpoke   (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Slowpoke( 0, 0, 0, 0, 1, pokemon.Slowpoke.get_default_color_0(), pokemon.Slowpoke.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Slowpoke')
@@ -2319,7 +5163,43 @@ class test_Slowpoke(unittest.TestCase): # {{{
 
 class test_Slowbro(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Slowbro    (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Slowbro( 0, 0, 0, 0, 1, pokemon.Slowbro.get_default_color_0(), pokemon.Slowbro.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Slowbro')
@@ -2348,7 +5228,43 @@ class test_Slowbro(unittest.TestCase): # {{{
 
 class test_Magnemite(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Magnemite  (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Magnemite( 0, 0, 0, 0, 1, pokemon.Magnemite.get_default_color_0(), pokemon.Magnemite.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Magnemite')
@@ -2377,7 +5293,43 @@ class test_Magnemite(unittest.TestCase): # {{{
 
 class test_Magneton(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Magneton   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Magneton( 0, 0, 0, 0, 1, pokemon.Magneton.get_default_color_0(), pokemon.Magneton.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Magneton')
@@ -2406,7 +5358,43 @@ class test_Magneton(unittest.TestCase): # {{{
 
 class test_Farfetchd(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Farfetchd  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Farfetchd( 0, 0, 0, 0, 1, pokemon.Farfetchd.get_default_color_0(), pokemon.Farfetchd.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Farfetch\'d')
@@ -2435,7 +5423,43 @@ class test_Farfetchd(unittest.TestCase): # {{{
 
 class test_Doduo(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Doduo      (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Doduo( 0, 0, 0, 0, 1, pokemon.Doduo.get_default_color_0(), pokemon.Doduo.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Doduo')
@@ -2464,7 +5488,43 @@ class test_Doduo(unittest.TestCase): # {{{
 
 class test_Dodrio(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Dodrio     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Dodrio( 0, 0, 0, 0, 1, pokemon.Dodrio.get_default_color_0(), pokemon.Dodrio.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Dodrio')
@@ -2493,7 +5553,43 @@ class test_Dodrio(unittest.TestCase): # {{{
 
 class test_Seel(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Seel       (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.Seel( 0, 0, 0, 0, 1, pokemon.Seel.get_default_color_0(), pokemon.Seel.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Seel')
@@ -2522,7 +5618,43 @@ class test_Seel(unittest.TestCase): # {{{
 
 class test_Dewgong(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Dewgong    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.Dewgong( 0, 0, 0, 0, 1, pokemon.Dewgong.get_default_color_0(), pokemon.Dewgong.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Dewgong')
@@ -2551,7 +5683,43 @@ class test_Dewgong(unittest.TestCase): # {{{
 
 class test_Grimer(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Grimer     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Grimer( 0, 0, 0, 0, 1, pokemon.Grimer.get_default_color_0(), pokemon.Grimer.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Grimer')
@@ -2580,7 +5748,43 @@ class test_Grimer(unittest.TestCase): # {{{
 
 class test_Muk(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Muk        (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Muk( 0, 0, 0, 0, 1, pokemon.Muk.get_default_color_0(), pokemon.Muk.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Muk')
@@ -2609,7 +5813,43 @@ class test_Muk(unittest.TestCase): # {{{
 
 class test_Shellder(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Shellder   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Shellder( 0, 0, 0, 0, 1, pokemon.Shellder.get_default_color_0(), pokemon.Shellder.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Shellder')
@@ -2638,7 +5878,43 @@ class test_Shellder(unittest.TestCase): # {{{
 
 class test_Cloyster(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Cloyster   (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Cloyster( 0, 0, 0, 0, 1, pokemon.Cloyster.get_default_color_0(), pokemon.Cloyster.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Cloyster')
@@ -2667,7 +5943,43 @@ class test_Cloyster(unittest.TestCase): # {{{
 
 class test_Gastly(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Gastly     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Gastly( 0, 0, 0, 0, 1, pokemon.Gastly.get_default_color_0(), pokemon.Gastly.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Gastly')
@@ -2696,7 +6008,43 @@ class test_Gastly(unittest.TestCase): # {{{
 
 class test_Haunter(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Haunter    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Haunter( 0, 0, 0, 0, 1, pokemon.Haunter.get_default_color_0(), pokemon.Haunter.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Haunter')
@@ -2725,7 +6073,43 @@ class test_Haunter(unittest.TestCase): # {{{
 
 class test_Gengar(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Gengar     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Gengar( 0, 0, 0, 0, 1, pokemon.Gengar.get_default_color_0(), pokemon.Gengar.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Gengar')
@@ -2754,7 +6138,43 @@ class test_Gengar(unittest.TestCase): # {{{
 
 class test_Onix(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Onix       (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Onix( 0, 0, 0, 0, 1, pokemon.Onix.get_default_color_0(), pokemon.Onix.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Onix')
@@ -2783,7 +6203,43 @@ class test_Onix(unittest.TestCase): # {{{
 
 class test_Drowzee(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Drowzee    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Drowzee( 0, 0, 0, 0, 1, pokemon.Drowzee.get_default_color_0(), pokemon.Drowzee.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Drowzee')
@@ -2812,7 +6268,43 @@ class test_Drowzee(unittest.TestCase): # {{{
 
 class test_Hypno(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Hypno      (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Hypno( 0, 0, 0, 0, 1, pokemon.Hypno.get_default_color_0(), pokemon.Hypno.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Hypno')
@@ -2841,7 +6333,43 @@ class test_Hypno(unittest.TestCase): # {{{
 
 class test_Krabby(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Krabby     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Krabby( 0, 0, 0, 0, 1, pokemon.Krabby.get_default_color_0(), pokemon.Krabby.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Krabby')
@@ -2870,7 +6398,43 @@ class test_Krabby(unittest.TestCase): # {{{
 
 class test_Kingler(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Kingler    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Kingler( 0, 0, 0, 0, 1, pokemon.Kingler.get_default_color_0(), pokemon.Kingler.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Kingler')
@@ -2899,7 +6463,43 @@ class test_Kingler(unittest.TestCase): # {{{
 
 class test_Voltorb(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Voltorb    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Voltorb( 0, 0, 0, 0, 1, pokemon.Voltorb.get_default_color_0(), pokemon.Voltorb.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Voltorb')
@@ -2928,7 +6528,43 @@ class test_Voltorb(unittest.TestCase): # {{{
 
 class test_Electrode(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Electrode  (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Electrode( 0, 0, 0, 0, 1, pokemon.Electrode.get_default_color_0(), pokemon.Electrode.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Electrode')
@@ -2957,7 +6593,43 @@ class test_Electrode(unittest.TestCase): # {{{
 
 class test_Exeggcute(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Exeggcute  (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Exeggcute( 0, 0, 0, 0, 1, pokemon.Exeggcute.get_default_color_0(), pokemon.Exeggcute.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Exeggcute')
@@ -2986,7 +6658,43 @@ class test_Exeggcute(unittest.TestCase): # {{{
 
 class test_Exeggutor(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Exeggutor  (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Exeggutor( 0, 0, 0, 0, 1, pokemon.Exeggutor.get_default_color_0(), pokemon.Exeggutor.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Exeggutor')
@@ -3015,7 +6723,43 @@ class test_Exeggutor(unittest.TestCase): # {{{
 
 class test_Cubone(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Cubone     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Cubone( 0, 0, 0, 0, 1, pokemon.Cubone.get_default_color_0(), pokemon.Cubone.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Cubone')
@@ -3044,7 +6788,43 @@ class test_Cubone(unittest.TestCase): # {{{
 
 class test_Marowak(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Marowak    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Marowak( 0, 0, 0, 0, 1, pokemon.Marowak.get_default_color_0(), pokemon.Marowak.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Marowak')
@@ -3073,7 +6853,43 @@ class test_Marowak(unittest.TestCase): # {{{
 
 class test_Hitmonlee(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Hitmonlee  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Hitmonlee( 0, 0, 0, 0, 1, pokemon.Hitmonlee.get_default_color_0(), pokemon.Hitmonlee.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Hitmonlee')
@@ -3102,7 +6918,43 @@ class test_Hitmonlee(unittest.TestCase): # {{{
 
 class test_Hitmonchan(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Hitmonchan (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Hitmonchan( 0, 0, 0, 0, 1, pokemon.Hitmonchan.get_default_color_0(), pokemon.Hitmonchan.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Hitmonchan')
@@ -3131,7 +6983,43 @@ class test_Hitmonchan(unittest.TestCase): # {{{
 
 class test_Lickitung(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Lickitung  (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Lickitung( 0, 0, 0, 0, 1, pokemon.Lickitung.get_default_color_0(), pokemon.Lickitung.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Lickitung')
@@ -3160,7 +7048,43 @@ class test_Lickitung(unittest.TestCase): # {{{
 
 class test_Koffing(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Koffing    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Koffing( 0, 0, 0, 0, 1, pokemon.Koffing.get_default_color_0(), pokemon.Koffing.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Koffing')
@@ -3189,7 +7113,43 @@ class test_Koffing(unittest.TestCase): # {{{
 
 class test_Weezing(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Weezing    (  0, 0, 0, 0, 1, NEAR_BLACK, (173,123,189), (222,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Weezing ( 0, 0, 0, 0, 1, pokemon.Weezing.get_default_color_0(), pokemon.Weezing.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (222,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Weezing')
@@ -3218,7 +7178,43 @@ class test_Weezing(unittest.TestCase): # {{{
 
 class test_Rhyhorn(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Rhyhorn    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Rhyhorn( 0, 0, 0, 0, 1, pokemon.Rhyhorn.get_default_color_0(), pokemon.Rhyhorn.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Rhyhorn')
@@ -3247,7 +7243,43 @@ class test_Rhyhorn(unittest.TestCase): # {{{
 
 class test_Rhydon(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Rhydon     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Rhydon( 0, 0, 0, 0, 1, pokemon.Rhydon.get_default_color_0(), pokemon.Rhydon.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Rhydon')
@@ -3276,7 +7308,43 @@ class test_Rhydon(unittest.TestCase): # {{{
 
 class test_Chansey(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Chansey    (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Chansey( 0, 0, 0, 0, 1, pokemon.Chansey.get_default_color_0(), pokemon.Chansey.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Chansey')
@@ -3305,10 +7373,46 @@ class test_Chansey(unittest.TestCase): # {{{
 
 class test_Tangela(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Tangela    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.Tangela( 0, 0, 0, 0, 1, pokemon.Tangela.get_default_color_0(), pokemon.Tangela.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Tangela')
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Pokedex_Number(self):
     self.assertEqual(str(self.my_pokemon.get_Number()).zfill(3), '114')
@@ -3334,7 +7438,43 @@ class test_Tangela(unittest.TestCase): # {{{
 
 class test_Kangaskhan(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Kangaskhan (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Kangaskhan( 0, 0, 0, 0, 1, pokemon.Kangaskhan.get_default_color_0(), pokemon.Kangaskhan.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Kangaskhan')
@@ -3363,7 +7503,43 @@ class test_Kangaskhan(unittest.TestCase): # {{{
 
 class test_Horsea(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Horsea     (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon = pokemon.Horsea( 0, 0, 0, 0, 1, pokemon.Horsea.get_default_color_0(), pokemon.Horsea.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Horsea')
@@ -3392,7 +7568,43 @@ class test_Horsea(unittest.TestCase): # {{{
 
 class test_Seadra(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Seadra     (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon = pokemon.Seadra( 0, 0, 0, 0, 1, pokemon.Seadra.get_default_color_0(), pokemon.Seadra.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Seadra')
@@ -3421,7 +7633,43 @@ class test_Seadra(unittest.TestCase): # {{{
 
 class test_Goldeen(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Goldeen    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Goldeen( 0, 0, 0, 0, 1, pokemon.Goldeen.get_default_color_0(), pokemon.Goldeen.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Goldeen')
@@ -3450,7 +7698,43 @@ class test_Goldeen(unittest.TestCase): # {{{
 
 class test_Seaking(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Seaking    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,165,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Seaking( 0, 0, 0, 0, 1, pokemon.Seaking.get_default_color_0(), pokemon.Seaking.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Seaking')
@@ -3479,7 +7763,43 @@ class test_Seaking(unittest.TestCase): # {{{
 
 class test_Staryu(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Staryu     (  0, 0, 0, 0, 1, NEAR_BLACK, (255,165,82),  (214,82,49),   WHITE, screen)
+    self.my_pokemon = pokemon.Staryu( 0, 0, 0, 0, 1, pokemon.Staryu.get_default_color_0(), pokemon.Staryu.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Staryu')
@@ -3508,7 +7828,43 @@ class test_Staryu(unittest.TestCase): # {{{
 
 class test_Starmie(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Starmie    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Starmie( 0, 0, 0, 0, 1, pokemon.Starmie.get_default_color_0(), pokemon.Starmie.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Starmie')
@@ -3537,7 +7893,43 @@ class test_Starmie(unittest.TestCase): # {{{
 
 class test_Mr_Mime(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Mr_Mime    (  0, 0, 0, 0, 1, NEAR_BLACK, (247,181,197), (230,123,173), WHITE, screen)
+    self.my_pokemon = pokemon.Mr_Mime( 0, 0, 0, 0, 1, pokemon.Mr_Mime.get_default_color_0(), pokemon.Mr_Mime.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Mr. Mime')
@@ -3566,7 +7958,43 @@ class test_Mr_Mime(unittest.TestCase): # {{{
 
 class test_Scyther(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Scyther    (  0, 0, 0, 0, 1, NEAR_BLACK, (74,165,90),   (165,214,132), WHITE, screen)
+    self.my_pokemon = pokemon.Scyther( 0, 0, 0, 0, 1, pokemon.Scyther.get_default_color_0(), pokemon.Scyther.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (74,165,90))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Scyther')
@@ -3595,7 +8023,43 @@ class test_Scyther(unittest.TestCase): # {{{
 
 class test_Jynx(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Jynx       (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
+    self.my_pokemon = pokemon.Jynx( 0, 0, 0, 0, 1, pokemon.Jynx.get_default_color_0(), pokemon.Jynx.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,140))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (132,115,156))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Jynx')
@@ -3624,7 +8088,43 @@ class test_Jynx(unittest.TestCase): # {{{
 
 class test_Electabuzz(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Electabuzz (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Electabuzz( 0, 0, 0, 0, 1, pokemon.Electabuzz.get_default_color_0(), pokemon.Electabuzz.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Electabuzz')
@@ -3653,7 +8153,43 @@ class test_Electabuzz(unittest.TestCase): # {{{
 
 class test_Magmar(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Magmar     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Magmar( 0, 0, 0, 0, 1, pokemon.Magmar.get_default_color_0(), pokemon.Magmar.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Magmar')
@@ -3682,7 +8218,43 @@ class test_Magmar(unittest.TestCase): # {{{
 
 class test_Pinsir(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Pinsir     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Pinsir( 0, 0, 0, 0, 1, pokemon.Pinsir.get_default_color_0(), pokemon.Pinsir.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Pinsir')
@@ -3711,7 +8283,43 @@ class test_Pinsir(unittest.TestCase): # {{{
 
 class test_Tauros(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Tauros     (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Tauros( 0, 0, 0, 0, 1, pokemon.Tauros.get_default_color_0(), pokemon.Tauros.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Tauros')
@@ -3740,7 +8348,43 @@ class test_Tauros(unittest.TestCase): # {{{
 
 class test_Magikarp(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Magikarp   (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Magikarp( 0, 0, 0, 0, 1, pokemon.Magikarp.get_default_color_0(), pokemon.Magikarp.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,165,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Magikarp')
@@ -3769,7 +8413,43 @@ class test_Magikarp(unittest.TestCase): # {{{
 
 class test_Gyrados(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Gyrados    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189), (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.Gyrados( 0, 0, 0, 0, 1, pokemon.Gyrados.get_default_color_0(), pokemon.Gyrados.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Gyrados')
@@ -3798,7 +8478,43 @@ class test_Gyrados(unittest.TestCase): # {{{
 
 class test_Lapras(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Lapras     (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon = pokemon.Lapras( 0, 0, 0, 0, 1, pokemon.Lapras.get_default_color_0(), pokemon.Lapras.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Lapras')
@@ -3827,7 +8543,43 @@ class test_Lapras(unittest.TestCase): # {{{
 
 class test_Ditto(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Ditto      (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Ditto( 0, 0, 0, 0, 1, pokemon.Ditto.get_default_color_0(), pokemon.Ditto.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Ditto')
@@ -3856,7 +8608,43 @@ class test_Ditto(unittest.TestCase): # {{{
 
 class test_Eevee(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Eevee      (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Eevee( 0, 0, 0, 0, 1, pokemon.Eevee.get_default_color_0(), pokemon.Eevee.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Eevee')
@@ -3885,7 +8673,43 @@ class test_Eevee(unittest.TestCase): # {{{
 
 class test_Vaporeon(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Vaporeon   (  0, 0, 0, 0, 1, NEAR_BLACK, (115,156,206), (173,206,239), WHITE, screen)
+    self.my_pokemon = pokemon.Vaporeon( 0, 0, 0, 0, 1, pokemon.Vaporeon.get_default_color_0(), pokemon.Vaporeon.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (173,206,239))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (115,156,206))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Vaporeon')
@@ -3914,7 +8738,43 @@ class test_Vaporeon(unittest.TestCase): # {{{
 
 class test_Jolteon(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Jolteon    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Jolteon( 0, 0, 0, 0, 1, pokemon.Jolteon.get_default_color_0(), pokemon.Jolteon.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Jolteon')
@@ -3943,7 +8803,43 @@ class test_Jolteon(unittest.TestCase): # {{{
 
 class test_Flareon(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Flareon    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Flareon( 0, 0, 0, 0, 1, pokemon.Flareon.get_default_color_0(), pokemon.Flareon.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Flareon')
@@ -3972,7 +8868,43 @@ class test_Flareon(unittest.TestCase): # {{{
 
 class test_Porygon(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Porygon    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Porygon( 0, 0, 0, 0, 1, pokemon.Porygon.get_default_color_0(), pokemon.Porygon.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Porygon')
@@ -4001,7 +8933,43 @@ class test_Porygon(unittest.TestCase): # {{{
 
 class test_Omanyte(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Omanyte    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.Omanyte( 0, 0, 0, 0, 1, pokemon.Omanyte.get_default_color_0(), pokemon.Omanyte.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Omanyte')
@@ -4030,7 +8998,43 @@ class test_Omanyte(unittest.TestCase): # {{{
 
 class test_Omastar(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Omastar    (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.Omastar( 0, 0, 0, 0, 1, pokemon.Omastar.get_default_color_0(), pokemon.Omastar.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Omastar')
@@ -4059,7 +9063,43 @@ class test_Omastar(unittest.TestCase): # {{{
 
 class test_Kabuto(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Kabuto     (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Kabuto( 0, 0, 0, 0, 1, pokemon.Kabuto.get_default_color_0(), pokemon.Kabuto.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Kabuto')
@@ -4088,7 +9128,43 @@ class test_Kabuto(unittest.TestCase): # {{{
 
 class test_Kabutops(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Kabutops   (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Kabutops( 0, 0, 0, 0, 1, pokemon.Kabutops.get_default_color_0(), pokemon.Kabutops.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Kabutops')
@@ -4117,7 +9193,43 @@ class test_Kabutops(unittest.TestCase): # {{{
 
 class test_Aerodactyl(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Aerodactyl (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Aerodactyl( 0, 0, 0, 0, 1, pokemon.Aerodactyl.get_default_color_0(), pokemon.Aerodactyl.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Aerodactyl')
@@ -4146,7 +9258,43 @@ class test_Aerodactyl(unittest.TestCase): # {{{
 
 class test_Snorlax(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Snorlax    (  0, 0, 0, 0, 1, NEAR_BLACK, (230,123,173), (247,181,197), WHITE, screen)
+    self.my_pokemon = pokemon.Snorlax( 0, 0, 0, 0, 1, pokemon.Snorlax.get_default_color_0(), pokemon.Snorlax.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,197))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (230,123,173))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Snorlax')
@@ -4175,7 +9323,43 @@ class test_Snorlax(unittest.TestCase): # {{{
 
 class test_Articuno(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Articuno   (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.Articuno( 0, 0, 0, 0, 1, pokemon.Articuno.get_default_color_0(), pokemon.Articuno.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Articuno')
@@ -4204,7 +9388,43 @@ class test_Articuno(unittest.TestCase): # {{{
 
 class test_Zapdos(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Zapdos     (  0, 0, 0, 0, 1, NEAR_BLACK, (214,165,0),   (255,230,115), WHITE, screen)
+    self.my_pokemon = pokemon.Zapdos( 0, 0, 0, 0, 1, pokemon.Zapdos.get_default_color_0(), pokemon.Zapdos.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,230,115))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,165,0))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Zapdos')
@@ -4233,7 +9453,43 @@ class test_Zapdos(unittest.TestCase): # {{{
 
 class test_Moltres(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Moltres    (  0, 0, 0, 0, 1, NEAR_BLACK, (214,82,49),   (255,162,82),  WHITE, screen)
+    self.my_pokemon = pokemon.Moltres( 0, 0, 0, 0, 1, pokemon.Moltres.get_default_color_0(), pokemon.Moltres.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (255,162,82))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (214,82,49))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Moltres')
@@ -4262,7 +9518,43 @@ class test_Moltres(unittest.TestCase): # {{{
 
 class test_Dratini(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Dratini    (  0, 0, 0, 0, 1, NEAR_BLACK, (123,123,148), (214,173,181), WHITE, screen)
+    self.my_pokemon = pokemon.Dratini( 0, 0, 0, 0, 1, pokemon.Dratini.get_default_color_0(), pokemon.Dratini.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (214,173,181))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (123,123,148))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Dratini')
@@ -4291,7 +9583,43 @@ class test_Dratini(unittest.TestCase): # {{{
 
 class test_Dragonair(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Dragonair  (  0, 0, 0, 0, 1, NEAR_BLACK, (90,123,189),  (148,165,222), WHITE, screen)
+    self.my_pokemon = pokemon.Dragonair( 0, 0, 0, 0, 1, pokemon.Dragonair.get_default_color_0(), pokemon.Dragonair.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (90,123,189))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Dragonair')
@@ -4320,7 +9648,43 @@ class test_Dragonair(unittest.TestCase): # {{{
 
 class test_Dragonite(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Dragonite  (  0, 0, 0, 0, 1, NEAR_BLACK, (173,115,74),  (230,165,123), WHITE, screen)
+    self.my_pokemon = pokemon.Dragonite ( 0, 0, 0, 0, 1, pokemon.Dragonite.get_default_color_0(), pokemon.Dragonite.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (230,165,123))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (173,115,74))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Dragonite')
@@ -4349,7 +9713,43 @@ class test_Dragonite(unittest.TestCase): # {{{
 
 class test_Mewtwo(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Mewtwo     (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
+    self.my_pokemon = pokemon.Mewtwo( 0, 0, 0, 0, 1, pokemon.Mewtwo.get_default_color_0(), pokemon.Mewtwo.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,140))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (132,115,156))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Mewtwo')
@@ -4378,7 +9778,43 @@ class test_Mewtwo(unittest.TestCase): # {{{
 
 class test_Mew(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Mew        (  0, 0, 0, 0, 1, NEAR_BLACK, (132,115,156), (247,181,140), WHITE, screen)
+    self.my_pokemon = pokemon.Mew( 0, 0, 0, 0, 1, pokemon.Mew.get_default_color_0(), pokemon.Mew.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (247,181,140))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (132,115,156))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (25,16,16))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'Mew')
@@ -4407,7 +9843,43 @@ class test_Mew(unittest.TestCase): # {{{
 
 class test_Missingno(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon  = pokemon.Missingno  (  0, 0, 0, 0, 1, (18,11,11), (117,101,142), (238,168,126), WHITE, screen)
+    self.my_pokemon = pokemon.Missingno( 0, 0, 0, 0, 1, pokemon.Missingno.get_default_color_0(), pokemon.Missingno.get_default_color_1(), screen)
+
+  def test_default_color_0(self):
+    self.assertEqual(self.my_pokemon.get_default_color_0(), (238,168,126))
+
+  def test_default_color_1(self):
+    self.assertEqual(self.my_pokemon.get_default_color_1(), (117,101,142))
+
+  def test_default_color_2(self):
+    self.assertEqual(self.my_pokemon.get_default_color_2(), (255,255,255))
+
+  def test_default_color_3(self):
+    self.assertEqual(self.my_pokemon.get_default_color_3(), (18,11,11))
+
+  def test_color_0(self):
+    self.assertEqual(self.my_pokemon.get_color_0(), self.my_pokemon.get_default_color_0())
+    self.my_pokemon.set_color_0(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_0(), BLACK)
+    self.my_pokemon.set_color_0(self.my_pokemon.get_default_color_0())
+    
+  def test_color_1(self):
+    self.assertEqual(self.my_pokemon.get_color_1(), self.my_pokemon.get_default_color_1())
+    self.my_pokemon.set_color_1(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_1(), BLACK)
+    self.my_pokemon.set_color_1(self.my_pokemon.get_default_color_1())
+
+  def test_color_2(self):
+    self.assertEqual(self.my_pokemon.get_color_2(), self.my_pokemon.get_default_color_2())
+    self.my_pokemon.set_color_2(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_2(), BLACK)
+    self.my_pokemon.set_color_2(self.my_pokemon.get_default_color_2())
+
+  def test_color_3(self):
+    self.assertEqual(self.my_pokemon.get_color_3(), self.my_pokemon.get_default_color_3())
+    self.my_pokemon.set_color_3(BLACK)
+    self.assertEqual(self.my_pokemon.get_color_3(), BLACK)
+    self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
     self.assertEqual(self.my_pokemon.get_Name(), 'MISSINGNO.')
