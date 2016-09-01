@@ -1,0 +1,40 @@
+# -*- coding: utf-8 -*-
+# vim: nu foldmethod=marker maxmem=10000000 
+# vim: expandtab shiftwidth=2 softtabstop=2 autoindent ttyfast
+
+
+# The pokemon class consists of the following
+# class Name (my_sprite):
+#   contains data:
+#     x position            (sprite class)
+#     y position            (sprite class)
+#     x velocity            (sprite class)
+#     y velocity            (sprite class)
+#     size multiplier       (sprite class)
+#     color_1               (near-black)
+#     color_2               (color 1 of pokemon)
+#     color_3               (color 2 of pokemon)
+#     color_4               (white)
+#     screen                (where to draw the sprite)
+#   contains methods:
+#     get_default_color_0()
+#     get_default_color_1()
+#     get_default_color_2()
+#     get_default_color_3()
+#     get_color_0()
+#     get_color_1()
+#     get_color_2()
+#     get_color_3()
+#     set_color_0(color)
+#     set_color_1(color)
+#     set_color_2(color)
+#     set_color_3(color)
+#     get_name()
+#     get_Number()
+#     get_Pokedex_Message()
+#     get_Pokemon_Category()
+#     get_Height_US()       (Given in inches)
+#     get_Height_SI()       (given in meters)
+#     get_Weight_US()       (Given in pounds)
+#     get_WEIGHT_SI()       (Given in kilograms)
+#     draw_front()                (the front sprite from Red/Blue)

@@ -156,9 +156,9 @@ class test_Ivysaur(unittest.TestCase): # {{{
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 13.0)
 # }}}
 
-class test_Venasaur(unittest.TestCase): # {{{
+class test_Venusaur(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon = pokemon.Venasaur( 0, 0, 0, 0, 1, pokemon.Venasaur.get_default_color_0(), pokemon.Venasaur.get_default_color_1(), screen)
+    self.my_pokemon = pokemon.Venusaur( 0, 0, 0, 0, 1, pokemon.Venusaur.get_default_color_0(), pokemon.Venusaur.get_default_color_1(), screen)
 
   def test_default_color_0(self):
     self.assertEqual(self.my_pokemon.get_default_color_0(), (165,214,132))
@@ -197,7 +197,7 @@ class test_Venasaur(unittest.TestCase): # {{{
     self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
-    self.assertEqual(self.my_pokemon.get_Name(), 'Venasaur')
+    self.assertEqual(self.my_pokemon.get_Name(), 'Venusaur')
 
   def test_Pokedex_Number(self):
     self.assertEqual(str(self.my_pokemon.get_Number()).zfill(3), '003')
@@ -8411,9 +8411,9 @@ class test_Magikarp(unittest.TestCase): # {{{
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 10.0)
 # }}}
 
-class test_Gyrados(unittest.TestCase): # {{{
+class test_Gyarados(unittest.TestCase): # {{{
   def setUp(self):
-    self.my_pokemon = pokemon.Gyrados( 0, 0, 0, 0, 1, pokemon.Gyrados.get_default_color_0(), pokemon.Gyrados.get_default_color_1(), screen)
+    self.my_pokemon = pokemon.Gyarados( 0, 0, 0, 0, 1, pokemon.Gyarados.get_default_color_0(), pokemon.Gyarados.get_default_color_1(), screen)
 
   def test_default_color_0(self):
     self.assertEqual(self.my_pokemon.get_default_color_0(), (148,165,222))
@@ -8452,7 +8452,7 @@ class test_Gyrados(unittest.TestCase): # {{{
     self.my_pokemon.set_color_3(self.my_pokemon.get_default_color_3())
 
   def test_Name(self):
-    self.assertEqual(self.my_pokemon.get_Name(), 'Gyrados')
+    self.assertEqual(self.my_pokemon.get_Name(), 'Gyarados')
 
   def test_Pokedex_Number(self):
     self.assertEqual(str(self.my_pokemon.get_Number()).zfill(3), '130')
