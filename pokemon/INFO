@@ -37,4 +37,8 @@
 #     get_Height_SI()       (given in meters)
 #     get_Weight_US()       (Given in pounds)
 #     get_WEIGHT_SI()       (Given in kilograms)
+#     get_Type_0()          (if 0 znd 1 are the same, it means that they only had 1 type)
+#     get_Type_1()
+#     get_front_height()    (given in terms of size)
+#     get_front_width()
 #     draw_front()                (the front sprite from Red/Blue)

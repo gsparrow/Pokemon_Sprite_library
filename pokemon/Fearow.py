@@ -79,6 +79,12 @@ class Fearow (my_sprite):
   def get_Weight_SI(self):
     return 38.0
 
+  def get_Type_0(self):
+    return "Flying"
+
+  def get_Type_1(self):
+    return "Normal"
+
   def get_front_height(self):
     return 48*self.size
 

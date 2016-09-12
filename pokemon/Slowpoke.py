@@ -79,6 +79,12 @@ class Slowpoke (my_sprite):
   def get_Weight_SI(self):
     return 36.0
 
+  def get_Type_0(self):
+    return "Psychic"
+
+  def get_Type_1(self):
+    return "Water"
+
   def get_front_height(self):
     return 37*self.size
 

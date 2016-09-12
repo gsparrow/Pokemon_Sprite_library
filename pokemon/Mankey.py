@@ -79,6 +79,12 @@ class Mankey (my_sprite):
   def get_Weight_SI(self):
     return 28.0
 
+  def get_Type_0(self):
+    return "Fighting"
+
+  def get_Type_1(self):
+    return "Fighting"
+
   def get_front_height(self):
     return 37*self.size
 

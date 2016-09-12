@@ -79,6 +79,12 @@ class Caterpie (my_sprite):
   def get_Weight_SI(self):
     return 2.9
 
+  def get_Type_0(self):
+    return "Bug"
+
+  def get_Type_1(self):
+    return "Bug"
+
   def get_front_height(self):
     return 26*self.size
 

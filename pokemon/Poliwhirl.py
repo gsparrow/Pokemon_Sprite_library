@@ -79,6 +79,12 @@ class Poliwhirl (my_sprite):
   def get_Weight_SI(self):
     return 20.0
 
+  def get_Type_0(self):
+    return "Water"
+
+  def get_Type_1(self):
+    return "Water"
+
   def get_front_height(self):
     return 46*self.size
 

@@ -79,6 +79,12 @@ class Articuno (my_sprite):
   def get_Weight_SI(self):
     return 55.4
 
+  def get_Type_0(self):
+    return "Flying"
+
+  def get_Type_1(self):
+    return "Ice"
+
   def get_front_height(self):
     return 56*self.size
 

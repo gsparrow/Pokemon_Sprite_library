@@ -79,6 +79,12 @@ class Scyther (my_sprite):
   def get_Weight_SI(self):
     return 56.0
 
+  def get_Type_0(self):
+    return "Bug"
+
+  def get_Type_1(self):
+    return "Flying"
+
   def get_front_height(self):
     return 56*self.size
 

@@ -79,6 +79,12 @@ class Mew (my_sprite):
   def get_Weight_SI(self):
     return 4.0
 
+  def get_Type_0(self):
+    return "Psychic"
+
+  def get_Type_1(self):
+    return "Psychic"
+
   def get_front_height(self):
     return 40*self.size
 

@@ -79,6 +79,12 @@ class Magmar (my_sprite):
   def get_Weight_SI(self):
     return 44.5
 
+  def get_Type_0(self):
+    return "Fire"
+
+  def get_Type_1(self):
+    return "Fire"
+
   def get_front_height(self):
     return 43*self.size
 

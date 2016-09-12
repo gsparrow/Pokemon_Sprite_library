@@ -89,6 +89,12 @@ class test_Bulbasaur(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 6.9)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Grass")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Ivysaur(unittest.TestCase): # {{{
@@ -154,6 +160,12 @@ class test_Ivysaur(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 13.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Grass")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Venusaur(unittest.TestCase): # {{{
@@ -219,6 +231,12 @@ class test_Venusaur(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 100.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Grass")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Charmander(unittest.TestCase): # {{{
@@ -284,6 +302,12 @@ class test_Charmander(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 8.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fire")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fire")
 # }}}
 
 class test_Charmeleon(unittest.TestCase): # {{{
@@ -349,6 +373,12 @@ class test_Charmeleon(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 19.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fire")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fire")
 # }}}
 
 class test_Charizard(unittest.TestCase): # {{{
@@ -414,6 +444,12 @@ class test_Charizard(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 90.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fire")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Flying")
 # }}}
 
 class test_Squirtle(unittest.TestCase): # {{{
@@ -479,6 +515,12 @@ class test_Squirtle(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 9.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Wartortle(unittest.TestCase): # {{{
@@ -544,6 +586,12 @@ class test_Wartortle(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 22.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Blastoise(unittest.TestCase): # {{{
@@ -609,6 +657,12 @@ class test_Blastoise(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 85.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Caterpie(unittest.TestCase): # {{{
@@ -674,6 +728,12 @@ class test_Caterpie(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 2.9)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Bug")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Bug")
 # }}}
 
 class test_Metapod(unittest.TestCase): # {{{
@@ -739,6 +799,12 @@ class test_Metapod(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 9.9)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Bug")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Bug")
 # }}}
 
 class test_Butterfree(unittest.TestCase): # {{{
@@ -804,6 +870,12 @@ class test_Butterfree(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 32.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Bug")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Flying")
 # }}}
 
 class test_Weedle(unittest.TestCase): # {{{
@@ -869,6 +941,12 @@ class test_Weedle(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 3.2)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Bug")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Kakuna(unittest.TestCase): # {{{
@@ -934,6 +1012,12 @@ class test_Kakuna(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 10.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Bug")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Beedrill(unittest.TestCase): # {{{
@@ -999,6 +1083,12 @@ class test_Beedrill(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 29.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Bug")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Pidgey(unittest.TestCase): # {{{
@@ -1064,6 +1154,12 @@ class test_Pidgey(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 1.8)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Flying")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Pidgeotto(unittest.TestCase): # {{{
@@ -1129,6 +1225,12 @@ class test_Pidgeotto(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 30.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Flying")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Pidgeot(unittest.TestCase): # {{{
@@ -1194,6 +1296,12 @@ class test_Pidgeot(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 39.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Flying")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Rattata(unittest.TestCase): # {{{
@@ -1259,6 +1367,12 @@ class test_Rattata(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 3.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Raticate(unittest.TestCase): # {{{
@@ -1324,6 +1438,12 @@ class test_Raticate(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 18.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Spearow(unittest.TestCase): # {{{
@@ -1389,6 +1509,12 @@ class test_Spearow(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 2.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Flying")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Fearow(unittest.TestCase): # {{{
@@ -1454,6 +1580,12 @@ class test_Fearow(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 38.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Flying")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Ekans(unittest.TestCase): # {{{
@@ -1519,6 +1651,12 @@ class test_Ekans(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 6.9)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Poison")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Arbok(unittest.TestCase): # {{{
@@ -1584,6 +1722,12 @@ class test_Arbok(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 65.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Poison")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Pikachu(unittest.TestCase): # {{{
@@ -1649,6 +1793,12 @@ class test_Pikachu(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 6.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Electric")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Electric")
 # }}}
 
 class test_Raichu(unittest.TestCase): # {{{
@@ -1714,6 +1864,12 @@ class test_Raichu(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 30.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Electric")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Electric")
 # }}}
 
 class test_Sandshrew(unittest.TestCase): # {{{
@@ -1779,6 +1935,12 @@ class test_Sandshrew(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 12.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ground")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Ground")
 # }}}
 
 class test_Sandslash(unittest.TestCase): # {{{
@@ -1844,6 +2006,12 @@ class test_Sandslash(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 29.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ground")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Ground")
 # }}}
 
 class test_NidoranF(unittest.TestCase): # {{{
@@ -1909,6 +2077,12 @@ class test_NidoranF(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 7.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Poison")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Nidorina(unittest.TestCase): # {{{
@@ -1974,6 +2148,12 @@ class test_Nidorina(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 20.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Poison")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Nidoqueen(unittest.TestCase): # {{{
@@ -2039,6 +2219,12 @@ class test_Nidoqueen(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 60.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ground")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_NidoranM(unittest.TestCase): # {{{
@@ -2104,6 +2290,12 @@ class test_NidoranM(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 9.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Poison")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Nidorino(unittest.TestCase): # {{{
@@ -2169,6 +2361,12 @@ class test_Nidorino(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 19.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Poison")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Nidoking(unittest.TestCase): # {{{
@@ -2234,6 +2432,12 @@ class test_Nidoking(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 62.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ground")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Clefairy(unittest.TestCase): # {{{
@@ -2299,6 +2503,12 @@ class test_Clefairy(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 7.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Clefable(unittest.TestCase): # {{{
@@ -2364,6 +2574,12 @@ class test_Clefable(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 40.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Vulpix(unittest.TestCase): # {{{
@@ -2429,6 +2645,12 @@ class test_Vulpix(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 9.9)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fire")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fire")
 # }}}
 
 class test_Ninetails(unittest.TestCase): # {{{
@@ -2494,6 +2716,12 @@ class test_Ninetails(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 19.9)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fire")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fire")
 # }}}
 
 class test_Jigglypuff(unittest.TestCase): # {{{
@@ -2559,6 +2787,12 @@ class test_Jigglypuff(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 5.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Wigglytuff(unittest.TestCase): # {{{
@@ -2624,6 +2858,12 @@ class test_Wigglytuff(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 12.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Zubat(unittest.TestCase): # {{{
@@ -2689,6 +2929,12 @@ class test_Zubat(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 7.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Flying")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Golbat(unittest.TestCase): # {{{
@@ -2754,6 +3000,12 @@ class test_Golbat(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 55.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Flying")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Oddish(unittest.TestCase): # {{{
@@ -2819,6 +3071,12 @@ class test_Oddish(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 5.4)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Grass")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Gloom(unittest.TestCase): # {{{
@@ -2884,6 +3142,12 @@ class test_Gloom(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 8.6)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Grass")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Vileplume(unittest.TestCase): # {{{
@@ -2949,6 +3213,12 @@ class test_Vileplume(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 18.6)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Grass")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Paras(unittest.TestCase): # {{{
@@ -3014,6 +3284,12 @@ class test_Paras(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 5.4)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Bug")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Grass")
 # }}}
 
 class test_Parasect(unittest.TestCase): # {{{
@@ -3079,6 +3355,12 @@ class test_Parasect(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 29.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Bug")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Grass")
 # }}}
 
 class test_Venonat(unittest.TestCase): # {{{
@@ -3144,6 +3426,12 @@ class test_Venonat(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 30.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Bug")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Venomoth(unittest.TestCase): # {{{
@@ -3209,6 +3497,12 @@ class test_Venomoth(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 12.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Bug")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Diglet(unittest.TestCase): # {{{
@@ -3274,6 +3568,12 @@ class test_Diglet(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 0.8)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ground")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Ground")
 # }}}
 
 class test_Dugtrio(unittest.TestCase): # {{{
@@ -3339,6 +3639,12 @@ class test_Dugtrio(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 33.3)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ground")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Ground")
 # }}}
 
 class test_Meowth(unittest.TestCase): # {{{
@@ -3404,6 +3710,12 @@ class test_Meowth(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 4.2)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Persian(unittest.TestCase): # {{{
@@ -3469,6 +3781,12 @@ class test_Persian(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 32.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Psyduck(unittest.TestCase): # {{{
@@ -3534,6 +3852,12 @@ class test_Psyduck(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 19.6)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Golduck(unittest.TestCase): # {{{
@@ -3599,6 +3923,12 @@ class test_Golduck(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 76.6)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Mankey(unittest.TestCase): # {{{
@@ -3664,6 +3994,12 @@ class test_Mankey(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 28.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fighting")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fighting")
 # }}}
 
 class test_Primeape(unittest.TestCase): # {{{
@@ -3729,6 +4065,12 @@ class test_Primeape(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 32.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fighting")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fighting")
 # }}}
 
 class test_Growlithe(unittest.TestCase): # {{{
@@ -3794,6 +4136,12 @@ class test_Growlithe(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 19.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fire")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fire")
 # }}}
 
 class test_Arcanine(unittest.TestCase): # {{{
@@ -3859,6 +4207,12 @@ class test_Arcanine(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 155.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fire")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fire")
 # }}}
 
 class test_Poliwag(unittest.TestCase): # {{{
@@ -3924,6 +4278,12 @@ class test_Poliwag(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 12.4)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Poliwhirl(unittest.TestCase): # {{{
@@ -3989,6 +4349,12 @@ class test_Poliwhirl(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 20.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Poliwrath(unittest.TestCase): # {{{
@@ -4054,6 +4420,12 @@ class test_Poliwrath(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 54.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fighting")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Abra(unittest.TestCase): # {{{
@@ -4119,6 +4491,12 @@ class test_Abra(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 19.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Psychic")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Psychic")
 # }}}
 
 class test_Kadabra(unittest.TestCase): # {{{
@@ -4184,6 +4562,12 @@ class test_Kadabra(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 56.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Psychic")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Psychic")
 # }}}
 
 class test_Alakazam(unittest.TestCase): # {{{
@@ -4249,6 +4633,12 @@ class test_Alakazam(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 48.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Psychic")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Psychic")
 # }}}
 
 class test_Machop(unittest.TestCase): # {{{
@@ -4314,7 +4704,13 @@ class test_Machop(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 19.5)
-# }}}zo
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fighting")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fighting")
+# }}}
 
 class test_Machoke(unittest.TestCase): # {{{
   def setUp(self):
@@ -4379,6 +4775,12 @@ class test_Machoke(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 70.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fighting")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fighting")
 # }}}
 
 class test_Machamp(unittest.TestCase): # {{{
@@ -4444,6 +4846,12 @@ class test_Machamp(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 130.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fighting")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fighting")
 # }}}
 
 class test_Bellsprout(unittest.TestCase): # {{{
@@ -4509,6 +4917,12 @@ class test_Bellsprout(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 4.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Grass")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Weepinbell(unittest.TestCase): # {{{
@@ -4574,6 +4988,12 @@ class test_Weepinbell(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 6.4)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Grass")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Victreebel(unittest.TestCase): # {{{
@@ -4639,6 +5059,12 @@ class test_Victreebel(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 15.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Grass")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Tentacool(unittest.TestCase): # {{{
@@ -4704,6 +5130,12 @@ class test_Tentacool(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 45.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Poison")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Tentacruel(unittest.TestCase): # {{{
@@ -4769,6 +5201,12 @@ class test_Tentacruel(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 55.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Poison")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Geodude(unittest.TestCase): # {{{
@@ -4834,6 +5272,12 @@ class test_Geodude(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 20.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ground")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Rock")
 # }}}
 
 class test_Graveler(unittest.TestCase): # {{{
@@ -4899,6 +5343,12 @@ class test_Graveler(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 105.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ground")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Rock")
 # }}}
 
 class test_Golem(unittest.TestCase): # {{{
@@ -4964,6 +5414,12 @@ class test_Golem(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 300.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ground")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Rock")
 # }}}
 
 class test_Ponyta(unittest.TestCase): # {{{
@@ -5029,6 +5485,12 @@ class test_Ponyta(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 30.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fire")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fire")
 # }}}
 
 class test_Rapidash(unittest.TestCase): # {{{
@@ -5094,6 +5556,12 @@ class test_Rapidash(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 95.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fire")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fire")
 # }}}
 
 class test_Slowpoke(unittest.TestCase): # {{{
@@ -5159,6 +5627,12 @@ class test_Slowpoke(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 36.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Psychic")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Slowbro(unittest.TestCase): # {{{
@@ -5224,6 +5698,12 @@ class test_Slowbro(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 78.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Psychic")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Magnemite(unittest.TestCase): # {{{
@@ -5289,6 +5769,12 @@ class test_Magnemite(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 6.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Electric")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Electric")
 # }}}
 
 class test_Magneton(unittest.TestCase): # {{{
@@ -5354,6 +5840,12 @@ class test_Magneton(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 60.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Electric")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Electric")
 # }}}
 
 class test_Farfetchd(unittest.TestCase): # {{{
@@ -5419,6 +5911,12 @@ class test_Farfetchd(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 15.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Flying")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Doduo(unittest.TestCase): # {{{
@@ -5484,6 +5982,12 @@ class test_Doduo(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 39.2)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Flying")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Dodrio(unittest.TestCase): # {{{
@@ -5549,6 +6053,12 @@ class test_Dodrio(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 85.2)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Flying")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Seel(unittest.TestCase): # {{{
@@ -5614,6 +6124,12 @@ class test_Seel(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 90.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Dewgong(unittest.TestCase): # {{{
@@ -5679,6 +6195,12 @@ class test_Dewgong(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 120.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ice")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Grimer(unittest.TestCase): # {{{
@@ -5744,6 +6266,12 @@ class test_Grimer(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 30.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Poison")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Muk(unittest.TestCase): # {{{
@@ -5809,6 +6337,12 @@ class test_Muk(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 30.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Poison")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Shellder(unittest.TestCase): # {{{
@@ -5874,6 +6408,12 @@ class test_Shellder(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 4.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Cloyster(unittest.TestCase): # {{{
@@ -5939,6 +6479,12 @@ class test_Cloyster(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 132.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ice")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Gastly(unittest.TestCase): # {{{
@@ -6004,6 +6550,12 @@ class test_Gastly(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 0.1)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ghost")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Haunter(unittest.TestCase): # {{{
@@ -6069,6 +6621,12 @@ class test_Haunter(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 0.1)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ghost")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Gengar(unittest.TestCase): # {{{
@@ -6134,6 +6692,12 @@ class test_Gengar(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 40.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ghost")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Onix(unittest.TestCase): # {{{
@@ -6199,6 +6763,12 @@ class test_Onix(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 210.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ground")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Rock")
 # }}}
 
 class test_Drowzee(unittest.TestCase): # {{{
@@ -6264,6 +6834,12 @@ class test_Drowzee(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 32.4)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Psychic")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Psychic")
 # }}}
 
 class test_Hypno(unittest.TestCase): # {{{
@@ -6329,6 +6905,12 @@ class test_Hypno(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 75.6)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Psychic")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Psychic")
 # }}}
 
 class test_Krabby(unittest.TestCase): # {{{
@@ -6394,6 +6976,12 @@ class test_Krabby(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 6.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Kingler(unittest.TestCase): # {{{
@@ -6459,6 +7047,12 @@ class test_Kingler(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 60.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Voltorb(unittest.TestCase): # {{{
@@ -6524,6 +7118,12 @@ class test_Voltorb(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 10.4)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Electric")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Electric")
 # }}}
 
 class test_Electrode(unittest.TestCase): # {{{
@@ -6589,6 +7189,12 @@ class test_Electrode(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 66.6)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Electric")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Electric")
 # }}}
 
 class test_Exeggcute(unittest.TestCase): # {{{
@@ -6654,6 +7260,12 @@ class test_Exeggcute(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 2.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Grass")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Psychic")
 # }}}
 
 class test_Exeggutor(unittest.TestCase): # {{{
@@ -6719,6 +7331,12 @@ class test_Exeggutor(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 120.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Grass")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Psychic")
 # }}}
 
 class test_Cubone(unittest.TestCase): # {{{
@@ -6784,6 +7402,12 @@ class test_Cubone(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 6.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ground")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Ground")
 # }}}
 
 class test_Marowak(unittest.TestCase): # {{{
@@ -6849,6 +7473,12 @@ class test_Marowak(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 45.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ground")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Ground")
 # }}}
 
 class test_Hitmonlee(unittest.TestCase): # {{{
@@ -6914,6 +7544,12 @@ class test_Hitmonlee(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 49.8)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fighting")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fighting")
 # }}}
 
 class test_Hitmonchan(unittest.TestCase): # {{{
@@ -6979,6 +7615,12 @@ class test_Hitmonchan(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 50.2)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fighting")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fighting")
 # }}}
 
 class test_Lickitung(unittest.TestCase): # {{{
@@ -7044,6 +7686,12 @@ class test_Lickitung(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 65.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Koffing(unittest.TestCase): # {{{
@@ -7109,6 +7757,12 @@ class test_Koffing(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 1.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Poison")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Weezing(unittest.TestCase): # {{{
@@ -7174,6 +7828,12 @@ class test_Weezing(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 9.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Poison")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Poison")
 # }}}
 
 class test_Rhyhorn(unittest.TestCase): # {{{
@@ -7239,6 +7899,12 @@ class test_Rhyhorn(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 115.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ground")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Rock")
 # }}}
 
 class test_Rhydon(unittest.TestCase): # {{{
@@ -7304,6 +7970,12 @@ class test_Rhydon(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 120.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ground")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Rock")
 # }}}
 
 class test_Chansey(unittest.TestCase): # {{{
@@ -7369,6 +8041,12 @@ class test_Chansey(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 34.6)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Tangela(unittest.TestCase): # {{{
@@ -7434,6 +8112,12 @@ class test_Tangela(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 35.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Grass")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Grass")
 # }}}
 
 class test_Kangaskhan(unittest.TestCase): # {{{
@@ -7499,6 +8183,12 @@ class test_Kangaskhan(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 80.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Horsea(unittest.TestCase): # {{{
@@ -7564,6 +8254,12 @@ class test_Horsea(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 8.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Seadra(unittest.TestCase): # {{{
@@ -7629,6 +8325,12 @@ class test_Seadra(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 25.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Goldeen(unittest.TestCase): # {{{
@@ -7694,6 +8396,12 @@ class test_Goldeen(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 15.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Seaking(unittest.TestCase): # {{{
@@ -7759,6 +8467,12 @@ class test_Seaking(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 39.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Staryu(unittest.TestCase): # {{{
@@ -7824,6 +8538,12 @@ class test_Staryu(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 34.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Starmie(unittest.TestCase): # {{{
@@ -7889,6 +8609,12 @@ class test_Starmie(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 80.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Psychic")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Mr_Mime(unittest.TestCase): # {{{
@@ -7954,6 +8680,12 @@ class test_Mr_Mime(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 54.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Psychic")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Psychic")
 # }}}
 
 class test_Scyther(unittest.TestCase): # {{{
@@ -8019,6 +8751,12 @@ class test_Scyther(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 56.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Bug")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Flying")
 # }}}
 
 class test_Jynx(unittest.TestCase): # {{{
@@ -8084,6 +8822,12 @@ class test_Jynx(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 40.6)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ice")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Psychic")
 # }}}
 
 class test_Electabuzz(unittest.TestCase): # {{{
@@ -8149,6 +8893,12 @@ class test_Electabuzz(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 30.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Electric")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Electric")
 # }}}
 
 class test_Magmar(unittest.TestCase): # {{{
@@ -8214,6 +8964,12 @@ class test_Magmar(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 44.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fire")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fire")
 # }}}
 
 class test_Pinsir(unittest.TestCase): # {{{
@@ -8279,6 +9035,12 @@ class test_Pinsir(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 55.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Bug")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Bug")
 # }}}
 
 class test_Tauros(unittest.TestCase): # {{{
@@ -8344,6 +9106,12 @@ class test_Tauros(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 88.4)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Magikarp(unittest.TestCase): # {{{
@@ -8409,6 +9177,12 @@ class test_Magikarp(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 10.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Gyarados(unittest.TestCase): # {{{
@@ -8474,6 +9248,12 @@ class test_Gyarados(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 235.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Flying")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Lapras(unittest.TestCase): # {{{
@@ -8539,6 +9319,12 @@ class test_Lapras(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 220.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Ice")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Ditto(unittest.TestCase): # {{{
@@ -8604,6 +9390,12 @@ class test_Ditto(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 4.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Eevee(unittest.TestCase): # {{{
@@ -8669,6 +9461,12 @@ class test_Eevee(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 6.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Vaporeon(unittest.TestCase): # {{{
@@ -8734,6 +9532,12 @@ class test_Vaporeon(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 29.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Water")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Jolteon(unittest.TestCase): # {{{
@@ -8799,6 +9603,12 @@ class test_Jolteon(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 24.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Electric")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Electric")
 # }}}
 
 class test_Flareon(unittest.TestCase): # {{{
@@ -8864,6 +9674,12 @@ class test_Flareon(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 25.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fire")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Fire")
 # }}}
 
 class test_Porygon(unittest.TestCase): # {{{
@@ -8929,6 +9745,12 @@ class test_Porygon(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 36.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Omanyte(unittest.TestCase): # {{{
@@ -8994,6 +9816,12 @@ class test_Omanyte(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 7.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Rock")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Omastar(unittest.TestCase): # {{{
@@ -9059,6 +9887,12 @@ class test_Omastar(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 35.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Rock")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Kabuto(unittest.TestCase): # {{{
@@ -9124,6 +9958,12 @@ class test_Kabuto(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 11.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Rock")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Kabutops(unittest.TestCase): # {{{
@@ -9189,6 +10029,12 @@ class test_Kabutops(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 40.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Rock")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Water")
 # }}}
 
 class test_Aerodactyl(unittest.TestCase): # {{{
@@ -9254,6 +10100,12 @@ class test_Aerodactyl(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 59.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Flying")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Rock")
 # }}}
 
 class test_Snorlax(unittest.TestCase): # {{{
@@ -9319,6 +10171,12 @@ class test_Snorlax(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 460.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Normal")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 class test_Articuno(unittest.TestCase): # {{{
@@ -9384,6 +10242,12 @@ class test_Articuno(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 55.4)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Flying")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Ice")
 # }}}
 
 class test_Zapdos(unittest.TestCase): # {{{
@@ -9449,6 +10313,12 @@ class test_Zapdos(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 52.6)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Electric")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Flying")
 # }}}
 
 class test_Moltres(unittest.TestCase): # {{{
@@ -9514,6 +10384,12 @@ class test_Moltres(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 60.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Fire")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Flying")
 # }}}
 
 class test_Dratini(unittest.TestCase): # {{{
@@ -9579,6 +10455,12 @@ class test_Dratini(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 3.3)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Dragon")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Dragon")
 # }}}
 
 class test_Dragonair(unittest.TestCase): # {{{
@@ -9644,6 +10526,12 @@ class test_Dragonair(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 16.5)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Dragon")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Dragon")
 # }}}
 
 class test_Dragonite(unittest.TestCase): # {{{
@@ -9709,6 +10597,12 @@ class test_Dragonite(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 210.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Dragon")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Flying")
 # }}}
 
 class test_Mewtwo(unittest.TestCase): # {{{
@@ -9774,6 +10668,12 @@ class test_Mewtwo(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 122.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Psychic")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Psychic")
 # }}}
 
 class test_Mew(unittest.TestCase): # {{{
@@ -9839,6 +10739,12 @@ class test_Mew(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 4.0)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Psychic")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Psychic")
 # }}}
 
 class test_Missingno(unittest.TestCase): # {{{
@@ -9904,6 +10810,12 @@ class test_Missingno(unittest.TestCase): # {{{
 
   def test_Pokemon_Weight_SI(self):
     self.assertEqual(self.my_pokemon.get_Weight_SI(), 1590.8)
+
+  def test_Pokemon_Type_0(self):
+    self.assertEqual(self.my_pokemon.get_Type_0(), "Bird")
+
+  def test_Pokemon_Type_1(self):
+    self.assertEqual(self.my_pokemon.get_Type_1(), "Normal")
 # }}}
 
 if __name__=='__main__':

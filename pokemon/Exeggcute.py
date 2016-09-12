@@ -79,6 +79,12 @@ class Exeggcute (my_sprite):
   def get_Weight_SI(self):
     return 2.5
 
+  def get_Type_0(self):
+    return "Grass"
+
+  def get_Type_1(self):
+    return "Psychic"
+
   def get_front_height(self):
     return 52*self.size
 

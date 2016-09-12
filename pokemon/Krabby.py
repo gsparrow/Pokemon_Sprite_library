@@ -79,6 +79,12 @@ class Krabby (my_sprite):
   def get_Weight_SI(self):
     return 6.5
 
+  def get_Type_0(self):
+    return "Water"
+
+  def get_Type_1(self):
+    return "Water"
+
   def get_front_height(self):
     return 39*self.size
 

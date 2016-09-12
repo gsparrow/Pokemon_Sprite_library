@@ -76,6 +76,12 @@ class Metapod (my_sprite):
   def get_Weight_US(self):
     return 21.8
 
+  def get_Type_0(self):
+    return "Bug"
+
+  def get_Type_1(self):
+    return "Bug"
+
   def get_Weight_SI(self):
     return 9.9
 

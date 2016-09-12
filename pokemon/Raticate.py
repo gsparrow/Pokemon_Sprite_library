@@ -79,6 +79,12 @@ class Raticate (my_sprite):
   def get_Weight_SI(self):
     return 18.5
 
+  def get_Type_0(self):
+    return "Normal"
+
+  def get_Type_1(self):
+    return "Normal"
+
   def get_front_height(self):
     return 47*self.size
 

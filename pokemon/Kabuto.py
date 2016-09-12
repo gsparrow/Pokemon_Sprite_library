@@ -79,6 +79,12 @@ class Kabuto (my_sprite):
   def get_Weight_SI(self):
     return 11.5
 
+  def get_Type_0(self):
+    return "Rock"
+
+  def get_Type_1(self):
+    return "Water"
+
   def get_front_height(self):
     return 36*self.size
 

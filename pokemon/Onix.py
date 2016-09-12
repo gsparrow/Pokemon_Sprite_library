@@ -79,6 +79,12 @@ class Onix (my_sprite):
   def get_Weight_SI(self):
     return 210.0
 
+  def get_Type_0(self):
+    return "Ground"
+
+  def get_Type_1(self):
+    return "Rock"
+
   def get_front_height(self):
     return 55*self.size
 

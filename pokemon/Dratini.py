@@ -79,6 +79,12 @@ class Dratini (my_sprite):
   def get_Weight_SI(self):
     return 3.3
 
+  def get_Type_0(self):
+    return "Dragon"
+
+  def get_Type_1(self):
+    return "Dragon"
+
   def get_front_height(self):
     return 39*self.size
 

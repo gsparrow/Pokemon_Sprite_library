@@ -79,6 +79,12 @@ class Pidgey (my_sprite):
   def get_Weight_SI(self):
     return 1.8
 
+  def get_Type_0(self):
+    return "Flying"
+
+  def get_Type_1(self):
+    return "Normal"
+
   def get_front_height(self):
     return 30*self.size
 

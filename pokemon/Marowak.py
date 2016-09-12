@@ -79,6 +79,12 @@ class Marowak (my_sprite):
   def get_Weight_SI(self):
     return 45.0
 
+  def get_Type_0(self):
+    return "Ground"
+
+  def get_Type_1(self):
+    return "Ground"
+
   def get_front_height(self):
     return 48*self.size
 

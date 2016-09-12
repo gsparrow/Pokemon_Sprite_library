@@ -79,6 +79,12 @@ class Weepinbell (my_sprite):
   def get_Weight_SI(self):
     return 6.4
 
+  def get_Type_0(self):
+    return "Grass"
+
+  def get_Type_1(self):
+    return "Poison"
+
   def get_front_height(self):
     return 42*self.size
 

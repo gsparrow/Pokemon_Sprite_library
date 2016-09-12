@@ -79,6 +79,12 @@ class Gyarados (my_sprite):
   def get_Weight_SI(self):
     return 235.0
 
+  def get_Type_0(self):
+    return "Flying"
+
+  def get_Type_1(self):
+    return "Water"
+
   def get_front_height(self):
     return 56*self.size
 

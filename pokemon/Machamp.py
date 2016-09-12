@@ -79,6 +79,12 @@ class Machamp (my_sprite):
   def get_Weight_SI(self):
     return 130.0
 
+  def get_Type_0(self):
+    return "Fighting"
+
+  def get_Type_1(self):
+    return "Fighting"
+
   def get_front_height(self):
     return 55*self.size
 

@@ -79,6 +79,12 @@ class Dugtrio (my_sprite):
   def get_Weight_SI(self):
     return 33.3
 
+  def get_Type_0(self):
+    return "Ground"
+
+  def get_Type_1(self):
+    return "Ground"
+
   def get_front_height(self):
     return 41*self.size
 

@@ -79,6 +79,12 @@ class Jynx (my_sprite):
   def get_Weight_SI(self):
     return 40.6
 
+  def get_Type_0(self):
+    return "Ice"
+
+  def get_Type_1(self):
+    return "Psychic"
+
   def get_front_height(self):
     return 48*self.size
 

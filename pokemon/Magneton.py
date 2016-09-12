@@ -79,6 +79,12 @@ class Magneton (my_sprite):
   def get_Weight_SI(self):
     return 60.0
 
+  def get_Type_0(self):
+    return "Electric"
+
+  def get_Type_1(self):
+    return "Electric"
+
   def get_front_height(self):
     return 48*self.size
 

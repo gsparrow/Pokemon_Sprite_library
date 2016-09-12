@@ -79,6 +79,12 @@ class Missingno (my_sprite):
   def get_Weight_SI(self):
     return 1590.8
 
+  def get_Type_0(self):
+    return "Bird"
+
+  def get_Type_1(self):
+    return "Normal"
+
   def get_front_height(self):
     return 56*self.size
 

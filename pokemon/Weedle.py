@@ -79,6 +79,12 @@ class Weedle (my_sprite):
   def get_Weight_SI(self):
     return 3.2
 
+  def get_Type_0(self):
+    return "Bug"
+
+  def get_Type_1(self):
+    return "Poison"
+
   def get_front_height(self):
     return 35*self.size
 

@@ -79,6 +79,12 @@ class Hypno (my_sprite):
   def get_Weight_SI(self):
     return 75.6
 
+  def get_Type_0(self):
+    return "Psychic"
+
+  def get_Type_1(self):
+    return "Psychic"
+
   def get_front_height(self):
     return 55*self.size
 

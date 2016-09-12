@@ -79,6 +79,12 @@ class Aerodactyl (my_sprite):
   def get_Weight_SI(self):
     return 59.0
 
+  def get_Type_0(self):
+    return "Flying"
+
+  def get_Type_1(self):
+    return "Rock"
+
   def get_front_height(self):
     return 50*self.size
 
